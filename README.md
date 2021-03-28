@@ -1,2 +1,2 @@
-# -foundryvtt-sf-modern-ui
-FoundryVTT SF Modern UI
+# sfrpg-modern-ui
+FoundryVTT SFRPG Modern UI
