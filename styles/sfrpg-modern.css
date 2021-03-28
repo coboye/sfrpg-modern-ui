@@ -1,0 +1,144 @@
+
+:root {
+  --sfmod-primary-color: #5fc4ff;
+  --sfmod-primary-color-light: #5fc4ff;
+  --sfmod-blur-radius:10px;
+  --sfmod-text-color-title:#ffffff;
+  --sfmod-text-color-placeholder:#869096;
+  --sfmod-text-color-sub:#e0e0ff;
+  --sfmod-text-color-hover:#5fc4ff;
+  --sfmod-text-color:#cecece;
+  --sfmod-background-color:#00000070;
+  --sfmod-background-color-full:#2a2a2a;
+  --sfmod-accent-color: #d26526;
+  --sfmod-accent-color-light: #d26526;
+  --ojLightBorder: 1px solid rgba(0, 0, 0, 0.1);
+  --ojBackground: rgba(0, 0, 0, 0.03);
+  --ojBackgroundMedium: #86909630;
+  --ojBackgroundHeavy: #86909650;
+  --ojTextColor: #cecece;
+  --ojTextColorContrast: #ffffff;
+  --ojHeaderAccentBg: rgba(0, 0, 0, 0.25);
+  --ojHeaderAccentBgFullscreen: rgba(0, 0, 0, 0.05);
+  --ojSidebarWidth: 300px;
+  --ojAppHeaderHeight: 30px;
+  --ojAccentColor: #5fc4ff;
+}
+.system-sfrpg #tinymce {
+    color: #ffff;
+}
+.system-sfrpg #sidebar .sidebar-tab{
+  backdrop-filter: blur(20px);
+}
+.system-sfrpg .window-app .window-header{
+    background: linear-gradient(25deg, #a24611 0%, #d26526 40%, #b74706 60%, #692600 100%);
+}
+.sfrpg.sheet .sheet-navigation .item.active {
+    background: var(--sfmod-accent-color);
+}
+.system-sfrpg #navigation #scene-list .scene.view, 
+.system-sfrpg #navigation #scene-list .scene.context,
+.system-sfrpg #controls .scene-control.active, 
+.system-sfrpg #controls .control-tool.active, 
+.system-sfrpg #controls .scene-control:hover,
+.system-sfrpg #controls .control-tool:hover,
+.system-sfrpg #sidebar-tabs > .item.active,
+.system-sfrpg #sidebar-tabs
+{
+  border-color: var(--sfmod-accent-color);
+  border-bottom-color: var(--sfmod-accent-color-light);
+  box-shadow: 0 0 10px var(--sfmod-accent-color-light);
+}
+.system-sfrpg #chat-controls .roll-type-select{
+  background: none;
+}
+#chat-form textarea {
+    background: var(--sfmod-background-color-full);
+    color: var(--sfmod-text-color);
+}
+
+textarea:focus {
+    outline: 2px solid --sfmod-text-color-hover;
+    box-shadow: 0 0 10px var(--sfmod-text-color-hover);
+}
+.system-sfrpg select optgroup{
+  background: var(--sfmod-background-color-full);
+}
+.system-sfrpg a.entity-link, .system-sfrpg a.inline-roll {
+    border: 1px solid var(--sfmod-primary-color);
+    color: var(--sfmod-primary-color);
+}
+.system-sfrpg .message-header h4.message-sender {
+  color: var(--sfmod-primary-color);
+}
+.system-sfrpg .chat-message .message-header{
+  color: var(--sfmod-text-color-sub);
+}
+.system-sfrpg  .message-header {
+    background-color: transparent;
+}
+.sfrpg.sheet .window-content,
+.system-sfrpg .window-app .window-content,
+.system-sfrpg #chat-log .message {
+    background: var(--sfmod-background-color);
+    color: var(--sfmod-text-color);
+    backdrop-filter: blur(var(--sfmod-blur-radius));
+}
+
+.system-sfrpg form .form-header, 
+.sfrpg.sheet .sheet-header, .sfrpg button{
+  color: var(--sfmod-text-color-title);
+}
+.sfrpg.sheet .sheet-header .summary li,
+.sfrpg .form-group label,
+.sfrpg.chat-card .card-header h3
+{
+  color: var(--sfmod-text-color-sub);
+}
+.sfrpg.sheet .editor-content h2, .system-sfrpg h2{
+  color: var(--sfmod-primary-color);
+  border-bottom: 1px solid var(--sfmod-primary-color);
+}
+.system-sfrpg a.entity-link, .system-sfrpg a.inline-roll{
+  background: none;
+}
+.sfrpg input[type="text"],
+.system-sfrpg select,
+.sfrpg select,
+.sfrpg .form-group label, 
+.sfrpg .window-content,
+.system-sfrpg input[type="text"], .system-sfrpg input[type="number"], .system-sfrpg input[type="password"], .system-sfrpg input[type="date"], .system-sfrpg input[type="time"] 
+{
+  color: var(--sfmod-text-color);
+}
+.sfrpg input[type="text"]::placeholder,
+.system-sfrpg form .notes, .system-sfrpg form .hint
+{
+  color: var(--sfmod-text-color-placeholder);
+}
+.system-sfrpg button:hover, button:focus{
+  box-shadow: 0 0 5px var(--sfmod-primary-color);
+  color:var(--sfmod-text-color-hover);
+}
+.sfrpg.sheet .editable .rollable:hover,
+.sfrpg.chat-card .card-header h3:hover
+{
+  text-shadow: 0 0 5px var(--sfmod-primary-color);
+  color:var(--sfmod-text-color-hover);
+}
+.sfrpg input[type="text"]:hover, 
+.sfrpg input[type="text"]:focus{
+  box-shadow: 0 0 8px var(--sfmod-primary-color);
+}
+.system-sfrpg a:hover {
+  text-shadow: 0 0 8px var(--sfmod-primary-color);
+}
+.system-sfrpg .tabs .item.active {
+    text-shadow: 0 0 10px var(--sfmod-primary-color);
+    color: var(--sfmod-primary-color);
+}
+.system-sfrpg form button {
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px groove var(--sfmod-text-color);
+    color: var(--sfmod-text-color);
+}
