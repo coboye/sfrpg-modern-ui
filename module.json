@@ -1,14 +1,14 @@
 {
     "name": "sfrpg-modern-ui",
-    "title": "A Modern UI for SFRPG",
-    "description": "A modern sci-fi looking UI for SFRPG system.",
+    "title": "Dark UI for SFRPG",
+    "description": "A dark UI for SFRPG system.",
     "author": "Coboye",
     "version": "0.0.1",
     "compatibleCoreVersion": "0.7.9",
     "minimumCoreVersion": "0.5.0",
     "url": "https://github.com/coboye/sfrpg-modern-ui",
-    "manifest": "https://github.com/coboye/sfrpg-modern-ui/main/module.json",
-    "download": "https://github.com/coboye/sfrpg-modern-ui/archive/main.zip",
+    "manifest": "https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/main/module.json",
+    "download": "https://github.com/coboye/sfrpg-modern-ui/archive/refs/heads/main.zip",
     "styles": [
         "styles/sfrpg-modern.css"
     ],
