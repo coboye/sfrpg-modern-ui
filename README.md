@@ -1,5 +1,5 @@
 # sfrpg-modern-ui
-FoundryVTT SFRPG modern dark UI
+FoundryVTT modern dark UI for SFRPG system
 
 ## Installation module url
 https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/main/module.json
