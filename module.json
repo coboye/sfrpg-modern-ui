@@ -3,7 +3,7 @@
     "title": "Dark UI for SFRPG",
     "description": "A dark UI for SFRPG system.",
     "author": "Coboye",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "compatibleCoreVersion": "0.7.9",
     "minimumCoreVersion": "0.5.0",
     "url": "https://github.com/coboye/sfrpg-modern-ui",
@@ -11,8 +11,5 @@
     "download": "https://github.com/coboye/sfrpg-modern-ui/archive/refs/heads/main.zip",
     "styles": [
         "styles/sfrpg-modern.css"
-    ],
-    "scripts": [
-        "main.js"
     ]
 }
