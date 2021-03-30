@@ -19,7 +19,7 @@
   --sfmod-border-on-backgound:#475258;
   --sfmod-blur-radius:10px;
  
-  
+  /*OneJournal integration */
   --ojLightBorder: 1px solid rgba(0, 0, 0, 0.1);
   --ojBackground: rgba(0, 0, 0, 0.03);
   --ojBackgroundMedium: #86909630;
@@ -267,6 +267,13 @@ form .notes, form .hint
 .system-sfrpg .gm-screen-container.window-content.tab.active{
   background: var(--sfmod-color-background);
 }
+.system-sfrpg .tabs a.item:hover {
+    box-shadow: 0 0 8px var(--sfmod-color-secondary);
+    color: inherit !important;
+    outline: 1px solid var(--sfmod-color-secondary-light);
+}
+
+/* GM Screen integration */
 .gm-screen-app .gm-screen-actions button,
 .gm-screen-app .gm-screen-actions .meta-actions button
 {
