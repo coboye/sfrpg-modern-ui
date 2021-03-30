@@ -52,10 +52,17 @@
 }
 
 /* only if backdrop support */
+
 @supports ((-webkit-backdrop-filter: blur(var(--sfmod-blur-radius))) or (backdrop-filter: blur(var(--sfmod-blur-radius)))) {
   .system-sfrpg {
     --sfmod-color-surface: #12121270;
   }
+}
+
+.system-sfrpg textarea, .system-sfrpg input[type="text"], .system-sfrpg input[type="number"], .system-sfrpg input[type="password"], .system-sfrpg input[type="date"], .system-sfrpg input[type="time"] {
+  color: var(--sfmod-text-on-background);
+  background: var(--sfmod-color-background);
+  border-color: var(--sfmod-border-on-backgound-light);
 }
 
 .sfrpg.sheet .editor .tox-tinymce {
@@ -118,11 +125,6 @@
 
 .system-sfrpg select:focus {
   box-shadow: 0 0 5px var(--sfmod-color-secondary);
-}
-
-.system-sfrpg textarea:focus {
-  outline: 2px solid var(--sfmod-color-secondary-light);
-  box-shadow: 0 0 10px var(--sfmod-color-secondary);
 }
 
 .system-sfrpg select {
@@ -196,8 +198,9 @@
   color: var(--sfmod-color-primary-light);
 }
 
-.system-sfrpg input[type="text"]:focus, .system-sfrpg input[type="number"]:focus, .system-sfrpg input[type="password"]:focus, .system-sfrpg input[type="date"]:focus, .system-sfrpg input[type="time"]:focus, .sfrpg input[type="text"]:hover, .sfrpg input[type="text"]:focus {
+.system-sfrpg textarea:focus, .system-sfrpg input[type="text"]:focus, .system-sfrpg input[type="number"]:focus, .system-sfrpg input[type="password"]:focus, .system-sfrpg input[type="date"]:focus, .system-sfrpg input[type="time"]:focus, .sfrpg input[type="text"]:hover, .sfrpg input[type="text"]:focus {
   box-shadow: 0 0 8px var(--sfmod-color-primary);
+  outline: 2px solid var(--sfmod-color-primary-light);
 }
 
 .system-sfrpg a:hover {
