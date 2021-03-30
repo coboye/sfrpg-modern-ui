@@ -250,6 +250,16 @@
   outline: 1px solid var(--sfmod-color-secondary-light);
 }
 
+.system-sfrpg .sidebar-tab .directory-footer {
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+}
+
+.system-sfrpg .sidebar-tab .directory-footer>* {
+  flex-grow: 1;
+}
+
 /* GM Screen integration */
 
 .gm-screen-app .gm-screen-actions button, .gm-screen-app .gm-screen-actions .meta-actions button {
