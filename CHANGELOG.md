@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.1] - 2021-03-30
+### Changed
+- Semitransparent windows background would be used only if the browser support blur backdrop-filter (eg. full opaque in Firefox)
+
 ## [1.0.0] - 2021-03-30
 First release after FoundryVTT approval.
 ### Added
