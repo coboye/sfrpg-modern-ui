@@ -198,9 +198,10 @@
   color: var(--sfmod-color-primary-light);
 }
 
-.system-sfrpg textarea:focus, .system-sfrpg textarea:focus, .system-sfrpg input[type="text"]:focus, .system-sfrpg input[type="number"]:focus, .system-sfrpg input[type="password"]:focus, .system-sfrpg input[type="date"]:focus, .system-sfrpg input[type="time"]:focus, .sfrpg input[type="text"]:hover, .sfrpg input[type="text"]:focus {
+.system-sfrpg select:focus, .system-sfrpg textarea:focus, .system-sfrpg textarea:focus, .system-sfrpg input[type="text"]:focus, .system-sfrpg input[type="number"]:focus, .system-sfrpg input[type="password"]:focus, .system-sfrpg input[type="date"]:focus, .system-sfrpg input[type="time"]:focus, .sfrpg input[type="text"]:hover, .sfrpg input[type="text"]:focus {
   box-shadow: 0 0 8px var(--sfmod-color-primary);
   outline: 2px solid var(--sfmod-color-primary-light);
+  outline-offset: -2px;
 }
 
 .system-sfrpg a:hover {
