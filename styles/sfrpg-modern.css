@@ -264,9 +264,10 @@
   color: unset;
 }
 
-.system-sfrpg .tox.tox-tinymce{
+.system-sfrpg .tox.tox-tinymce {
   background: #ffffff;
 }
+
 /* GM Screen integration */
 
 .gm-screen-app .gm-screen-actions button, .gm-screen-app .gm-screen-actions .meta-actions button {
@@ -311,4 +312,30 @@
 
 .system-sfrpg .tagify__tag--editable>div::before {
   background: var(--sfmod-color-surface);
+}
+
+/* DF Chat Enhancements integration */
+
+.system-sfrpg #dfcp-rt-buttons button i {
+  color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg #dfcp-rt-buttons button.active {
+  background: unset;
+}
+
+.system-sfrpg #dfcp-rt-buttons button[data-id=roll].active {
+  box-shadow: inset 0 0 8px 4px #26c281;
+}
+
+.system-sfrpg #dfcp-rt-buttons button[data-id=gmroll].active {
+  box-shadow: inset 0 0 8px 4px #f2ca27;
+}
+
+.system-sfrpg #dfcp-rt-buttons button[data-id=blindroll].active {
+  box-shadow: inset 0 0 8px 4px #e87e04;
+}
+
+.system-sfrpg #dfcp-rt-buttons button[data-id=selfroll].active {
+  box-shadow: inset 0 0 8px 4px #e74c3c;
 }
