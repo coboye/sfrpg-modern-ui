@@ -264,6 +264,9 @@
   color: unset;
 }
 
+.system-sfrpg .tox.tox-tinymce{
+  background: #ffffff;
+}
 /* GM Screen integration */
 
 .gm-screen-app .gm-screen-actions button, .gm-screen-app .gm-screen-actions .meta-actions button {
