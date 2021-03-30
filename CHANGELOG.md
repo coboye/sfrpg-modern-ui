@@ -1,4 +1,13 @@
 # Changelog
+## [1.0.2] - 2021-03-31
+### Added
+- Starfinder Statblock Parser integration GH-8
+- text selection color
+### Fixed
+- OneJournal maximized titlebar
+- Select and textarea focus style
+- Compendium list and browser windows theme GH-7
+- Other minor fixes
 
 ## [1.0.1] - 2021-03-30
 ### Changed
