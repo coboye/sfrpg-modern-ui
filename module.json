@@ -3,13 +3,35 @@
     "title": "Dark UI for SFRPG",
     "description": "A dark UI for SFRPG system.",
     "author": "Coboye",
-    "version": "0.0.2",
+    "authors": [
+        {
+            "name": "Coboye",
+            "discord": "Coboye#4996"
+        }
+    ],
+    "systems": [
+        "sfrpg"
+    ],
+    "version": "1.0.0",
     "compatibleCoreVersion": "0.7.9",
-    "minimumCoreVersion": "0.5.0",
+    "minimumCoreVersion": "0.7.4",
     "url": "https://github.com/coboye/sfrpg-modern-ui",
     "manifest": "https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/main/module.json",
     "download": "https://github.com/coboye/sfrpg-modern-ui/archive/refs/heads/main.zip",
+    "bugs": "https://github.com/coboye/sfrpg-modern-ui/issues",
+    "readme": "https://github.com/coboye/sfrpg-modern-ui/blob/main/README.md",
+    "changelog": "https://github.com/coboye/sfrpg-modern-ui/blob/main/CHANGELOG.md",
     "styles": [
         "styles/sfrpg-modern.css"
+    ],
+    "media": [
+        {
+            "type": "cover",
+            "link": "https://i.imgur.com/FjuGn5I.jpg"
+        },
+        {
+            "type": "screenshot",
+            "link": "https://i.imgur.com/AknNV7V.png"
+        }
     ]
 }
