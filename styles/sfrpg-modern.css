@@ -180,6 +180,13 @@
   color: var(--sfmod-color-primary);
 }
 
+.sfrpg.sheet.actor .inventory-list .item .item-name .item-action .attack, .sfrpg.sheet.actor .crew-list .item .item-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .item .item-name .item-action .attack, .sfrpg.sheet.actor .inventory-list .crew .item-name .item-action .attack, .sfrpg.sheet.actor .crew-list .crew .item-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .crew .item-name .item-action .attack, .sfrpg.sheet.actor .inventory-list .item .crew-name .item-action .attack, .sfrpg.sheet.actor .crew-list .item .crew-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .item .crew-name .item-action .attack, .sfrpg.sheet.actor .inventory-list .crew .crew-name .item-action .attack, .sfrpg.sheet.actor .crew-list .crew .crew-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-action .attack {
+  width: auto;
+  background: #235683;
+  color: #fff;
+  cursor: pointer;
+}
+
 .system-sfrpg a.entity-link, .system-sfrpg a.inline-roll {
   background: none;
 }
@@ -216,6 +223,10 @@
 .system-sfrpg .tabs .item.active {
   text-shadow: 0 0 10px var(--sfmod-color-secondary);
   color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg .sheet-tabs.tabs .item.active {
+  color: var(--sfmod-color-secondary)
 }
 
 .system-sfrpg button {
