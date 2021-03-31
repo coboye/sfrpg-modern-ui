@@ -229,6 +229,19 @@
   color: var(--sfmod-color-secondary)
 }
 
+.system-sfrpg #hotbar .macro.active:hover {
+  border: 1px solid var(--sfmod-color-primary-primary);
+}
+
+.system-sfrpg #hotbar .macro:hover {
+  box-shadow: 0 0 10px var(--sfmod-color-primary-light) inset;
+}
+
+#context-menu li.context-item:hover {
+  color: var(--sfmod-color-primary);
+  text-shadow: 0 0 4px var(--sfmod-color-primary);
+}
+
 .system-sfrpg button {
   background: rgba(0, 0, 0, 0.1);
   border: 2px groove var(--sfmod-text-on-background);
