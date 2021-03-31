@@ -256,6 +256,16 @@
   border-bottom-color: var(--sfmod-color-secondary);
 }
 
+.sfrpg.sheet .filter-list .filter-item.active, .sfrpg.sheet .sheet-subnavigation .item.active {
+  border-bottom: 3px solid var(--sfmod-color-secondary);
+}
+
+.sfrpg.sheet .filter-list .filter-item:hover, .sfrpg.sheet .sheet-subnavigation .item:hover {
+  text-shadow: 0 0 4px var(--sfmod-color-secondary);
+  border-bottom: 3px solid var(--sfmod-color-secondary-light);
+  color: unset !important;
+}
+
 .sfrpg.sheet.actor.starship .sheet-body a.critical-edit, .sfrpg.sheet.actor.starship .sheet-body i.fas {
   color: inherit;
 }
