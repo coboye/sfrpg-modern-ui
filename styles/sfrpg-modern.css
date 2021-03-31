@@ -176,6 +176,10 @@
   border-bottom: 1px solid var(--sfmod-color-primary);
 }
 
+.sfrpg.sheet .editor-content h3, .sfrpg.sheet .item-summary h3 {
+  color: var(--sfmod-color-primary);
+}
+
 .system-sfrpg a.entity-link, .system-sfrpg a.inline-roll {
   background: none;
 }
@@ -304,7 +308,7 @@
 }
 
 .system-sfrpg .sfrpg.sheet.actor .inventory-filters .currency label.currency-value {
-  color:var(--sfmod-text-on-background-light);
+  color: var(--sfmod-text-on-background-light);
 }
 
 /* GM Screen integration */
