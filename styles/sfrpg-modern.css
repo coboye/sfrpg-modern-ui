@@ -303,6 +303,10 @@
   background: #ffffff;
 }
 
+.system-sfrpg .sfrpg.sheet.actor .inventory-filters .currency label.currency-value {
+  color:var(--sfmod-text-on-background-light);
+}
+
 /* GM Screen integration */
 
 .system-sfrpg .gm-screen-container.window-content.tab.active {
