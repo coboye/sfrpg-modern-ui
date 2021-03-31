@@ -1,4 +1,12 @@
 # Changelog
+## [1.0.4] - 2021-03-31
+### Fixed
+- Currency-value foreground color
+- Heading 3 in editor and item description style
+- Core sheet active tabs foreground color
+- Macros hotbar theme
+- Filter list and Sub navigation items theme
+
 ## [1.0.3] - 2021-03-31
 ### Changed
 - Release versioning & distribution
