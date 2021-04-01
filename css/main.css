@@ -141,11 +141,16 @@
   background-color: transparent;
 }
 
-.sfrpg.sheet .window-content, .system-sfrpg .window-app .window-content, .system-sfrpg #chat-log .message {
+.sfrpg.sheet .window-content, .system-sfrpg .window-app .window-content{
   background: var(--sfmod-color-surface);
   color: var(--sfmod-text-on-background) !important;
   backdrop-filter: blur(var(--sfmod-config-blur-radius));
   -webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius));
+}
+
+.system-sfrpg #chat-log .message {
+  background: var(--sfmod-color-surface);
+  color: var(--sfmod-text-on-background) !important;
 }
 
 .system-sfrpg #module-management .package-list .package-title, .system-sfrpg #module-management .package-list .package-metadata, .system-sfrpg #module-management .package-list .package-description, .sfrpg.sheet.actor .sheet-header .header-background .charname>input {
@@ -383,6 +388,10 @@
 
 .system-sfrpg .tagify__tag--editable>div::before {
   background: var(--sfmod-color-surface);
+}
+
+.system-sfrpg #context-menu li.context-item {
+  backdrop-filter: none;
 }
 
 /* DF Chat Enhancements integration */
