@@ -1,25 +1,4 @@
 .system-sfrpg {
-  --sfmod-color-primary: #45afeb;
-  --sfmod-color-primary-light: #5fc4ff;
-  --sfmod-color-primary-variant: #1d4e8c;
-  --sfmod-color-primary-gradient: linear-gradient(25deg, #1d4e8c 0%, #45afeb 40%, #2b6abb 60%, #1d4e8c 100%);
-  --sfmod-color-secondary: #f49045;
-  --sfmod-color-secondary-light: #efa26b;
-  --sfmod-color-secondary-gradient: linear-gradient(25deg, #bd6e33 0%, #f49045 40%, #b74706 60%, #692600 100%);
-  --sfmod-color-selection: #5fc4ffcc;
-  --sfmod-color-error: #C52611;
-  --sfmod-color-surface: #121212;
-  --sfmod-color-background: #121212;
-  --sfmod-text-on-background: #ffffff;
-  --sfmod-text-on-primary: #ffffff;
-  --sfmod-text-on-secondary: #ffffff;
-  --sfmod-text-on-background-light: #eaeaea;
-  --sfmod-text-on-error: #ffffff;
-  --sfmod-text-on-surface: #869096;
-  --sfmod-text-on-selection: #ffffff;
-  --sfmod-border-on-backgound: #475258;
-  --sfmod-border-on-backgound-light: #7a7971;
-  --sfmod-blur-radius: 10px;
   /* tagify integration */
   --tagify-dd-color-primary: var(--sfmod-color-primary);
   --tagify-dd-bg-color: var(--sfmod-color-background);
@@ -39,13 +18,13 @@
 
 /* tagify integration */
 
-.system-sfrpg .tagify {
+.tagify {
   --tags-border-color: var(--sfmod-color-background);
   --tags-hover-border-color: var(--sfmod-color-primary);
   --tags-focus-border-color: var(--sfmod-color-secondary);
-  --tag-bg: var(--sfmod-color-surface);
-  --tag-hover: var(--sfmod-color-primary);
-  --tag-text-color: var(--sfmod-text-on-background);
+  --tag-bg: var(--sfmod-color-primary);
+  --tag-hover: var(--sfmod-color-secondary);
+  --tag-text-color: var(--sfmod-text-on-primary);
   --tag-text-color--edit: var(--sfmod-text-on-background);
   --tag-invalid-color: var(--sfmod-text-on-error);
   --tag-invalid-bg: var(--sfmod-color-error);
@@ -57,10 +36,23 @@
 
 /* only if backdrop support */
 
-@supports ((-webkit-backdrop-filter: blur(var(--sfmod-blur-radius))) or (backdrop-filter: blur(var(--sfmod-blur-radius)))) {
+@supports ((-webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius))) or (backdrop-filter: blur(var(--sfmod-config-blur-radius)))) {
   .system-sfrpg {
-    --sfmod-color-surface: #12121270;
+    --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
   }
+}
+
+.system-sfrpg #player-config label {
+  color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg input[type="color"] {
+  background: var(--sfmod-color-surface);
+  border-color: var(--sfmod-border-on-backgound);
+}
+
+.system-sfrpg img {
+  border-color: var(--sfmod-border-on-backgound);
 }
 
 .system-sfrpg textarea, .system-sfrpg input[type="text"], .system-sfrpg input[type="number"], .system-sfrpg input[type="password"], .system-sfrpg input[type="date"], .system-sfrpg input[type="time"] {
@@ -83,8 +75,8 @@
 }
 
 .system-sfrpg #sidebar .sidebar-tab {
-  backdrop-filter: blur(var(--sfmod-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
+  backdrop-filter: blur(var(--sfmod-config-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius));
 }
 
 .sfrpg.sheet .window-content {
@@ -101,6 +93,7 @@
 
 .sfrpg.sheet .sheet-navigation .item.active {
   background: var(--sfmod-color-secondary);
+  color: var(--sfmod-text-on-secondary);
 }
 
 .system-sfrpg .tabs a.item:hover, .system-sfrpg #navigation #scene-list .scene.view, .system-sfrpg #navigation #scene-list .scene.context, .system-sfrpg #controls .scene-control.active, .system-sfrpg #controls .control-tool.active, .system-sfrpg #controls .scene-control:hover, .system-sfrpg #controls .control-tool:hover, .system-sfrpg #sidebar-tabs>.item.active, .system-sfrpg #sidebar-tabs {
@@ -151,8 +144,8 @@
 .sfrpg.sheet .window-content, .system-sfrpg .window-app .window-content, .system-sfrpg #chat-log .message {
   background: var(--sfmod-color-surface);
   color: var(--sfmod-text-on-background) !important;
-  backdrop-filter: blur(var(--sfmod-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
+  backdrop-filter: blur(var(--sfmod-config-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius));
 }
 
 .system-sfrpg #module-management .package-list .package-title, .system-sfrpg #module-management .package-list .package-metadata, .system-sfrpg #module-management .package-list .package-description, .sfrpg.sheet.actor .sheet-header .header-background .charname>input {
@@ -368,8 +361,8 @@
 .system-sfrpg .tah-title-button, .system-sfrpg .tah-action button {
   background: var(--sfmod-color-surface);
   border: 1px solid #000;
-  backdrop-filter: blur(var(--sfmod-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
+  backdrop-filter: blur(var(--sfmod-config-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius));
 }
 
 .system-sfrpg .tah-title-button:hover, .system-sfrpg .tah-action button:hover {
@@ -386,10 +379,6 @@
   border-radius: 3px;
   margin: 8px 0;
   overflow: hidden;
-}
-
-.system-sfrpg .tagify__tag>div::before {
-  background: var(--sfmod-text-on-background);
 }
 
 .system-sfrpg .tagify__tag--editable>div::before {
@@ -436,4 +425,8 @@
 
 .system-sfrpg #OneJournalShell.maximized .window-content {
   backdrop-filter: none;
+}
+
+.system-sfrpg #client-settings.app.window-app.form #config-tabs .settings-list h2.module-header span .far:before {
+  color: var(--sfmod-text-on-surface);
 }
