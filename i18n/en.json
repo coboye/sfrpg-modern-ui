@@ -8,7 +8,7 @@
   "sfrpg-modern-ui.settings.theme.label": "Theme palette",
   "sfrpg-modern-ui.settings.theme.hint": "Choose which theme to use in your client, select -- disabled -- to use to system theme.",
   "sfrpg-modern-ui.settings.background_alpha.label": "Window opacity",
-  "sfrpg-modern-ui.settings.background_alpha.hint": "Adjust window panels background opacity. (default: 50)",
+  "sfrpg-modern-ui.settings.background_alpha.hint": "Adjust window panels background opacity. (default: 40)",
   "sfrpg-modern-ui.settings.blur_radius.label": "Window blur strenght",
   "sfrpg-modern-ui.settings.blur_radius.hint": "Adjust panels frosted glass effect strenght. ** Warning ** it may not work in some browsers, eg. Firefox. (default: 10)"
 }

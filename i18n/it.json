@@ -8,7 +8,7 @@
     "sfrpg-modern-ui.settings.theme.label": "Theme palette",
     "sfrpg-modern-ui.settings.theme.hint": "Scegli quale tavolozza di tema usare nel tuo client, seleziona -- disabilito -- per usare ill tema di sistema.",
     "sfrpg-modern-ui.settings.background_alpha.label": "Opacità finesta",
-    "sfrpg-modern-ui.settings.background_alpha.hint": "Aggiusta l'opacità dello sfondo dei pannelli finestra. (default: 50)",
+    "sfrpg-modern-ui.settings.background_alpha.hint": "Aggiusta l'opacità dello sfondo dei pannelli finestra. (default: 40)",
     "sfrpg-modern-ui.settings.blur_radius.label": "Intensità sfocatura finestra",
     "sfrpg-modern-ui.settings.blur_radius.hint": "Aggiusta l'intesità dell'effetto vetro satinato dei pannelli. ** Attenzione ** potrebbe non funzionare in alcuni browser, es. Firefox. (default: 10)"
 }
