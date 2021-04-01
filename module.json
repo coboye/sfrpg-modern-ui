@@ -12,11 +12,26 @@
     "systems": [
         "sfrpg"
     ],
-    "version": "1.0.4",
+    "version": "1.1.0",
     "compatibleCoreVersion": "0.7.9",
     "minimumCoreVersion": "0.7.4",
     "styles": [
-        "styles/sfrpg-modern.css"
+        "sfrpg-modern-ui.css"
+    ],
+    "esmodules": [
+        "sfrpg-modern-ui.js"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "i18n/en.json"
+        },
+        {
+            "lang": "it",
+            "name": "Italiano",
+            "path": "i18n/it.json"
+        }
     ],
     "media": [
         {
@@ -25,13 +40,21 @@
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/AknNV7V.png"
+            "link": "https://i.imgur.com/2MWJmk2.png"
+        },
+        {
+            "type": "screenshot",
+            "link": "https://i.imgur.com/CMlw51e.png"
+        },
+        {
+            "type": "screenshot",
+            "link": "https://i.imgur.com/w1ozWTS.png"
         }
     ],
     "bugs": "https://github.com/coboye/sfrpg-modern-ui/issues",
     "url": "https://github.com/coboye/sfrpg-modern-ui",
-    "manifest": "https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/release/1.0.4/module.json",
-    "download": "https://codeload.github.com/coboye/sfrpg-modern-ui/zip/refs/tags/release/1.0.4",
-    "readme": "https://github.com/coboye/sfrpg-modern-ui/blob/release/1.0.4/README.md",
-    "changelog": "https://github.com/coboye/sfrpg-modern-ui/blob/release/1.0.4/CHANGELOG.md"
+    "manifest": "https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/release/1.1.0/module.json",
+    "download": "https://codeload.github.com/coboye/sfrpg-modern-ui/zip/refs/tags/release/1.1.0",
+    "readme": "https://github.com/coboye/sfrpg-modern-ui/blob/release/1.1.0/README.md",
+    "changelog": "https://github.com/coboye/sfrpg-modern-ui/blob/release/1.1.0/CHANGELOG.md"
 }

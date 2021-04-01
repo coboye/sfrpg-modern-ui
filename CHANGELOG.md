@@ -1,4 +1,12 @@
 # Changelog
+## [1.1.0] - 2021-04-01
+### Added
+- Theme configuration in module settings GH-9 GH-6
+- Two new color palettes
+- Tidy UI integration
+### Changed
+- Dynamic stylesheet injection
+
 ## [1.0.4] - 2021-03-31
 ### Fixed
 - Currency-value foreground color
