@@ -12,7 +12,7 @@
     "systems": [
         "sfrpg"
     ],
-    "version": "1.1.0",
+    "version": "1.1.1",
     "compatibleCoreVersion": "0.7.9",
     "minimumCoreVersion": "0.7.4",
     "styles": [
@@ -53,8 +53,8 @@
     ],
     "bugs": "https://github.com/coboye/sfrpg-modern-ui/issues",
     "url": "https://github.com/coboye/sfrpg-modern-ui",
-    "manifest": "https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/release/1.1.0/module.json",
-    "download": "https://codeload.github.com/coboye/sfrpg-modern-ui/zip/refs/tags/release/1.1.0",
-    "readme": "https://github.com/coboye/sfrpg-modern-ui/blob/release/1.1.0/README.md",
-    "changelog": "https://github.com/coboye/sfrpg-modern-ui/blob/release/1.1.0/CHANGELOG.md"
+    "manifest": "https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/main/module.json",
+    "download": "https://codeload.github.com/coboye/sfrpg-modern-ui/zip/refs/tags/release/1.1.1",
+    "readme": "https://github.com/coboye/sfrpg-modern-ui/blob/main/README.md",
+    "changelog": "https://github.com/coboye/sfrpg-modern-ui/blob/main/CHANGELOG.md"
 }

@@ -1,4 +1,8 @@
 # Changelog
+## [1.1.1] - 2021-04-01
+### Fixed
+- Wrong manifest in module.json **CLEAN REINSTALL REQUIRED** for FoundryVTT standalone client
+
 ## [1.1.0] - 2021-04-01
 ### Added
 - Theme configuration in module settings GH-9 GH-6
