@@ -4,6 +4,8 @@
   "sfrpg-modern-ui.theme.core": "-- disabled --",
   "sfrpg-modern-ui.theme.starfinder": "Starfinder Logo",
   "sfrpg-modern-ui.theme.neon": "Neon Cyberpunk",
+  "sfrpg-modern-ui.theme.terminal_amber": "Terminal Amber",
+  "sfrpg-modern-ui.theme.terminal_cyan": "Terminal Cyan",
   "sfrpg-modern-ui.theme.terminal_green": "Terminal Green",
   "sfrpg-modern-ui.settings.theme.label": "Theme palette",
   "sfrpg-modern-ui.settings.theme.hint": "Choose which theme to use in your client, select -- disabled -- to use to system theme.",
