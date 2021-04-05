@@ -1,4 +1,8 @@
 # Changelog
+## [1.1.2] - TODO:
+### Fixed
+- Chat item context menu visibility GH-10
+
 ## [1.1.1] - 2021-04-01
 ### Fixed
 - Wrong manifest in module.json **CLEAN REINSTALL REQUIRED** for FoundryVTT standalone client

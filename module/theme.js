@@ -5,6 +5,8 @@ export const Themes = {
     core: "core",
     starfinder: "starfinder",
     neon: "neon",
+    terminal_amber: "terminal-amber",
+    terminal_cyan: "terminal-cyan",
     terminal_green: "terminal-green"
 }
 
