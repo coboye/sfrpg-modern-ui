@@ -1,5 +1,5 @@
 # Changelog
-## [1.1.2] - TODO: tbd
+## [1.1.2] - TODO: **NOT YET RELEASED**
 ### Fixed
 - Chat item context menu visibility GH-10
 - Typo in theme choise GH-11
