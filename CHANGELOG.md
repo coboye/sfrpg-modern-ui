@@ -1,7 +1,12 @@
 # Changelog
-## [1.1.2] - TODO:
+## [1.1.2] - TODO: tbd
 ### Fixed
 - Chat item context menu visibility GH-10
+- Typo in theme choise GH-11
+- Table in feat modifiers tab is not themed GH-12
+### Added
+- Theme: Terminal Cyan
+- Theme: Terminal Amber
 
 ## [1.1.1] - 2021-04-01
 ### Fixed
