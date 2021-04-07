@@ -8,6 +8,7 @@
   "sfrpg-modern-ui.theme.terminal_cyan": "Terminal Cyan",
   "sfrpg-modern-ui.theme.terminal_green": "Terminal Green",
   "sfrpg-modern-ui.theme.illusive_man": "Illusive Man",
+  "sfrpg-modern-ui.theme.unitologist": "Unitologist's",
   "sfrpg-modern-ui.settings.theme.label": "Theme palette",
   "sfrpg-modern-ui.settings.theme.hint": "Choose which theme to use in your client, select -- disabled -- to use to system theme.",
   "sfrpg-modern-ui.settings.background_alpha.label": "Window opacity",

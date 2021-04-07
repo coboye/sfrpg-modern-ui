@@ -8,7 +8,8 @@ export const Themes = {
     terminal_amber: "terminal-amber",
     terminal_cyan: "terminal-cyan",
     terminal_green: "terminal-green",
-    illusive_man: "illusive-man"
+    illusive_man: "illusive-man",
+    unitologist: "unitologist"
 }
 
 export class ThemeConfiguration {

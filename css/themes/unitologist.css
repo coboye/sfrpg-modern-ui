@@ -1,0 +1,24 @@
+@import "../main.css";
+.system-sfrpg {
+    --sfmod-color-primary: #D91828;
+    --sfmod-color-primary-light: #f84655;
+    --sfmod-color-primary-variant: #110617;
+    --sfmod-color-primary-gradient: linear-gradient(25deg, #110617 0%, #D91828 40%, #f84655 60%, #110617 100%);
+    --sfmod-color-secondary: #5703ab;
+    --sfmod-color-secondary-light: #b46bfd;
+    --sfmod-color-secondary-gradient: linear-gradient(25deg, #180B26 0%, #531B8C 40%, #643594 60%, #180B26 100%);
+    --sfmod-color-selection: #D91828;
+    --sfmod-color-error: #C52611;
+    --sfmod-color-surface: #0D0101;
+    --sfmod-color-surface-wbr: rgba(14, 1, 1, var(--sfmod-config-background-alpha));
+    --sfmod-color-background: rgb(14, 1, 1);
+    --sfmod-text-on-background: #ffffff;
+    --sfmod-text-on-primary: #ffffff;
+    --sfmod-text-on-secondary: #ffffff;
+    --sfmod-text-on-background-light: #eaeaea;
+    --sfmod-text-on-error: #ffffff;
+    --sfmod-text-on-surface: #e7d5f8;
+    --sfmod-text-on-selection: #ffffff;
+    --sfmod-border-on-backgound: #5a1228;
+    --sfmod-border-on-backgound-light: #771a37;
+}
