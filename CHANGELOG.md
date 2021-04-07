@@ -1,4 +1,16 @@
 # Changelog
+## [1.1.2] - TODO: NOT YET RELEASED
+### Fixed
+- 
+
+### Changed 
+- 
+
+### Added
+- Scroll bars
+- Progress bars
+- Theme: Unitologist's
+
 ## [1.1.2] - 2021-04-077
 ### Fixed
 - Chat item context menu visibility GH-10
