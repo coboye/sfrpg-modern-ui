@@ -35,9 +35,11 @@
 }
 
 /* only if backdrop support */
+
 .system-sfrpg {
   --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
 }
+
 /*
 @supports ((-webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius))) or (backdrop-filter: blur(var(--sfmod-config-blur-radius)))) {
   .system-sfrpg {
@@ -404,6 +406,14 @@
 
 .system-sfrpg #context-menu li.context-item {
   backdrop-filter: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sfmod-color-secondary);
+  border: 1px solid var(--sfmod-color-secondary-light);
+}
+:root {
+  scrollbar-color: var(--sfmod-color-secondary) #111;
 }
 
 /* DF Chat Enhancements integration */
