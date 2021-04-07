@@ -9,18 +9,3 @@ Hooks.once('init', async function () {
     registerSettings();    
     ThemeManager.initialize();
 });
-
-/* ------------------------------------ */
-/* Setup module							*/
-/* ------------------------------------ */
-/* Hooks.once('setup', function () {
-
-}); */
-
-/* ------------------------------------ */
-/* When ready							*/
-/* ------------------------------------ */
-/* Hooks.once('ready', function () {  
-    
-});
- */

@@ -35,12 +35,16 @@
 }
 
 /* only if backdrop support */
-
+.system-sfrpg {
+  --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
+}
+/*
 @supports ((-webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius))) or (backdrop-filter: blur(var(--sfmod-config-blur-radius)))) {
   .system-sfrpg {
     --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
   }
 }
+*/
 
 .system-sfrpg #player-config label {
   color: var(--sfmod-text-on-background);
@@ -91,6 +95,10 @@
   background: var(--sfmod-color-primary-gradient);
 }
 
+.sfrpg.sheet .sheet-navigation .item {
+  color: var(--sfmod-text-on-primary);
+}
+
 .sfrpg.sheet .sheet-navigation .item.active {
   background: var(--sfmod-color-secondary);
   color: var(--sfmod-text-on-secondary);
@@ -101,6 +109,10 @@
   border-bottom-color: var(--sfmod-color-secondary-light);
   box-shadow: 0 0 10px var(--sfmod-color-secondary-light);
   background: var(--sfmod-color-surface);
+}
+
+.sfrpg.sheet .sheet-navigation .item.active:hover {
+  color: var(--sfmod-text-on-secondary) !important;
 }
 
 .system-sfrpg #navigation #scene-list .scene.gm {

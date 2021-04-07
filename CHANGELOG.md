@@ -1,12 +1,17 @@
 # Changelog
-## [1.1.2] - TODO: **NOT YET RELEASED**
+## [1.1.2] - 2021-04-077
 ### Fixed
 - Chat item context menu visibility GH-10
 - Typo in theme choise GH-11
 - Table in feat modifiers tab is not themed GH-12
+### Changed 
+- Windows backgorund alpha for non blur-radius supported browsers
+- Theme harmony: Terminal Green 
 ### Added
+- Settings instant preview
 - Theme: Terminal Cyan
 - Theme: Terminal Amber
+- Theme: Illusive Man
 
 ## [1.1.1] - 2021-04-01
 ### Fixed

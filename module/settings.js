@@ -1,9 +1,17 @@
 import { Constants, Settings } from "./constants.js";
 import { Logger } from "./logger.js";
 import { Themes, ThemeManager } from "./theme.js";
+
+//TODO: organize settings hooks
+Hooks.on("renderSettingsConfig", (sheet, html, data) =>{
+    $(`select[name="${Constants.MODULENAME}.${Settings.theme}"]`).on("change", (evt) => { ThemeManager.change($(evt.target).val()) });
+    $(`input[name="${Constants.MODULENAME}.${Settings.background_alpha}"]`).on("input", (evt) => { ThemeManager.edit(Settings.background_alpha, ($(evt.target).val() / 100).toFixed(2)) });
+    $(`input[name="${Constants.MODULENAME}.${Settings.background_alpha}"]`).on("change", (evt) => { ThemeManager.edit(Settings.background_alpha, ($(evt.target).val() / 100).toFixed(2)) });
+    $(`input[name="${Constants.MODULENAME}.${Settings.blur_radius}"]`).on("input", (evt) => { ThemeManager.edit(Settings.blur_radius, $(evt.target).val()+"px") });
+    $(`input[name="${Constants.MODULENAME}.${Settings.blur_radius}"]`).on("change", (evt) => { ThemeManager.edit(Settings.blur_radius, $(evt.target).val()+"px") });
+})
 export const registerSettings = function () {
     // Register any custom module settings here   
-
     /**
      * @param {String} key 
      * @param {String} attribute 
@@ -27,8 +35,8 @@ export const registerSettings = function () {
         default: Themes.starfinder,
         config: true,
         onChange: ThemeManager.change
-    });
-
+    });     
+    
     game.settings.register(Constants.MODULENAME, Settings.background_alpha, {
         name: localize(Settings.background_alpha, "label"),
         hint: localize(Settings.background_alpha, "hint"),
