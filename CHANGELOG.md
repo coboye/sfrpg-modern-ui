@@ -5,7 +5,7 @@
 - Typo in theme choise GH-11
 - Table in feat modifiers tab is not themed GH-12
 ### Changed 
-- Windows backgorund alpha for non blur-radius supported browsers
+- Windows background alpha for non blur-radius supported browsers
 - Theme harmony: Terminal Green 
 ### Added
 - Settings instant preview
