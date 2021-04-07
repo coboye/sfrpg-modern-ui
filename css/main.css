@@ -412,8 +412,18 @@
   background: var(--sfmod-color-secondary);
   border: 1px solid var(--sfmod-color-secondary-light);
 }
+
 :root {
   scrollbar-color: var(--sfmod-color-secondary) #111;
+}
+
+.sfrpg.sheet.actor.character .sheet-header .charlevel .xpbar .bar {
+  background: var(--sfmod-color-primary);
+}
+
+.sfrpg.sheet.actor.character .encumbrance .encumbrance-bar {
+  background: var(--sfmod-color-primary);
+  border: 1px solid var(--sfmod-color-primary-light);
 }
 
 /* DF Chat Enhancements integration */
