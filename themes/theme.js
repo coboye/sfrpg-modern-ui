@@ -28,21 +28,22 @@ export default class AbstractTheme {
     colorSecondaryLight = new Color();
     colorSecondaryGradient = [new Color(), new Color(), new Color(), new Color()];
 
-    colorSelection = this.colorPrimary;
+    colorSelection= new Color();
     colorError = new Color("#C52611");
 
     colorSurface = new Color();
     colorBackground = new Color();
 
-    colorTextOnBackground = new Color();
-    colorTextOnBackgroundLight = new Color();
-    colorTextOnSurface = new Color();
-    colorTextOnPrimary = new Color();
-    colorTextOnSecondary = new Color();
-    colorTextOnError = new Color();
-    colorTextOnSelection = new Color();
-    colorBorderOnBackground = new Color();
-    colorBorderOnBackgroundLight = new Color();
+    textOnBackground = new Color();
+    textOnBackgroundLight = new Color();
+    textOnSurface = new Color();
+    textOnPrimary = new Color();
+    textOnSecondary = new Color();
+    textOnError = new Color();
+    textOnSelection = new Color();
+
+    borderOnBackground = new Color();
+    borderOnBackgroundLight = new Color();
 
     constructor(name) {
         /* if (this.constructor == AbstractTheme) {
@@ -116,7 +117,7 @@ export default class AbstractTheme {
         if (this.__colorsHue != 0) {
             Object.keys(this).forEach(key => {
                 let color = this[key];
-                if (!!color.valueByRatio) {
+                if (!!color.shiftHue) {
                     this[key] = color.shiftHue(this.__colorsHue);
                 }
             })
@@ -170,12 +171,3 @@ export default class AbstractTheme {
         return this.__name;
     }
 }
-/*
-
---sfmod-text-on-error: #ffffff;
---sfmod-text-on-surface: #869096;
---sfmod-text-on-selection: #ffffff;
---sfmod-border-on-backgound: #475258;
---sfmod-border-on-backgound-light: #7a7971;
-
-*/

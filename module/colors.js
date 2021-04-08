@@ -849,4 +849,109 @@ if (!net.brehaut) {
 if (typeof module !== 'undefined') {
     module.exports = net.brehaut.Color;    
 }
+
+//
+//
+// Integration by coboye 
+// ES6 export
+// Colors gradient wrappers
+//
+//
+//
+//
+
 export const Color = net.brehaut.Color;
+
+export class ColorStep{
+    /**
+     * @type {String}
+     */
+    length=null;
+    /**
+     * @type {net.brehaut.Color}
+     */
+    color=null;
+
+    /**
+     * 
+     * @param {string} color
+     * @param {String} length 
+     */
+    constructor(color, length){
+        this.color = new net.brehaut.Color(color);
+        this.length = length;
+    }
+
+    toString(){
+        return `${this.color} ${this.length}`;
+    }
+
+    shiftHue(value){
+        this.color = this.color.shiftHue(value);
+        return this;
+    }
+    lightenByRatio(value){
+        this.color = this.color.lightenByRatio(value);
+        return this;
+    }
+    valueByRatio(value){
+        this.color = this.color.valueByRatio(value);
+        return this;
+    }
+    saturateByRatio(value){
+        this.color = this.color.saturateByRatio(value);
+        return this;
+    }
+
+}
+
+
+export class LinearGradient{
+    //linear-gradient(25deg, #1d4e8c 0%, #45afeb 40 %, #2b6abb 60 %, #1d4e8c 100 %);
+    tilt = null;
+    /**
+     * @type {Array<ColorStep>}
+    */
+    steps=[];
+
+    /**
+     * 
+     * @param {String} tilt 
+     * @param {Array<ColorStep>} steps
+     */
+    constructor(tilt, steps){
+        this.tilt = tilt;
+        this.steps = steps;
+    }
+
+    toString(){
+        const steps = this.steps.map(s => s.toString()).join(" ,");
+        return `linear-gradient(${this.tilt==null ? "" : this.tilt+", "}${steps})`;
+    }
+
+    shiftHue(value) {
+        this.steps = this.steps.map(step =>{
+            return step.shiftHue(value);
+        })
+        return this;
+    }
+    lightenByRatio(value) {
+        this.steps = this.steps.map(step =>{
+            return step.lightenByRatio(value);
+        })
+        return this;
+    }
+    valueByRatio(value) {
+        this.steps = this.steps.map(step =>{
+            return step.valueByRatio(value);
+        })
+        return this;
+    }
+    saturateByRatio(value) {
+        this.steps = this.steps.map(step =>{
+            return step.saturateByRatio(value);
+        })
+        return this;
+    }
+    
+}

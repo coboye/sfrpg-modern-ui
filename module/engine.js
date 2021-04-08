@@ -9,7 +9,6 @@ export class UIEngine {
     static initialize() {        
         Logger.debug("UIEngine.initialize", SettingsProvider.settings.value(Constants.Settings.theme));
         UIEngine.apply();
-        //Logger.debug(new Themes.starfinder().properties);
     }
     /** 
      * @param {Settings} settings
@@ -57,7 +56,6 @@ export class UIEngine {
             Object.keys(properties).forEach(key => {
                 const val = properties[key];
                 root.style.setProperty('--sfmod-' + key, val);
-                //Logger.debug(':root --sfmod-' + key, val);
             })
         }
     }
