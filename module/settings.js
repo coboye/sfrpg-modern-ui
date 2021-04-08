@@ -1,70 +1,232 @@
-import { Constants, Settings } from "./constants.js";
+import { Constants } from "./constants.js";
 import { Logger } from "./logger.js";
-import { Themes, ThemeManager } from "./theme.js";
+import { UIEngine } from "./engine.js";
+import { Themes } from "../themes/index.js";
+import { Utils } from "./utils.js";
 
-//TODO: organize settings hooks
-Hooks.on("renderSettingsConfig", (sheet, html, data) =>{
-    $(`select[name="${Constants.MODULENAME}.${Settings.theme}"]`).on("change", (evt) => { ThemeManager.change($(evt.target).val()) });
-    $(`input[name="${Constants.MODULENAME}.${Settings.background_alpha}"]`).on("input", (evt) => { ThemeManager.edit(Settings.background_alpha, ($(evt.target).val() / 100).toFixed(2)) });
-    $(`input[name="${Constants.MODULENAME}.${Settings.background_alpha}"]`).on("change", (evt) => { ThemeManager.edit(Settings.background_alpha, ($(evt.target).val() / 100).toFixed(2)) });
-    $(`input[name="${Constants.MODULENAME}.${Settings.blur_radius}"]`).on("input", (evt) => { ThemeManager.edit(Settings.blur_radius, $(evt.target).val()+"px") });
-    $(`input[name="${Constants.MODULENAME}.${Settings.blur_radius}"]`).on("change", (evt) => { ThemeManager.edit(Settings.blur_radius, $(evt.target).val()+"px") });
+export class SettingRange{
+    min= 0;
+    max= 100;
+    step= 1;
+
+    constructor(min, max, step){
+        this.min = min;
+        this.max = max;
+        this.step = step;
+    }
+}
+export const SettingScope = Object.freeze({
+    CLIENT:"client",
+    GLOBAL:"global"
 })
-export const registerSettings = function () {
-    // Register any custom module settings here   
+export class Setting{
+    key = "setting";
+    value;     
+    scope = SettingScope.GLOBAL;
+    default="";
+    showHint= true;
+    type=String;
+    choices= null;
+    config= true;
     /**
-     * @param {String} key 
-     * @param {String} attribute 
-     * @returns {String}
+     * @type {SettingRange}
      */
-    const localize = (key, attribute) => {
-        return game.i18n.localize(Constants.MODULENAME + ".settings." + key + "." + attribute);
+    range= null;
+    /**
+     * @type {Function}
+     */
+    callback = () => { UIEngine.apply() };
+
+    register(){
+        Logger.debug("Setting:register", this.key);
+        let setting = {
+            name: Utils.localize(`settings.${this.key}.label`),
+            hint: this.showHint? Utils.localize(`settings.${this.key}.hint`) : null,
+            scope: this.scope,
+            type: this.type,            
+            default: this.default,
+            config: this.config,
+            onChange: this.changed.bind(this)
+        }
+        if(this.type == Number){
+            // If range is specified, the resulting setting will be a range slider
+            if(this.range !=null){
+                setting.range ={
+                    min: this.range.min,
+                    max: this.range.max,
+                    step: this.range.step
+                }
+            }
+        }
+        if(this.choices != null){
+            setting.choices = this.choices;
+        }
+        game.settings.register(Constants.MODULENAME, this.key, setting);
+        this.value = game.settings.get(Constants.MODULENAME, this.key);        
+
+    }
+    get tagname(){
+        return this.choices != null ? "select" : "input";
+    }
+    get element(){
+        return $(`${this.tagname}[name="${Constants.MODULENAME}.${this.key}"]`);
+    }
+    reset(){
+        this.value = game.settings.get(Constants.MODULENAME, this.key);
+    }
+    changed(value){
+        Logger.debug("Setting:changed", this.key, value);
+        this.value = value;
+        this.callback(value);
+    }
+    updated(value) {
+        Logger.debug("Setting:updated", this.key, value);
+        this.value = value;
+        this.callback(value);
+    }
+    watch(){
+        Logger.debug("Setting:watch", this.key);
+        this.element.on("change", (evt) => { this.updated($(evt.target).val()) });
+        this.element.on("input", (evt) => { this.updated($(evt.target).val()) });
     }
 
-    let themes = Object.keys(Themes).reduce((map, key) => {
-        map[key] = game.i18n.localize(Constants.MODULENAME + ".theme." + key) || key;
-        return map;
-    }, {});
+    constructor(key, properties){
+        Object.assign(this, {...properties});
+        this.key = key;        
+    }
+}
+export class Settings {
+    /**
+     * @type {Array<Setting>}
+     */
+    properties= [];
 
-    game.settings.register(Constants.MODULENAME, Settings.theme, {
-        name: localize(Settings.theme, "label"),
-        hint: localize(Settings.theme, "hint"),
-        scope: "client",
-        type: String,
-        choices: themes,
-        default: Themes.starfinder,
-        config: true,
-        onChange: ThemeManager.change
-    });     
-    
-    game.settings.register(Constants.MODULENAME, Settings.background_alpha, {
-        name: localize(Settings.background_alpha, "label"),
-        hint: localize(Settings.background_alpha, "hint"),
-        scope: "client",
-        type: Number,
-        range: {             // If range is specified, the resulting setting will be a range slider
-            min: 0,
-            max: 100,
-            step: 1
-        },
-        default: 40,
-        config: true,
-        onChange: (v) => ThemeManager.edit(Settings.background_alpha, v)
-    });
+    /**
+     * 
+     * @param {Arrayy<Setting>} properties 
+     */
+    constructor(properties){
+        this.properties = this.properties || [];
+    }
 
-    game.settings.register(Constants.MODULENAME, Settings.blur_radius, {
-        name: localize(Settings.blur_radius, "label"),
-        hint: localize(Settings.blur_radius, "hint"),
-        scope: "client",
-        type: Number,
-        range: {
-            min: 0,
-            max: 50,
-            step: 1
-        },
-        default: 10,
-        config: true,
-        onChange: (v) => ThemeManager.edit(Settings.blur_radius, v)
-    });
+    register(){
+        this.properties.forEach(p => p.register());
+    }
 
+    watch() {
+        this.properties.forEach(p => p.watch());
+
+        // Create an observer instance linked to the callback function
+        const observer = new MutationObserver((mutations, observer) => {
+            mutations.forEach((mutation) => {
+                if (mutation.type == 'childList' && mutation.removedNodes) {
+                    if (Array.from(mutation.removedNodes).some(node => node.id == 'client-settings')) {
+                        observer.disconnect();
+                        this.reset();                        
+                    }
+                }
+            });
+        });
+        // Start observing the target node for configured mutations
+        observer.observe($("#client-settings").get(0).parentNode, { attributes: false, childList: true, subtree: true });
+
+        $('#client-settings button[name="reset"]').on("click", ()=> this.reset());
+    }
+
+    reset() {
+        this.properties.forEach(p => p.reset());
+        UIEngine.apply();
+    }
+
+    value(key){
+        const property = this.properties.find(p=>{
+            return p.key == key;
+        });
+        return (property || {}).value;
+    }
+}
+
+export const SettingsProvider = {
+
+    settings: new Settings(),
+
+    watch: () => {
+        SettingsProvider.settings.watch();
+    },
+
+    reset: () => {
+        SettingsProvider.settings.reset();
+    },
+
+    initialize: () => {    
+        // Register any custom module settings here   
+        let themes = Object.keys(Themes).reduce((map, key) => {
+            map[key] = game.i18n.localize(Constants.MODULENAME + ".theme." + key) || key;
+            return map;
+        }, {});
+
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.theme, {
+                scope: SettingScope.CLIENT,
+                type: String,
+                choices: themes,
+                default: new Themes.starfinder().toString()
+            })
+        );
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.background_alpha, {
+                scope: SettingScope.CLIENT,
+                type: Number,
+                range: new SettingRange(0, 100, 10),
+                default: 40
+            })
+        );
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.blur_radius, {
+                scope: SettingScope.CLIENT,
+                type: Number,
+                range: new SettingRange(0, 50, 1),
+                default: 10
+            })
+        );
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.colors_saturation, {
+                scope: SettingScope.CLIENT,
+                type: Number,
+                range: new SettingRange(-100, 100, 1),
+                default: 0,
+                showHint: false
+            })
+        );
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.colors_value, {
+                scope: SettingScope.CLIENT,
+                type: Number,
+                range: new SettingRange(-100, 100, 1),
+                default: 0,
+                showHint: false
+            })
+        );
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.colors_lightness, {
+                scope: SettingScope.CLIENT,
+                type: Number,
+                range: new SettingRange(-100, 100, 1),
+                default: 0,
+                showHint: false
+            })
+        );
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.colors_hue, {
+                scope: SettingScope.CLIENT,
+                type: Number,
+                range: new SettingRange(-360, 360, 1),
+                default: 0,
+                showHint:false
+            })
+        );
+        
+        SettingsProvider.settings.register();
+
+    }
 };

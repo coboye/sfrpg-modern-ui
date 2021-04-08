@@ -41,7 +41,7 @@
 }
 
 /*
-@supports ((-webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius))) or (backdrop-filter: blur(var(--sfmod-config-blur-radius)))) {
+@supports ((-webkit-backdrop-filter: blur(var(--sfmod-blur-radius))) or (backdrop-filter: blur(var(--sfmod-blur-radius)))) {
   .system-sfrpg {
     --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
   }
@@ -81,8 +81,8 @@
 }
 
 .system-sfrpg #sidebar .sidebar-tab {
-  backdrop-filter: blur(var(--sfmod-config-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius));
+  backdrop-filter: blur(var(--sfmod-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
 }
 
 .sfrpg.sheet .window-content {
@@ -158,8 +158,8 @@
 .sfrpg.sheet .window-content, .system-sfrpg .window-app .window-content {
   background: var(--sfmod-color-surface);
   color: var(--sfmod-text-on-background) !important;
-  backdrop-filter: blur(var(--sfmod-config-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius));
+  backdrop-filter: blur(var(--sfmod-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
 }
 
 .system-sfrpg #chat-log .message {
@@ -380,8 +380,8 @@
 .system-sfrpg .tah-title-button, .system-sfrpg .tah-action button {
   background: var(--sfmod-color-surface);
   border: 1px solid #000;
-  backdrop-filter: blur(var(--sfmod-config-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius));
+  backdrop-filter: blur(var(--sfmod-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
 }
 
 .system-sfrpg .tah-title-button:hover, .system-sfrpg .tah-action button:hover {

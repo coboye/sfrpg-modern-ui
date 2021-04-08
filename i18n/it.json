@@ -14,5 +14,9 @@
     "sfrpg-modern-ui.settings.background_alpha.label": "Opacità finesta",
     "sfrpg-modern-ui.settings.background_alpha.hint": "Aggiusta l'opacità dello sfondo dei pannelli finestra. (default: 40)",
     "sfrpg-modern-ui.settings.blur_radius.label": "Intensità sfocatura finestra",
-    "sfrpg-modern-ui.settings.blur_radius.hint": "Aggiusta l'intesità dell'effetto vetro satinato dei pannelli. ** Attenzione ** potrebbe non funzionare in alcuni browser, es. Firefox. (default: 10)"
+    "sfrpg-modern-ui.settings.blur_radius.hint": "Aggiusta l'intesità dell'effetto vetro satinato dei pannelli. ** Attenzione ** potrebbe non funzionare in alcuni browser, es. Firefox. (default: 10)",
+    "sfrpg-modern-ui.settings.colors_saturation.label": "Saturatione",
+    "sfrpg-modern-ui.settings.colors_value.label": "Valore",
+    "sfrpg-modern-ui.settings.colors_lightness.label": "Luminosità",
+    "sfrpg-modern-ui.settings.colors_hue.label": "Tonalità"
 }

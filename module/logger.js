@@ -31,4 +31,10 @@ export class Logger {
     static debug(...args) {
         log(Methods.DEBUG, [Constants.LOGGERNAME, ...args]);
     }
+    static error(...args) {
+        log(Methods.ERROR, [Constants.LOGGERNAME, ...args]);
+    }
+    static warn(...args) {
+        log(Methods.WARN, [Constants.LOGGERNAME, ...args]);
+    }
 }

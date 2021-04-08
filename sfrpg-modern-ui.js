@@ -1,11 +1,13 @@
-import { registerSettings } from "./module/settings.js";
+import { SettingsProvider } from "./module/settings.js";
 import { Constants} from "./module/constants.js";
-import { ThemeManager} from "./module/theme.js";
+import { UIEngine} from "./module/engine.js";
 
 Hooks.once('init', async function () {
     console.log(Constants.LOGGERNAME + '| Initializing ' + Constants.MODULENAME);
-    // Assign custom classes and constants here
-    // Register custom module settings
-    registerSettings();    
-    ThemeManager.initialize();
+    SettingsProvider.initialize();        
+    UIEngine.initialize();
 });
+
+Hooks.on("renderSettingsConfig", (sheet, html, data) => {
+    SettingsProvider.watch();    
+})
