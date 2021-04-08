@@ -41,12 +41,21 @@
 }
 
 /*
-@supports ((-webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius))) or (backdrop-filter: blur(var(--sfmod-config-blur-radius)))) {
+@supports ((-webkit-backdrop-filter: blur(var(--sfmod-blur-radius))) or (backdrop-filter: blur(var(--sfmod-blur-radius)))) {
   .system-sfrpg {
     --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
   }
 }
 */
+
+.sfrpg.sheet .editor-content h2, .system-sfrpg h2, .sfrpg.sheet .editor-content h1, .system-sfrpg h1 {
+  color: var(--sfmod-color-primary);
+  border-bottom: 1px solid var(--sfmod-color-primary);
+}
+
+.sfrpg.sheet .editor-content h3, .sfrpg.sheet .item-summary h3 {
+  color: var(--sfmod-color-primary);
+}
 
 .system-sfrpg #player-config label {
   color: var(--sfmod-text-on-background);
@@ -54,17 +63,17 @@
 
 .system-sfrpg input[type="color"] {
   background: var(--sfmod-color-surface);
-  border-color: var(--sfmod-border-on-backgound);
+  border-color: var(--sfmod-border-on-background);
 }
 
 .system-sfrpg img {
-  border-color: var(--sfmod-border-on-backgound);
+  border-color: var(--sfmod-border-on-background);
 }
 
 .system-sfrpg textarea, .system-sfrpg input[type="text"], .system-sfrpg input[type="number"], .system-sfrpg input[type="password"], .system-sfrpg input[type="date"], .system-sfrpg input[type="time"] {
   color: var(--sfmod-text-on-background);
   background: var(--sfmod-color-background);
-  border-color: var(--sfmod-border-on-backgound-light);
+  border-color: var(--sfmod-border-on-background-light);
 }
 
 .sfrpg.sheet .editor .tox-tinymce {
@@ -77,12 +86,12 @@
 
 .sfrpg.sheet.actor .inventory-list .item-detail, .sfrpg.sheet.actor .crew-list .item-detail, .sfrpg.sheet.actor .inventory-list .crew-detial, .sfrpg.sheet.actor .crew-list .crew-detial {
   color: var(--sfmod-text-on-background-light);
-  border-right-color: var(--sfmod-border-on-backgound);
+  border-right-color: var(--sfmod-border-on-background);
 }
 
 .system-sfrpg #sidebar .sidebar-tab {
-  backdrop-filter: blur(var(--sfmod-config-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius));
+  backdrop-filter: blur(var(--sfmod-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
 }
 
 .sfrpg.sheet .window-content {
@@ -158,8 +167,8 @@
 .sfrpg.sheet .window-content, .system-sfrpg .window-app .window-content {
   background: var(--sfmod-color-surface);
   color: var(--sfmod-text-on-background) !important;
-  backdrop-filter: blur(var(--sfmod-config-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius));
+  backdrop-filter: blur(var(--sfmod-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
 }
 
 .system-sfrpg #chat-log .message {
@@ -181,15 +190,6 @@
 
 .sfrpg.sheet .sheet-header .summary li, .sfrpg .form-group label, .sfrpg.chat-card .card-header h3 {
   color: var(--sfmod-text-on-background-light);
-}
-
-.sfrpg.sheet .editor-content h2, .system-sfrpg h2, .sfrpg.sheet .editor-content h1, .system-sfrpg h1 {
-  color: var(--sfmod-color-primary);
-  border-bottom: 1px solid var(--sfmod-color-primary);
-}
-
-.sfrpg.sheet .editor-content h3, .sfrpg.sheet .item-summary h3 {
-  color: var(--sfmod-color-primary);
 }
 
 .sfrpg.sheet.actor .inventory-list .item .item-name .item-action .attack, .sfrpg.sheet.actor .crew-list .item .item-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .item .item-name .item-action .attack, .sfrpg.sheet.actor .inventory-list .crew .item-name .item-action .attack, .sfrpg.sheet.actor .crew-list .crew .item-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .crew .item-name .item-action .attack, .sfrpg.sheet.actor .inventory-list .item .crew-name .item-action .attack, .sfrpg.sheet.actor .crew-list .item .crew-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .item .crew-name .item-action .attack, .sfrpg.sheet.actor .inventory-list .crew .crew-name .item-action .attack, .sfrpg.sheet.actor .crew-list .crew .crew-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-action .attack {
@@ -305,7 +305,7 @@
 */
 
 .system-sfrpg .compendium .directory-list .directory-item, .sfrpg.item-browser-window .item-browser .filtercontainer, .sfrpg.item-browser-window .item-browser .sortcontainer, .sfrpg.sheet.actor ul.attributes li.attribute, .sfrpg.sheet.actor.starship .sheet-header .attributes .attribute, .sfrpg.sheet .sheet-header .summary li, .sfrpg.sheet .sheet-header .summary, .sfrpg.sheet.actor.starship .sheet-header .summary, .sfrpg.sheet .sheet-header img.profile, .sfrpg.sheet .sheet-header, .sfrpg.sheet.actor .inventory-list .inventory-header, .sfrpg.sheet.actor .crew-list .inventory-header, .sfrpg.sheet.actor .inventory-list .crew-header, .sfrpg.sheet.actor .crew-list .crew-header, .sfrpg.sheet.actor .inventory-list .item, .sfrpg.sheet.actor .crew-list .item, .sfrpg.sheet.actor .inventory-list .crew, .sfrpg.sheet.actor .crew-list .crew, .sfrpg.sheet.actor.starship .action-list .action-header, .sfrpg.sheet.actor.starship .action-list .action, .sfrpg .form-header, .sfrpg.sheet.actor.character .sheet-header .attributes .attribute, .sfrpg.sheet.actor.character .sheet-header .summary, .sfrpg.sheet.actor.character .ability-scores .ability .ability-header input[type="text"].ability-drain, .sfrpg.sheet.actor.character .ability-scores .ability, .sfrpg.sheet.actor.character .ability-scores .ability .ability-header input[type="text"].ability-penalty, .sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers input[type="text"].ability-base, .sfrpg.sheet.actor.character .ability-scores .ability .ability-header input[type="text"].ability-damage, .sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers span.ability-mod, .sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers input[type="text"].ability-base, .sfrpg.sheet.actor ul.skills-list, .sfrpg.sheet.actor.character ul.skills-list li.skills-header, .sfrpg.sheet.actor .inventory-list .item-detail, .sfrpg.sheet.actor .crew-list .item-detail, .sfrpg.sheet.actor .inventory-list .crew-detial, .sfrpg.sheet.actor .crew-list .crew-detial, .sfrpg.sheet.actor .ability-scores .ability, .sfrpg.sheet.actor ul.attributes.last, .sfrpg.sheet.actor h4.box-title, .sfrpg.sheet.actor.character .ability-scores .ability h4.box-title, .sfrpg.sheet.actor .inventory-list .inventory-header, .sfrpg.sheet.actor .crew-list .inventory-header, .sfrpg.sheet.actor .vehicle-system-list .inventory-header, .sfrpg.sheet.actor .inventory-list .crew-header, .sfrpg.sheet.actor .crew-list .crew-header, .sfrpg.sheet.actor .vehicle-system-list .crew-header, .sfrpg.sheet.actor .inventory-list .item-detail, .sfrpg.sheet.actor .crew-list .item-detail, .sfrpg.sheet.actor .vehicle-system-list .item-detail, .sfrpg.sheet.actor .inventory-list .crew-detial, .sfrpg.sheet.actor .crew-list .crew-detial, .sfrpg.sheet.actor .vehicle-system-list .crew-detial, .sfrpg.sheet.actor .inventory-list .item, .sfrpg.sheet.actor .crew-list .item, .sfrpg.sheet.actor .vehicle-system-list .item, .sfrpg.sheet.actor .inventory-list .crew, .sfrpg.sheet.actor .crew-list .crew, .sfrpg.sheet.actor .vehicle-system-list .crew, .sfrpg.sheet.item .inventory-list .item-detail, .sfrpg.sheet.item .inventory-list .inventory-header, .sfrpg.sheet.item .inventory-list .item {
-  border-color: var(--sfmod-border-on-backgound);
+  border-color: var(--sfmod-border-on-background);
 }
 
 .sfrpg.sheet.actor.vehicle .passenger-action .pilotPilotingSkill:hover, .sfrpg.sheet.actor.vehicle .passenger-action .pilotPilotingSkill:focus {
@@ -380,8 +380,8 @@
 .system-sfrpg .tah-title-button, .system-sfrpg .tah-action button {
   background: var(--sfmod-color-surface);
   border: 1px solid #000;
-  backdrop-filter: blur(var(--sfmod-config-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-config-blur-radius));
+  backdrop-filter: blur(var(--sfmod-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
 }
 
 .system-sfrpg .tah-title-button:hover, .system-sfrpg .tah-action button:hover {
@@ -394,7 +394,7 @@
 .system-sfrpg tags.tagify.token-action-hud-taginput {
   background: var(--sfmod-color-background) !important;
   color: var(--sfmod-text-on-background) !important;
-  border: 1px solid var(--sfmod-border-on-backgound-light);
+  border: 1px solid var(--sfmod-border-on-background-light);
   border-radius: 3px;
   margin: 8px 0;
   overflow: hidden;

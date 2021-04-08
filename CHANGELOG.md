@@ -1,17 +1,17 @@
 # Changelog
-## [1.1.2] - TODO: NOT YET RELEASED
-### Fixed
-- 
+## [1.2.0] - 2021-04-08
+### Added
+- Scroll bars override
+- Progress bars override
+- Theme: Unitologist
+- Colors settings
+- More screenshots
 
 ### Changed 
-- 
+- Major module refactor
+- Removed terminal theme variants, obsolte after hue shift implementation
 
-### Added
-- Scroll bars
-- Progress bars
-- Theme: Unitologist's
-
-## [1.1.2] - 2021-04-077
+## [1.1.2] - 2021-04-07
 ### Fixed
 - Chat item context menu visibility GH-10
 - Typo in theme choise GH-11
