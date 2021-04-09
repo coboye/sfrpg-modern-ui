@@ -1,4 +1,9 @@
 # Changelog
+## [1.2.1] - TODO: NOT YET RELEASED
+### Fixed
+- Borders color in drone sheet
+
+
 ## [1.2.0] - 2021-04-08
 ### Added
 - Scroll bars override
