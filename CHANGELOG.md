@@ -1,11 +1,13 @@
 # Changelog
-## [1.2.1] - TODO: NOT YET RELEASED
+## [1.2.1] - 2021-04-09
 ### Fixed
 - Borders color in drone sheet
 - Borders color in npc sheet
 - Text color of grid unit notes (token sheet)
 - Range sliders thumb color
-
+- Pause text shadow color
+- Controls reference keys
+- Core themplate switching
 
 ## [1.2.0] - 2021-04-08
 ### Added
