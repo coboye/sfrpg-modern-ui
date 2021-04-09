@@ -58,14 +58,15 @@ export default class AbstractTheme {
      * @param {Settings} settings 
      */
     apply(settings){
-        this.__backgroundAlpha = (settings.value(Constants.Settings.background_alpha) / 100).toFixed(2);
-        this.__blurRadius = settings.value(Constants.Settings.blur_radius)  + "px";
+        if(!this.core){
+            this.__backgroundAlpha = (settings.value(Constants.Settings.background_alpha) / 100).toFixed(2);
+            this.__blurRadius = settings.value(Constants.Settings.blur_radius)  + "px";
 
-        this.saturation = settings.value(Constants.Settings.colors_saturation);        
-        this.value = settings.value(Constants.Settings.colors_value);   
-        this.hue = settings.value(Constants.Settings.colors_hue);   
-        this.lightness = settings.value(Constants.Settings.colors_lightness);
-
+            this.saturation = settings.value(Constants.Settings.colors_saturation);        
+            this.value = settings.value(Constants.Settings.colors_value);   
+            this.hue = settings.value(Constants.Settings.colors_hue);   
+            this.lightness = settings.value(Constants.Settings.colors_lightness);
+        }
         return this;
     }
 
@@ -75,7 +76,7 @@ export default class AbstractTheme {
         if(this.__colorsSaturation !=0){
             Object.keys(this).forEach(key => {
                 let color = this[key];
-                if (!!color.saturateByRatio){
+                if (!!color && !!color.saturateByRatio){
                     this[key] = color.saturateByRatio( this.__colorsSaturation);
                 }
             })
@@ -89,7 +90,7 @@ export default class AbstractTheme {
         if (this.__colorsValue != 0) {
             Object.keys(this).forEach(key => {
                 let color = this[key];
-                if (!!color.valueByRatio) {
+                if (!!color && !!color.valueByRatio) {
                     this[key] = color.valueByRatio(this.__colorsValue);
                 }
             })
@@ -103,7 +104,7 @@ export default class AbstractTheme {
         if (this.__colorsLightness != 0) {
             Object.keys(this).forEach(key => {
                 let color = this[key];
-                if (!!color.lightenByRatio) {
+                if (!!color && !!color.lightenByRatio) {
                     this[key] = color.lightenByRatio(this.__colorsLightness);
                 }
             })
@@ -117,7 +118,7 @@ export default class AbstractTheme {
         if (this.__colorsHue != 0) {
             Object.keys(this).forEach(key => {
                 let color = this[key];
-                if (!!color.shiftHue) {
+                if (!!color && !!color.shiftHue) {
                     this[key] = color.shiftHue(this.__colorsHue);
                 }
             })
