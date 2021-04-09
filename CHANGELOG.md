@@ -2,6 +2,9 @@
 ## [1.2.1] - TODO: NOT YET RELEASED
 ### Fixed
 - Borders color in drone sheet
+- Borders color in npc sheet
+- Text color of grid unit notes (token sheet)
+- Range sliders thumb color
 
 
 ## [1.2.0] - 2021-04-08
