@@ -411,6 +411,20 @@ sheets borders
   backdrop-filter: none;
 }
 
+.system-sfrpg #pause h3 {
+  text-shadow: 1px 1px 30px #000, 0px 0px 12px var(--sfmod-color-primary), 0px 0px 8px var(--sfmod-color-primary-light), 0px 0px 4px var(--sfmod-color-primary), 0px 0px 2px #000;
+}
+
+.system-sfrpg #controls-reference ol.hotkey-list .key {
+  background: var(--sfmod-color-background);
+  color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg #controls-reference ol.hotkey-list li.gm .key {
+  background: var(--sfmod-color-background);
+  color: var(--sfmod-color-primary-light);
+}
+
 ::-webkit-scrollbar-thumb {
   background: var(--sfmod-color-secondary);
   border: 1px solid var(--sfmod-color-secondary-light);
