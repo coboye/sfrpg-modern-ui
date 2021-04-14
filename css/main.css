@@ -1,4 +1,3 @@
-@import "./integration/sf-furnace.css";
 .system-sfrpg {
   /* tagify integration */
   --tagify-dd-color-primary: var(--sfmod-color-primary);
