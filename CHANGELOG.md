@@ -8,6 +8,7 @@
 ### Added
 - Furnace integration
 - Tidy UI integration
+
 ### Fixed
 - Macros editor visibility
 - Chat message visibility GH-16
