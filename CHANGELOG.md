@@ -1,4 +1,14 @@
 # Changelog
+## [1.2.2] - 2021-04-09
+### Added
+- Furnace integration
+- Tidy UI integration
+### Fixed
+- Macros editor visibility
+- Chat message visibility GH-16
+- Chat message out of bounduary content headers
+- OneJournal contrast text color
+
 ## [1.2.1] - 2021-04-09
 ### Fixed
 - Borders color in drone sheet
