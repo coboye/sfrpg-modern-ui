@@ -1,3 +1,4 @@
+@import "./integration/sf-furnace.css";
 .system-sfrpg {
   /* tagify integration */
   --tagify-dd-color-primary: var(--sfmod-color-primary);
@@ -8,7 +9,7 @@
   --ojBackgroundMedium: #86909630;
   --ojBackgroundHeavy: #86909650;
   --ojTextColor: var(--sfmod-text-on-background);
-  --ojTextColorContrast: var(--sfmod-text-on-surface);
+  --ojTextColorContrast: var(--sfmod-text-on-background);
   --ojHeaderAccentBg: rgba(0, 0, 0, 0.25);
   --ojHeaderAccentBgFullscreen: rgba(0, 0, 0, 0.05);
   --ojSidebarWidth: 300px;
@@ -34,19 +35,9 @@
   --placeholder-color: var(--sfmod-text-on-background);
 }
 
-/* only if backdrop support */
-
 .system-sfrpg {
   --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
 }
-
-/*
-@supports ((-webkit-backdrop-filter: blur(var(--sfmod-blur-radius))) or (backdrop-filter: blur(var(--sfmod-blur-radius)))) {
-  .system-sfrpg {
-    --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
-  }
-}
-*/
 
 .sfrpg.sheet .editor-content h2, .system-sfrpg h2, .sfrpg.sheet .editor-content h1, .system-sfrpg h1 {
   color: var(--sfmod-color-primary);
@@ -172,8 +163,12 @@
 }
 
 .system-sfrpg #chat-log .message {
-  background: var(--sfmod-color-surface);
+  background: var(--sfmod-color-background);
   color: var(--sfmod-text-on-background) !important;
+}
+
+.system-sfrpg #chat-log .message .message-content h2 {
+  position: unset;
 }
 
 .system-sfrpg #module-management .package-list .package-title, .system-sfrpg #module-management .package-list .package-metadata, .system-sfrpg #module-management .package-list .package-description, .sfrpg.sheet.actor .sheet-header .header-background .charname>input {
@@ -203,11 +198,11 @@
   background: none;
 }
 
-.sfrpg input[type="text"], .system-sfrpg .sidebar-tab .directory-header .header-search input, .system-sfrpg select, .system-sfrpg .gm-screen-app .gm-screen-grid-cell-header select, .sfrpg select, .sfrpg .form-group label, .sfrpg .window-content, .system-sfrpg input[type="text"], .system-sfrpg input[type="number"], .system-sfrpg input[type="password"], .system-sfrpg input[type="date"], .system-sfrpg input[type="time"] {
+.system-sfrpg input[type="text"], .system-sfrpg .sidebar-tab .directory-header .header-search input, .system-sfrpg select, .system-sfrpg .gm-screen-app .gm-screen-grid-cell-header select, .sfrpg select, .sfrpg .form-group label, .sfrpg .window-content, .system-sfrpg input[type="text"], .system-sfrpg input[type="number"], .system-sfrpg input[type="password"], .system-sfrpg input[type="date"], .system-sfrpg input[type="time"] {
   color: var(--sfmod-text-on-background) !important;
 }
 
-.sfrpg input[type="text"]::placeholder, .system-sfrpg #chat-form textarea, .sidebar-tab .directory-header .header-search input::placeholder, .system-sfrpg .sidebar-tab .directory-header .header-search input, form .notes, form .hint {
+.system-sfrpg input[type="text"]::placeholder, .system-sfrpg #chat-form textarea, .sidebar-tab .directory-header .header-search input::placeholder, .system-sfrpg .sidebar-tab .directory-header .header-search input, form .notes, form .hint {
   color: var(--sfmod-text-on-surface);
 }
 
@@ -496,3 +491,17 @@ sheets borders
 .system-sfrpg #client-settings.app.window-app.form #config-tabs .settings-list h2.module-header span .far:before {
   color: var(--sfmod-text-on-surface);
 }
+
+/*Furnace integration */
+
+.system-sfrpg .macro-sheet .form-group.command .furnace-macro-command {
+  background: #fff;
+}
+
+/* Tidy UI integration */
+
+.system-sfrpg #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::placeholder {
+  color: var(--sfmod-text-on-surface);
+}
+
+/* END */
