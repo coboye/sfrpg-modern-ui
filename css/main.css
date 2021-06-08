@@ -249,8 +249,8 @@
 }
 
 .system-sfrpg button {
-  background: rgba(0, 0, 0, 0.1);
-  border: 2px groove var(--sfmod-text-on-background);
+  background: rgba(0, 0, 0, 0.1) !important;
+  border: 2px groove var(--sfmod-text-on-background) !important;
   color: var(--sfmod-text-on-background);
 }
 
@@ -501,6 +501,68 @@ sheets borders
 
 .system-sfrpg #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::placeholder {
   color: var(--sfmod-text-on-surface);
+}
+
+/* Forien's Quest Log integration */
+
+.system-sfrpg #forien-quest-log-form button {
+  background: rgba(0, 0, 0, 0.1) !important;
+  border: 2px groove var(--sfmod-text-on-background) !important;
+  color: var(--sfmod-text-on-background) !important;
+}
+
+.system-sfrpg #forien-quest-log-form button:hover, .system-sfrpg #forien-quest-log-form button:focus {
+  box-shadow: 0 0 5px var(--sfmod-color-primary) !important;
+  color: var(--sfmod-color-primary) !important;
+}
+
+.system-sfrpg .forien-quest-preview .editor, .system-sfrpg #forien-quest-log-form .editor, .system-sfrpg #forien-quest-log-form textarea, #forien-quest-log-form input[type="text"], #forien-quest-log-form input[type="number"], #forien-quest-log-form input[type="password"], #forien-quest-log-form input[type="date"], #forien-quest-log-form input[type="time"] {
+  color: var(--sfmod-text-on-background) !important;
+  background: var(--sfmod-color-background) !important;
+  border: 1px solid var(--sfmod-border-on-background-light) !important;
+}
+
+.system-sfrpg #forien-quest-log .window-content, .system-sfrpg #forien-quest-log-form .window-content, .system-sfrpg .window-app.forien-quest-preview .window-content {
+  overflow: visible;
+}
+
+.system-sfrpg #forien-quest-log .quest-log.bookmarks nav .item {
+  background: none;
+  background-color: var(--sfmod-color-background);
+  border: 1px solid var(--sfmod-border-on-background);
+  border-right: 0px;
+  backdrop-filter: blur(var(--sfmod-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
+}
+
+.system-sfrpg #forien-quest-log .quest-log.bookmarks nav .item:hover {
+  border-color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg #forien-quest-log .quest-log.bookmarks nav .item.active {
+  color: var(--sfmod-color-primary);
+  border: 1px solid var(--sfmod-color-primary);
+  border-right: 0px;
+}
+
+.system-sfrpg #forien-quest-log .actions i, .system-sfrpg #forien-quest-log-form .actions i, .system-sfrpg .window-app.forien-quest-preview .actions i {
+  color: var(--sfmod-text-on-background-light);
+}
+
+.system-sfrpg #forien-quest-log .actions i:hover, .system-sfrpg #forien-quest-log-form .actions i:hover, .system-sfrpg .window-app.forien-quest-preview .actions i:hover {
+  color: var(--sfmod-color-secondary);
+}
+
+.system-sfrpg .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right header {
+  border-color: var(--sfmod-border-on-background);
+}
+
+.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-giver-gc .toggleImage {
+  background: var(--sfmod-color-surface);
+}
+
+.system-sfrpg .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .toggleState:hover,.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .actions i:hover .system-sfrpg #forien-quest-log .actions i:hover, #forien-quest-log-form .actions i:hover, .window-app.forien-quest-preview .actions i:hover, .system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-status .quest-name:hover, .system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-giver-name h2:hover {
+  color: var(--sfmod-color-secondary) !important;
 }
 
 /* END */
