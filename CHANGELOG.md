@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.4] - 2021-06-08
+### Added
+- Forien's Quest Log integration GH-19
+
 ## [1.2.3 HOTFIX] - 2021-04-09
 ### Fixed
 - wrong css import
