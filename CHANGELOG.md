@@ -1,4 +1,9 @@
 # Changelog
+
+## [1.2.7] - 2021-06-17
+### Added
+- Illandrill's Token Tooltips integration
+
 ## [1.2.6] - 2021-06-17
 ### Fixed
 - wrong main css name
