@@ -1,3 +1,18 @@
 :root{
     --sfmod: "active";
 }
+/* UI fixes */
+.sfrpg.sheet.actor .inventory-list .item .item-name .item-image, .sfrpg.sheet.actor .crew-list .item .item-name .item-image, .sfrpg.sheet.actor .vehicle-system-list .item .item-name .item-image, .sfrpg.sheet.actor .inventory-list .crew .item-name .item-image, .sfrpg.sheet.actor .crew-list .crew .item-name .item-image, .sfrpg.sheet.actor .vehicle-system-list .crew .item-name .item-image, .sfrpg.sheet.actor .inventory-list .item .crew-name .item-image, .sfrpg.sheet.actor .crew-list .item .crew-name .item-image, .sfrpg.sheet.actor .vehicle-system-list .item .crew-name .item-image, .sfrpg.sheet.actor .inventory-list .crew .crew-name .item-image, .sfrpg.sheet.actor .crew-list .crew .crew-name .item-image, .sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-image, .sfrpg.sheet.actor .inventory-list .item .item-name .crew-image, .sfrpg.sheet.actor .crew-list .item .item-name .crew-image, .sfrpg.sheet.actor .vehicle-system-list .item .item-name .crew-image, .sfrpg.sheet.actor .inventory-list .crew .item-name .crew-image, .sfrpg.sheet.actor .crew-list .crew .item-name .crew-image, .sfrpg.sheet.actor .vehicle-system-list .crew .item-name .crew-image, .sfrpg.sheet.actor .inventory-list .item .crew-name .crew-image, .sfrpg.sheet.actor .crew-list .item .crew-name .crew-image, .sfrpg.sheet.actor .vehicle-system-list .item .crew-name .crew-image, .sfrpg.sheet.actor .inventory-list .crew .crew-name .crew-image, .sfrpg.sheet.actor .crew-list .crew .crew-name .crew-image, .sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .crew-image {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.sfrpg.sheet.actor .inventory-list .item-detail, .sfrpg.sheet.actor .crew-list .item-detail, .sfrpg.sheet.actor .vehicle-system-list .item-detail, .sfrpg.sheet.actor .inventory-list .crew-detial, .sfrpg.sheet.actor .crew-list .crew-detial, .sfrpg.sheet.actor .vehicle-system-list .crew-detial {
+    display: flex;
+    justify-content: center;
+    line-height: 14px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    letter-spacing: -0.5px;
+    align-items: center;
+}

@@ -470,6 +470,9 @@ sheets borders
 .system-sfrpg #dfcp-rt-buttons button[data-id=selfroll].active {
   box-shadow: inset 0 0 8px 4px #e74c3c;
 }
+.system-sfrpg .chat-card-custom .chat-card-custom-item p span{
+    color: var(--sfmod-text-on-background);
+}
 
 .system-sfrpg ::selection {
   color: var(--sfmod-text-on-selection);

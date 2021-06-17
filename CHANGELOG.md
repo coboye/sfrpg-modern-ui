@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.5] - 2021-06-17
+### Fixed
+- Custom chat card items's span color GH-20
+### Added
+- main css QOL override
+
 ## [1.2.4] - 2021-06-08
 ### Added
 - Forien's Quest Log integration GH-19
