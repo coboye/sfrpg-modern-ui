@@ -38,12 +38,16 @@
   --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
 }
 
-.sfrpg.sheet .editor-content h2, .system-sfrpg h2, .sfrpg.sheet .editor-content h1, .system-sfrpg h1 {
+.sfrpg.sheet .editor-content h2,
+.system-sfrpg h2,
+.sfrpg.sheet .editor-content h1,
+.system-sfrpg h1 {
   color: var(--sfmod-color-primary);
   border-bottom: 1px solid var(--sfmod-color-primary);
 }
 
-.sfrpg.sheet .editor-content h3, .sfrpg.sheet .item-summary h3 {
+.sfrpg.sheet .editor-content h3,
+.sfrpg.sheet .item-summary h3 {
   color: var(--sfmod-color-primary);
 }
 
@@ -60,7 +64,12 @@
   border-color: var(--sfmod-border-on-background);
 }
 
-.system-sfrpg textarea, .system-sfrpg input[type="text"], .system-sfrpg input[type="number"], .system-sfrpg input[type="password"], .system-sfrpg input[type="date"], .system-sfrpg input[type="time"] {
+.system-sfrpg textarea,
+.system-sfrpg input[type="text"],
+.system-sfrpg input[type="number"],
+.system-sfrpg input[type="password"],
+.system-sfrpg input[type="date"],
+.system-sfrpg input[type="time"] {
   color: var(--sfmod-text-on-background);
   background: var(--sfmod-color-background);
   border-color: var(--sfmod-border-on-background-light);
@@ -70,11 +79,17 @@
   background: #ffffff;
 }
 
-.sfrpg.sheet.actor .inventory-list .item-controls a, .sfrpg.sheet.actor .crew-list .item-controls a, .sfrpg.sheet.actor .inventory-list .crew-controls a, .sfrpg.sheet.actor .crew-list .crew-controls a {
+.sfrpg.sheet.actor .inventory-list .item-controls a,
+.sfrpg.sheet.actor .crew-list .item-controls a,
+.sfrpg.sheet.actor .inventory-list .crew-controls a,
+.sfrpg.sheet.actor .crew-list .crew-controls a {
   color: var(--sfmod-text-on-background-light);
 }
 
-.sfrpg.sheet.actor .inventory-list .item-detail, .sfrpg.sheet.actor .crew-list .item-detail, .sfrpg.sheet.actor .inventory-list .crew-detial, .sfrpg.sheet.actor .crew-list .crew-detial {
+.sfrpg.sheet.actor .inventory-list .item-detail,
+.sfrpg.sheet.actor .crew-list .item-detail,
+.sfrpg.sheet.actor .inventory-list .crew-detial,
+.sfrpg.sheet.actor .crew-list .crew-detial {
   color: var(--sfmod-text-on-background-light);
   border-right-color: var(--sfmod-border-on-background);
 }
@@ -105,7 +120,15 @@
   color: var(--sfmod-text-on-secondary);
 }
 
-.system-sfrpg .tabs a.item:hover, .system-sfrpg #navigation #scene-list .scene.view, .system-sfrpg #navigation #scene-list .scene.context, .system-sfrpg #controls .scene-control.active, .system-sfrpg #controls .control-tool.active, .system-sfrpg #controls .scene-control:hover, .system-sfrpg #controls .control-tool:hover, .system-sfrpg #sidebar-tabs>.item.active, .system-sfrpg #sidebar-tabs {
+.system-sfrpg .tabs a.item:hover,
+.system-sfrpg #navigation #scene-list .scene.view,
+.system-sfrpg #navigation #scene-list .scene.context,
+.system-sfrpg #controls .scene-control.active,
+.system-sfrpg #controls .control-tool.active,
+.system-sfrpg #controls .scene-control:hover,
+.system-sfrpg #controls .control-tool:hover,
+.system-sfrpg #sidebar-tabs>.item.active,
+.system-sfrpg #sidebar-tabs {
   border-color: var(--sfmod-color-secondary);
   border-bottom-color: var(--sfmod-color-secondary-light);
   box-shadow: 0 0 10px var(--sfmod-color-secondary-light);
@@ -128,7 +151,8 @@
   color: var(--sfmod-text-on-background)
 }
 
-.system-sfrpg #chat-form textarea, .sidebar-tab .directory-header .header-search input {
+.system-sfrpg #chat-form textarea,
+.sidebar-tab .directory-header .header-search input {
   background: var(--sfmod-color-background);
   color: var(--sfmod-text-on-background);
 }
@@ -137,7 +161,8 @@
   background: var(--sfmod-color-background) !important;
 }
 
-.system-sfrpg a.entity-link, .system-sfrpg a.inline-roll {
+.system-sfrpg a.entity-link,
+.system-sfrpg a.inline-roll {
   border: 1px solid var(--sfmod-color-primary);
   color: var(--sfmod-color-primary);
 }
@@ -154,7 +179,8 @@
   background-color: transparent;
 }
 
-.sfrpg.sheet .window-content, .system-sfrpg .window-app .window-content {
+.sfrpg.sheet .window-content,
+.system-sfrpg .window-app .window-content {
   background: var(--sfmod-color-surface);
   color: var(--sfmod-text-on-background) !important;
   backdrop-filter: blur(var(--sfmod-blur-radius));
@@ -170,7 +196,10 @@
   position: unset;
 }
 
-.system-sfrpg #module-management .package-list .package-title, .system-sfrpg #module-management .package-list .package-metadata, .system-sfrpg #module-management .package-list .package-description, .sfrpg.sheet.actor .sheet-header .header-background .charname>input {
+.system-sfrpg #module-management .package-list .package-title,
+.system-sfrpg #module-management .package-list .package-metadata,
+.system-sfrpg #module-management .package-list .package-description,
+.sfrpg.sheet.actor .sheet-header .header-background .charname>input {
   color: var(--sfmod-text-on-background);
 }
 
@@ -178,44 +207,87 @@
   background: var(--sfmod-color-primary-gradient);
 }
 
-.system-sfrpg form .form-header, .sfrpg.sheet .sheet-header, .sfrpg button {
+.system-sfrpg form .form-header,
+.sfrpg.sheet .sheet-header,
+.sfrpg button {
   color: var(--sfmod-text-on-background);
 }
 
-.sfrpg.sheet .sheet-header .summary li, .sfrpg .form-group label, .sfrpg.chat-card .card-header h3 {
+.sfrpg.sheet .sheet-header .summary li,
+.sfrpg .form-group label,
+.sfrpg.chat-card .card-header h3 {
   color: var(--sfmod-text-on-background-light);
 }
 
-.sfrpg.sheet.actor .inventory-list .item .item-name .item-action .attack, .sfrpg.sheet.actor .crew-list .item .item-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .item .item-name .item-action .attack, .sfrpg.sheet.actor .inventory-list .crew .item-name .item-action .attack, .sfrpg.sheet.actor .crew-list .crew .item-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .crew .item-name .item-action .attack, .sfrpg.sheet.actor .inventory-list .item .crew-name .item-action .attack, .sfrpg.sheet.actor .crew-list .item .crew-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .item .crew-name .item-action .attack, .sfrpg.sheet.actor .inventory-list .crew .crew-name .item-action .attack, .sfrpg.sheet.actor .crew-list .crew .crew-name .item-action .attack, .sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-action .attack {
+.sfrpg.sheet.actor .inventory-list .item .item-name .item-action .attack,
+.sfrpg.sheet.actor .crew-list .item .item-name .item-action .attack,
+.sfrpg.sheet.actor .vehicle-system-list .item .item-name .item-action .attack,
+.sfrpg.sheet.actor .inventory-list .crew .item-name .item-action .attack,
+.sfrpg.sheet.actor .crew-list .crew .item-name .item-action .attack,
+.sfrpg.sheet.actor .vehicle-system-list .crew .item-name .item-action .attack,
+.sfrpg.sheet.actor .inventory-list .item .crew-name .item-action .attack,
+.sfrpg.sheet.actor .crew-list .item .crew-name .item-action .attack,
+.sfrpg.sheet.actor .vehicle-system-list .item .crew-name .item-action .attack,
+.sfrpg.sheet.actor .inventory-list .crew .crew-name .item-action .attack,
+.sfrpg.sheet.actor .crew-list .crew .crew-name .item-action .attack,
+.sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-action .attack {
   width: auto;
   background: #235683;
   color: #fff;
   cursor: pointer;
 }
 
-.system-sfrpg a.entity-link, .system-sfrpg a.inline-roll {
+.system-sfrpg a.entity-link,
+.system-sfrpg a.inline-roll {
   background: none;
 }
 
-.system-sfrpg input[type="text"], .system-sfrpg .sidebar-tab .directory-header .header-search input, .system-sfrpg select, .system-sfrpg .gm-screen-app .gm-screen-grid-cell-header select, .sfrpg select, .sfrpg .form-group label, .sfrpg .window-content, .system-sfrpg input[type="text"], .system-sfrpg input[type="number"], .system-sfrpg input[type="password"], .system-sfrpg input[type="date"], .system-sfrpg input[type="time"] {
+.system-sfrpg input[type="text"],
+.system-sfrpg .sidebar-tab .directory-header .header-search input,
+.system-sfrpg select,
+.system-sfrpg .gm-screen-app .gm-screen-grid-cell-header select,
+.sfrpg select,
+.sfrpg .form-group label,
+.sfrpg .window-content,
+.system-sfrpg input[type="text"],
+.system-sfrpg input[type="number"],
+.system-sfrpg input[type="password"],
+.system-sfrpg input[type="date"],
+.system-sfrpg input[type="time"] {
   color: var(--sfmod-text-on-background) !important;
 }
 
-.system-sfrpg input[type="text"]::placeholder, .system-sfrpg #chat-form textarea, .sidebar-tab .directory-header .header-search input::placeholder, .system-sfrpg .sidebar-tab .directory-header .header-search input, form .notes, form .hint {
+.system-sfrpg input[type="text"]::placeholder,
+.system-sfrpg #chat-form textarea,
+.sidebar-tab .directory-header .header-search input::placeholder,
+.system-sfrpg .sidebar-tab .directory-header .header-search input,
+form .notes,
+form .hint {
   color: var(--sfmod-text-on-surface);
 }
 
-.system-sfrpg button:hover, .system-sfrpg button:focus {
+.system-sfrpg button:hover,
+.system-sfrpg button:focus {
   box-shadow: 0 0 5px var(--sfmod-color-primary);
   color: var(--sfmod-color-primary);
 }
 
-.sfrpg.sheet .editable .rollable:hover, .sfrpg.chat-card .card-header h3:hover {
+.sfrpg.sheet .editable .rollable:hover,
+.sfrpg.chat-card .card-header h3:hover {
   text-shadow: 0 0 5px var(--sfmod-color-primary);
   color: var(--sfmod-color-primary-light);
 }
 
-.system-sfrpg select:focus, .system-sfrpg textarea:focus, .system-sfrpg textarea:focus, .system-sfrpg input[type="text"]:focus, .system-sfrpg input[type="number"]:focus, .system-sfrpg input[type="password"]:focus, .system-sfrpg input[type="date"]:focus, .system-sfrpg input[type="time"]:focus, .sfrpg input[type="text"]:hover, .sfrpg input[type="text"]:focus {
+.system-sfrpg select:focus,
+.system-sfrpg textarea:focus,
+.system-sfrpg textarea:focus,
+.system-sfrpg input[type="text"]:focus,
+.system-sfrpg input[type="number"]:focus,
+.system-sfrpg input[type="password"]:focus,
+.system-sfrpg input[type="date"]:focus,
+.system-sfrpg input[type="time"]:focus,
+.sfrpg input[type="text"]:hover,
+.sfrpg input[type="text"]:focus {
   box-shadow: 0 0 8px var(--sfmod-color-primary);
   outline: 2px solid var(--sfmod-color-primary-light);
   outline-offset: -2px;
@@ -254,25 +326,34 @@
   color: var(--sfmod-text-on-background);
 }
 
-.sfrpg.sheet.actor .inventory-filters .currency label, .sfrpg.sheet.actor .inventory-filters h3, .sfrpg.sheet.actor .inventory-filters .filter-title, .sfrpg.sheet.actor.starship .crew-settings h3, .sfrpg.sheet.actor.starship .crew-settings .filter-title {
+.sfrpg.sheet.actor .inventory-filters .currency label,
+.sfrpg.sheet.actor .inventory-filters h3,
+.sfrpg.sheet.actor .inventory-filters .filter-title,
+.sfrpg.sheet.actor.starship .crew-settings h3,
+.sfrpg.sheet.actor.starship .crew-settings .filter-title {
   color: var(--sfmod-text-on-surface);
 }
 
-.sfrpg.sheet .filter-list .filter-item.active, .sfrpg.sheet .sheet-subnavigation .item.active, .system-sfrpg nav.list-filters a.filter.active {
+.sfrpg.sheet .filter-list .filter-item.active,
+.sfrpg.sheet .sheet-subnavigation .item.active,
+.system-sfrpg nav.list-filters a.filter.active {
   border-bottom-color: var(--sfmod-color-secondary);
 }
 
-.sfrpg.sheet .filter-list .filter-item.active, .sfrpg.sheet .sheet-subnavigation .item.active {
+.sfrpg.sheet .filter-list .filter-item.active,
+.sfrpg.sheet .sheet-subnavigation .item.active {
   border-bottom: 3px solid var(--sfmod-color-secondary);
 }
 
-.sfrpg.sheet .filter-list .filter-item:hover, .sfrpg.sheet .sheet-subnavigation .item:hover {
+.sfrpg.sheet .filter-list .filter-item:hover,
+.sfrpg.sheet .sheet-subnavigation .item:hover {
   text-shadow: 0 0 4px var(--sfmod-color-secondary);
   border-bottom: 3px solid var(--sfmod-color-secondary-light);
   color: unset !important;
 }
 
-.sfrpg.sheet.actor.starship .sheet-body a.critical-edit, .sfrpg.sheet.actor.starship .sheet-body i.fas {
+.sfrpg.sheet.actor.starship .sheet-body a.critical-edit,
+.sfrpg.sheet.actor.starship .sheet-body i.fas {
   color: inherit;
 }
 
@@ -297,7 +378,77 @@
 sheets borders
 */
 
-.sfrpg.sheet .sheet-header .summary-row2 li, .sfrpg.sheet.actor .counters, .sfrpg.sheet .sheet-header .summary-row1, .sfrpg.sheet .sheet-header .summary-row2, .sfrpg.sheet.actor.drone .ability-scores .ability h4.box-title, .sfrpg.sheet.actor.drone .sheet-header .summary, .sfrpg.sheet.actor.drone .sheet-header .attributes .attribute, .sfrpg.sheet.actor.drone ul.skills-list li.skills-header, .sfrpg.sheet.actor.drone .ability-scores .ability, .sfrpg.sheet.actor.drone .ability-scores .ability .ability-modifiers span.ability-mod, .system-sfrpg .compendium .directory-list .directory-item, .sfrpg.item-browser-window .item-browser .filtercontainer, .sfrpg.item-browser-window .item-browser .sortcontainer, .sfrpg.sheet.actor ul.attributes li.attribute, .sfrpg.sheet.actor.starship .sheet-header .attributes .attribute, .sfrpg.sheet .sheet-header .summary li, .sfrpg.sheet .sheet-header .summary, .sfrpg.sheet.actor.starship .sheet-header .summary, .sfrpg.sheet .sheet-header img.profile, .sfrpg.sheet .sheet-header, .sfrpg.sheet.actor .inventory-list .inventory-header, .sfrpg.sheet.actor .crew-list .inventory-header, .sfrpg.sheet.actor .inventory-list .crew-header, .sfrpg.sheet.actor .crew-list .crew-header, .sfrpg.sheet.actor .inventory-list .item, .sfrpg.sheet.actor .crew-list .item, .sfrpg.sheet.actor .inventory-list .crew, .sfrpg.sheet.actor .crew-list .crew, .sfrpg.sheet.actor.starship .action-list .action-header, .sfrpg.sheet.actor.starship .action-list .action, .sfrpg .form-header, .sfrpg.sheet.actor.character .sheet-header .attributes .attribute, .sfrpg.sheet.actor.character .sheet-header .summary, .sfrpg.sheet.actor.character .ability-scores .ability .ability-header input[type="text"].ability-drain, .sfrpg.sheet.actor.character .ability-scores .ability, .sfrpg.sheet.actor.character .ability-scores .ability .ability-header input[type="text"].ability-penalty, .sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers input[type="text"].ability-base, .sfrpg.sheet.actor.character .ability-scores .ability .ability-header input[type="text"].ability-damage, .sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers span.ability-mod, .sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers input[type="text"].ability-base, .sfrpg.sheet.actor ul.skills-list, .sfrpg.sheet.actor.character ul.skills-list li.skills-header, .sfrpg.sheet.actor .inventory-list .item-detail, .sfrpg.sheet.actor .crew-list .item-detail, .sfrpg.sheet.actor .inventory-list .crew-detial, .sfrpg.sheet.actor .crew-list .crew-detial, .sfrpg.sheet.actor .ability-scores .ability, .sfrpg.sheet.actor ul.attributes.last, .sfrpg.sheet.actor h4.box-title, .sfrpg.sheet.actor.character .ability-scores .ability h4.box-title, .sfrpg.sheet.actor .inventory-list .inventory-header, .sfrpg.sheet.actor .crew-list .inventory-header, .sfrpg.sheet.actor .vehicle-system-list .inventory-header, .sfrpg.sheet.actor .inventory-list .crew-header, .sfrpg.sheet.actor .crew-list .crew-header, .sfrpg.sheet.actor .vehicle-system-list .crew-header, .sfrpg.sheet.actor .inventory-list .item-detail, .sfrpg.sheet.actor .crew-list .item-detail, .sfrpg.sheet.actor .vehicle-system-list .item-detail, .sfrpg.sheet.actor .inventory-list .crew-detial, .sfrpg.sheet.actor .crew-list .crew-detial, .sfrpg.sheet.actor .vehicle-system-list .crew-detial, .sfrpg.sheet.actor .inventory-list .item, .sfrpg.sheet.actor .crew-list .item, .sfrpg.sheet.actor .vehicle-system-list .item, .sfrpg.sheet.actor .inventory-list .crew, .sfrpg.sheet.actor .crew-list .crew, .sfrpg.sheet.actor .vehicle-system-list .crew, .sfrpg.sheet.item .inventory-list .item-detail, .sfrpg.sheet.item .inventory-list .inventory-header, .sfrpg.sheet.item .inventory-list .item {
+.sfrpg.sheet .sheet-header .summary-row2 li,
+.sfrpg.sheet.actor .counters,
+.sfrpg.sheet .sheet-header .summary-row1,
+.sfrpg.sheet .sheet-header .summary-row2,
+.sfrpg.sheet.actor.drone .ability-scores .ability h4.box-title,
+.sfrpg.sheet.actor.drone .sheet-header .summary,
+.sfrpg.sheet.actor.drone .sheet-header .attributes .attribute,
+.sfrpg.sheet.actor.drone ul.skills-list li.skills-header,
+.sfrpg.sheet.actor.drone .ability-scores .ability,
+.sfrpg.sheet.actor.drone .ability-scores .ability .ability-modifiers span.ability-mod,
+.system-sfrpg .compendium .directory-list .directory-item,
+.sfrpg.item-browser-window .item-browser .filtercontainer,
+.sfrpg.item-browser-window .item-browser .sortcontainer,
+.sfrpg.sheet.actor ul.attributes li.attribute,
+.sfrpg.sheet.actor.starship .sheet-header .attributes .attribute,
+.sfrpg.sheet .sheet-header .summary li,
+.sfrpg.sheet .sheet-header .summary,
+.sfrpg.sheet.actor.starship .sheet-header .summary,
+.sfrpg.sheet .sheet-header img.profile,
+.sfrpg.sheet .sheet-header,
+.sfrpg.sheet.actor .inventory-list .inventory-header,
+.sfrpg.sheet.actor .crew-list .inventory-header,
+.sfrpg.sheet.actor .inventory-list .crew-header,
+.sfrpg.sheet.actor .crew-list .crew-header,
+.sfrpg.sheet.actor .inventory-list .item,
+.sfrpg.sheet.actor .crew-list .item,
+.sfrpg.sheet.actor .inventory-list .crew,
+.sfrpg.sheet.actor .crew-list .crew,
+.sfrpg.sheet.actor.starship .action-list .action-header,
+.sfrpg.sheet.actor.starship .action-list .action,
+.sfrpg .form-header,
+.sfrpg.sheet.actor.character .sheet-header .attributes .attribute,
+.sfrpg.sheet.actor.character .sheet-header .summary,
+.sfrpg.sheet.actor.character .ability-scores .ability .ability-header input[type="text"].ability-drain,
+.sfrpg.sheet.actor.character .ability-scores .ability,
+.sfrpg.sheet.actor.character .ability-scores .ability .ability-header input[type="text"].ability-penalty,
+.sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers input[type="text"].ability-base,
+.sfrpg.sheet.actor.character .ability-scores .ability .ability-header input[type="text"].ability-damage,
+.sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers span.ability-mod,
+.sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers input[type="text"].ability-base,
+.sfrpg.sheet.actor ul.skills-list,
+.sfrpg.sheet.actor.character ul.skills-list li.skills-header,
+.sfrpg.sheet.actor .inventory-list .item-detail,
+.sfrpg.sheet.actor .crew-list .item-detail,
+.sfrpg.sheet.actor .inventory-list .crew-detial,
+.sfrpg.sheet.actor .crew-list .crew-detial,
+.sfrpg.sheet.actor .ability-scores .ability,
+.sfrpg.sheet.actor ul.attributes.last,
+.sfrpg.sheet.actor h4.box-title,
+.sfrpg.sheet.actor.character .ability-scores .ability h4.box-title,
+.sfrpg.sheet.actor .inventory-list .inventory-header,
+.sfrpg.sheet.actor .crew-list .inventory-header,
+.sfrpg.sheet.actor .vehicle-system-list .inventory-header,
+.sfrpg.sheet.actor .inventory-list .crew-header,
+.sfrpg.sheet.actor .crew-list .crew-header,
+.sfrpg.sheet.actor .vehicle-system-list .crew-header,
+.sfrpg.sheet.actor .inventory-list .item-detail,
+.sfrpg.sheet.actor .crew-list .item-detail,
+.sfrpg.sheet.actor .vehicle-system-list .item-detail,
+.sfrpg.sheet.actor .inventory-list .crew-detial,
+.sfrpg.sheet.actor .crew-list .crew-detial,
+.sfrpg.sheet.actor .vehicle-system-list .crew-detial,
+.sfrpg.sheet.actor .inventory-list .item,
+.sfrpg.sheet.actor .crew-list .item,
+.sfrpg.sheet.actor .vehicle-system-list .item,
+.sfrpg.sheet.actor .inventory-list .crew,
+.sfrpg.sheet.actor .crew-list .crew,
+.sfrpg.sheet.actor .vehicle-system-list .crew,
+.sfrpg.sheet.item .inventory-list .item-detail,
+.sfrpg.sheet.item .inventory-list .inventory-header,
+.sfrpg.sheet.item .inventory-list .item {
   border-color: var(--sfmod-border-on-background);
 }
 
@@ -305,7 +456,8 @@ sheets borders
   color: var(--sfmod-text-on-surface);
 }
 
-.sfrpg.sheet.actor.vehicle .passenger-action .pilotPilotingSkill:hover, .sfrpg.sheet.actor.vehicle .passenger-action .pilotPilotingSkill:focus {
+.sfrpg.sheet.actor.vehicle .passenger-action .pilotPilotingSkill:hover,
+.sfrpg.sheet.actor.vehicle .passenger-action .pilotPilotingSkill:focus {
   filter: invert(1) sepia(1) saturate(10) hue-rotate(119deg);
 }
 
@@ -342,7 +494,8 @@ sheets borders
   flex-grow: 1;
 }
 
-.system-sfrpg a.entity-link i, .system-sfrpg a.inline-roll i {
+.system-sfrpg a.entity-link i,
+.system-sfrpg a.inline-roll i {
   color: unset;
 }
 
@@ -360,7 +513,8 @@ sheets borders
   background: var(--sfmod-color-background);
 }
 
-.system-sfrpg .gm-screen-app .gm-screen-actions button, .system-sfrpg .gm-screen-app .gm-screen-actions .meta-actions button {
+.system-sfrpg .gm-screen-app .gm-screen-actions button,
+.system-sfrpg .gm-screen-app .gm-screen-actions .meta-actions button {
   color: var(--sfmod-text-on-background);
   background: var(--sfmod-color-surface);
 }
@@ -374,14 +528,16 @@ sheets borders
   color: var(--sfmod-color-secondary);
 }
 
-.system-sfrpg .tah-title-button, .system-sfrpg .tah-action button {
+.system-sfrpg .tah-title-button,
+.system-sfrpg .tah-action button {
   background: var(--sfmod-color-surface);
   border: 1px solid #000;
   backdrop-filter: blur(var(--sfmod-blur-radius));
   -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
 }
 
-.system-sfrpg .tah-title-button:hover, .system-sfrpg .tah-action button:hover {
+.system-sfrpg .tah-title-button:hover,
+.system-sfrpg .tah-action button:hover {
   color: var(--sfmod-text-on-background);
   border: 1px solid var(--sfmod-color-primary);
   border-bottom: 1px solid var(--sfmod-color-primary-light);
@@ -470,8 +626,9 @@ sheets borders
 .system-sfrpg #dfcp-rt-buttons button[data-id=selfroll].active {
   box-shadow: inset 0 0 8px 4px #e74c3c;
 }
-.system-sfrpg .chat-card-custom .chat-card-custom-item p span{
-    color: var(--sfmod-text-on-background);
+
+.system-sfrpg .chat-card-custom .chat-card-custom-item p span {
+  color: var(--sfmod-text-on-background);
 }
 
 .system-sfrpg ::selection {
@@ -514,18 +671,28 @@ sheets borders
   color: var(--sfmod-text-on-background) !important;
 }
 
-.system-sfrpg #forien-quest-log-form button:hover, .system-sfrpg #forien-quest-log-form button:focus {
+.system-sfrpg #forien-quest-log-form button:hover,
+.system-sfrpg #forien-quest-log-form button:focus {
   box-shadow: 0 0 5px var(--sfmod-color-primary) !important;
   color: var(--sfmod-color-primary) !important;
 }
 
-.system-sfrpg .forien-quest-preview .editor, .system-sfrpg #forien-quest-log-form .editor, .system-sfrpg #forien-quest-log-form textarea, #forien-quest-log-form input[type="text"], #forien-quest-log-form input[type="number"], #forien-quest-log-form input[type="password"], #forien-quest-log-form input[type="date"], #forien-quest-log-form input[type="time"] {
+.system-sfrpg .forien-quest-preview .editor,
+.system-sfrpg #forien-quest-log-form .editor,
+.system-sfrpg #forien-quest-log-form textarea,
+#forien-quest-log-form input[type="text"],
+#forien-quest-log-form input[type="number"],
+#forien-quest-log-form input[type="password"],
+#forien-quest-log-form input[type="date"],
+#forien-quest-log-form input[type="time"] {
   color: var(--sfmod-text-on-background) !important;
   background: var(--sfmod-color-background) !important;
   border: 1px solid var(--sfmod-border-on-background-light) !important;
 }
 
-.system-sfrpg #forien-quest-log .window-content, .system-sfrpg #forien-quest-log-form .window-content, .system-sfrpg .window-app.forien-quest-preview .window-content {
+.system-sfrpg #forien-quest-log .window-content,
+.system-sfrpg #forien-quest-log-form .window-content,
+.system-sfrpg .window-app.forien-quest-preview .window-content {
   overflow: visible;
 }
 
@@ -548,11 +715,15 @@ sheets borders
   border-right: 0px;
 }
 
-.system-sfrpg #forien-quest-log .actions i, .system-sfrpg #forien-quest-log-form .actions i, .system-sfrpg .window-app.forien-quest-preview .actions i {
+.system-sfrpg #forien-quest-log .actions i,
+.system-sfrpg #forien-quest-log-form .actions i,
+.system-sfrpg .window-app.forien-quest-preview .actions i {
   color: var(--sfmod-text-on-background-light);
 }
 
-.system-sfrpg #forien-quest-log .actions i:hover, .system-sfrpg #forien-quest-log-form .actions i:hover, .system-sfrpg .window-app.forien-quest-preview .actions i:hover {
+.system-sfrpg #forien-quest-log .actions i:hover,
+.system-sfrpg #forien-quest-log-form .actions i:hover,
+.system-sfrpg .window-app.forien-quest-preview .actions i:hover {
   color: var(--sfmod-color-secondary);
 }
 
@@ -564,8 +735,33 @@ sheets borders
   background: var(--sfmod-color-surface);
 }
 
-.system-sfrpg .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .toggleState:hover,.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .actions i:hover .system-sfrpg #forien-quest-log .actions i:hover, #forien-quest-log-form .actions i:hover, .window-app.forien-quest-preview .actions i:hover, .system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-status .quest-name:hover, .system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-giver-name h2:hover {
+.system-sfrpg .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .toggleState:hover,
+.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .actions i:hover .system-sfrpg #forien-quest-log .actions i:hover,
+#forien-quest-log-form .actions i:hover,
+.window-app.forien-quest-preview .actions i:hover,
+.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-status .quest-name:hover,
+.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-giver-name h2:hover {
   color: var(--sfmod-color-secondary) !important;
 }
+/**/
+.system-sfrpg .illandril-token-tooltips--tooltip {
+  background: var(--sfmod-color-surface-wbr);
+  border-color: var(--sfmod-color-primary-variant);
+  backdrop-filter: blur(var(--sfmod-blur-radius));
+  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
+}
 
+/*Illandrill's Token Tooltips integration*/
+
+.system-sfrpg .illandril-token-tooltips--name {
+  color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg .illandril-token-tooltips--label {
+  color: var(--sfmod-text-on-background)
+}
+
+.system-sfrpg .illandril-token-tooltips--row {
+  color: var(--sfmod-text-on-surface)
+}
 /* END */
