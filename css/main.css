@@ -109,6 +109,7 @@
 
 .system-sfrpg .window-app .window-header {
   background: var(--sfmod-color-primary-gradient);
+  color: var(--sfmod-text-on-primary);
 }
 
 .sfrpg.sheet .sheet-navigation .item {
@@ -656,6 +657,7 @@ sheets borders
 .system-sfrpg .macro-sheet .form-group.command .furnace-macro-command {
   background: #fff;
 }
+
 .system-sfrpg .macro-sheet .form-group.command .furnace-macro-command textarea {
   caret-color: black;
 }
@@ -746,6 +748,7 @@ sheets borders
 .system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-giver-name h2:hover {
   color: var(--sfmod-color-secondary) !important;
 }
+
 /**/
 .system-sfrpg .illandril-token-tooltips--tooltip {
   background: var(--sfmod-color-surface-wbr);
@@ -767,4 +770,5 @@ sheets borders
 .system-sfrpg .illandril-token-tooltips--row {
   color: var(--sfmod-text-on-surface)
 }
+
 /* END */
