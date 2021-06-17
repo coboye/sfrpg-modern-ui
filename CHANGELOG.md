@@ -1,6 +1,9 @@
 # Changelog
 
 ## [1.2.7] - 2021-06-17
+### Fixed
+- Furnace macro editor's caret color
+- Tox dialogs colors
 ### Added
 - Illandrill's Token Tooltips integration
 
