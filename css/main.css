@@ -632,6 +632,48 @@ sheets borders
   color: var(--sfmod-text-on-background);
 }
 
+.system-sfrpg .tox .tox-dialog {
+  background-color: var(--sfmod-color-background);
+  border-color: var(--sfmod-border-on-background);
+}
+
+.system-sfrpg .tox .tox-dialog__header {
+  background: var(--sfmod-color-primary-gradient);
+  color: var(--sfmod-text-on-primary);
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.system-sfrpg .tox .tox-button--naked {
+  color: var(--sfmod-text-on-background)
+}
+
+.system-sfrpg .tox .tox-button--naked.tox-button--icon:hover:not(:disabled) {
+  border-color: var(--sfmod-color-secondary);
+  border-bottom-color: var(--sfmod-color-secondary-light);
+  box-shadow: 0 0 10px var(--sfmod-color-secondary-light);
+  background: var(--sfmod-color-surface);
+}
+
+.system-sfrpg .tox .tox-listboxfield .tox-listbox--select,
+.system-sfrpg .tox .tox-textarea,
+.system-sfrpg .tox .tox-textfield,
+.system-sfrpg .tox .tox-toolbar-textfield {
+  color: var(--sfmod-text-on-background) !important;
+  background: var(--sfmod-color-background) !important;
+  border-color: var(--sfmod-border-on-background-light) !important;
+}
+
+.system-sfrpg .tox .tox-label,
+.system-sfrpg .tox .tox-toolbar-label {
+  color: var(--sfmod-color-primary)
+}
+
+.system-sfrpg .tox .tox-dialog__footer {
+  background-color: var(--sfmod-color-background);
+  border-color: var(--sfmod-border-on-background);
+}
+
 .system-sfrpg ::selection {
   color: var(--sfmod-text-on-selection);
   background: var(--sfmod-color-selection);
@@ -749,15 +791,13 @@ sheets borders
   color: var(--sfmod-color-secondary) !important;
 }
 
-/**/
+/*Illandrill's Token Tooltips integration*/
 .system-sfrpg .illandril-token-tooltips--tooltip {
   background: var(--sfmod-color-surface-wbr);
   border-color: var(--sfmod-color-primary-variant);
   backdrop-filter: blur(var(--sfmod-blur-radius));
   -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
 }
-
-/*Illandrill's Token Tooltips integration*/
 
 .system-sfrpg .illandril-token-tooltips--name {
   color: var(--sfmod-color-primary);
@@ -770,5 +810,6 @@ sheets borders
 .system-sfrpg .illandril-token-tooltips--row {
   color: var(--sfmod-text-on-surface)
 }
+
 
 /* END */
