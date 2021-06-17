@@ -1,4 +1,7 @@
 # Changelog
+## [1.2.6] - 2021-06-17
+### Fixed
+- wrong main css name
 
 ## [1.2.5] - 2021-06-17
 ### Fixed
