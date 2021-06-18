@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.8] - 2021-06-18
+### Added
+- override compact chat items flex-box
+
 ## [1.2.7] - 2021-06-17
 ### Fixed
 - Furnace macro editor's caret color
