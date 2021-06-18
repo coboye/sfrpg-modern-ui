@@ -1,13 +1,43 @@
-:root{
+:root {
     --sfmod: "active";
 }
+
 /* UI fixes */
-.sfrpg.sheet.actor .inventory-list .item .item-name .item-image, .sfrpg.sheet.actor .crew-list .item .item-name .item-image, .sfrpg.sheet.actor .vehicle-system-list .item .item-name .item-image, .sfrpg.sheet.actor .inventory-list .crew .item-name .item-image, .sfrpg.sheet.actor .crew-list .crew .item-name .item-image, .sfrpg.sheet.actor .vehicle-system-list .crew .item-name .item-image, .sfrpg.sheet.actor .inventory-list .item .crew-name .item-image, .sfrpg.sheet.actor .crew-list .item .crew-name .item-image, .sfrpg.sheet.actor .vehicle-system-list .item .crew-name .item-image, .sfrpg.sheet.actor .inventory-list .crew .crew-name .item-image, .sfrpg.sheet.actor .crew-list .crew .crew-name .item-image, .sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-image, .sfrpg.sheet.actor .inventory-list .item .item-name .crew-image, .sfrpg.sheet.actor .crew-list .item .item-name .crew-image, .sfrpg.sheet.actor .vehicle-system-list .item .item-name .crew-image, .sfrpg.sheet.actor .inventory-list .crew .item-name .crew-image, .sfrpg.sheet.actor .crew-list .crew .item-name .crew-image, .sfrpg.sheet.actor .vehicle-system-list .crew .item-name .crew-image, .sfrpg.sheet.actor .inventory-list .item .crew-name .crew-image, .sfrpg.sheet.actor .crew-list .item .crew-name .crew-image, .sfrpg.sheet.actor .vehicle-system-list .item .crew-name .crew-image, .sfrpg.sheet.actor .inventory-list .crew .crew-name .crew-image, .sfrpg.sheet.actor .crew-list .crew .crew-name .crew-image, .sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .crew-image {
+.sfrpg.sheet.actor .inventory-list .item .item-name .item-image,
+.sfrpg.sheet.actor .crew-list .item .item-name .item-image,
+.sfrpg.sheet.actor .vehicle-system-list .item .item-name .item-image,
+.sfrpg.sheet.actor .inventory-list .crew .item-name .item-image,
+.sfrpg.sheet.actor .crew-list .crew .item-name .item-image,
+.sfrpg.sheet.actor .vehicle-system-list .crew .item-name .item-image,
+.sfrpg.sheet.actor .inventory-list .item .crew-name .item-image,
+.sfrpg.sheet.actor .crew-list .item .crew-name .item-image,
+.sfrpg.sheet.actor .vehicle-system-list .item .crew-name .item-image,
+.sfrpg.sheet.actor .inventory-list .crew .crew-name .item-image,
+.sfrpg.sheet.actor .crew-list .crew .crew-name .item-image,
+.sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-image,
+.sfrpg.sheet.actor .inventory-list .item .item-name .crew-image,
+.sfrpg.sheet.actor .crew-list .item .item-name .crew-image,
+.sfrpg.sheet.actor .vehicle-system-list .item .item-name .crew-image,
+.sfrpg.sheet.actor .inventory-list .crew .item-name .crew-image,
+.sfrpg.sheet.actor .crew-list .crew .item-name .crew-image,
+.sfrpg.sheet.actor .vehicle-system-list .crew .item-name .crew-image,
+.sfrpg.sheet.actor .inventory-list .item .crew-name .crew-image,
+.sfrpg.sheet.actor .crew-list .item .crew-name .crew-image,
+.sfrpg.sheet.actor .vehicle-system-list .item .crew-name .crew-image,
+.sfrpg.sheet.actor .inventory-list .crew .crew-name .crew-image,
+.sfrpg.sheet.actor .crew-list .crew .crew-name .crew-image,
+.sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .crew-image {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
 }
-.sfrpg.sheet.actor .inventory-list .item-detail, .sfrpg.sheet.actor .crew-list .item-detail, .sfrpg.sheet.actor .vehicle-system-list .item-detail, .sfrpg.sheet.actor .inventory-list .crew-detial, .sfrpg.sheet.actor .crew-list .crew-detial, .sfrpg.sheet.actor .vehicle-system-list .crew-detial {
+
+.sfrpg.sheet.actor .inventory-list .item-detail,
+.sfrpg.sheet.actor .crew-list .item-detail,
+.sfrpg.sheet.actor .vehicle-system-list .item-detail,
+.sfrpg.sheet.actor .inventory-list .crew-detial,
+.sfrpg.sheet.actor .crew-list .crew-detial,
+.sfrpg.sheet.actor .vehicle-system-list .crew-detial {
     display: flex;
     justify-content: center;
     line-height: 14px;
@@ -15,4 +45,25 @@
     flex-wrap: nowrap;
     letter-spacing: -0.5px;
     align-items: center;
+}
+
+.sfrpg.chat-card .card-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sfrpg.chat-card .card-header .action-img+.flexcol {
+    overflow: hidden;
+    position: relative;
+}
+
+.sfrpg.chat-card .card-header .action-img+.flexcol .item-name {
+    font-size: 17px;
+}
+
+.sfrpg.chat-card .card-header .action-img+.flexcol .item-name:hover {
+    letter-spacing: -1px;
 }
