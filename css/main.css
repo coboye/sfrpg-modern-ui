@@ -38,12 +38,47 @@
   --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
 }
 
+.system-sfrpg strong {
+  color: var(--sfmod-text-on-selection);
+}
+
+.system-sfrpg .editor-content h3,
+.system-sfrpg .editor-content h4,
+.system-sfrpg .editor-content h5,
+.system-sfrpg .editor-content h6 {
+  font-variant: small-caps;
+  color: var(--sfmod-text-on-selection);
+}
+
 .sfrpg.sheet .editor-content h2,
 .system-sfrpg h2,
 .sfrpg.sheet .editor-content h1,
 .system-sfrpg h1 {
   color: var(--sfmod-color-primary);
   border-bottom: 1px solid var(--sfmod-color-primary);
+}
+
+.system-sfrpg blockquote {
+  quotes: "\201C""\201D""\2018""\2019";
+  background: var(--sfmod-color-surface);
+  border-left: 5px solid var(--sfmod-color-secondary);
+  margin: 15px 5px;
+  padding: 5px 10px;
+  text-align: justify;
+}
+
+.system-sfrpg blockquote:before {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  margin-left: -15px;
+  color: var(--sfmod-color-secondary);
+  vertical-align: -0.4em;
+}
+
+.system-sfrpg blockquote p {
+  display: inline;
 }
 
 .sfrpg.sheet .editor-content h3,

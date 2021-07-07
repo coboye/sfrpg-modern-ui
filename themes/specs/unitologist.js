@@ -21,7 +21,7 @@ export default class extends AbstractTheme {
         this.colorSurface = new Color("#0D0101");
         this.colorBackground = new Color("#0e0101");
 
-        this.textOnBackground = new Color("#ffffff");
+        this.textOnBackground = new Color("#cfcfcf");
         this.textOnPrimary = new Color("#ffffff");
         this.textOnSecondary = new Color("#ffffff");
         this.textOnBackgroundLight = new Color("#eaeaea");
