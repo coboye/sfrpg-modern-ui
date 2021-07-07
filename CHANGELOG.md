@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.9] - 2021-07-07
+### Added
+- override editor-content h3, h4, h5 and h6 to small-caps
+- some minor changes to increase normal vs strong text contrast
+- editor-content blockquote styling
+
 ## [1.2.8] - 2021-06-18
 ### Added
 - override compact chat items flex-box
