@@ -38,7 +38,7 @@
   --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
 }
 
-.system-sfrpg strong {
+.system-sfrpg :not(span[style*="color:"])>strong {
   color: var(--sfmod-text-on-selection);
 }
 
