@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.10] - 2021-07-09
+### Fixed
+- CSS selector for strong tags to preserve wysiwyg custom font color
+
 ## [1.2.9] - 2021-07-07
 ### Added
 - override editor-content h3, h4, h5 and h6 to small-caps
