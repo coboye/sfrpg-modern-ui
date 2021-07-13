@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0] - 2021-07-09
+### Changed
+- FoundrVTT core versione 0.8.8
+### Fixed
+- System items browser table header filters text hover color
+- Compendiums text filter background
+- Chat rolls details alignment
+
 ## [1.2.10] - 2021-07-09
 ### Fixed
 - CSS selector for strong tags to preserve wysiwyg custom font color
