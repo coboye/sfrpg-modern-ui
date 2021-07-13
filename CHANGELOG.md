@@ -1,6 +1,10 @@
 # Changelog
 
-## [1.3.0] - 2021-07-09
+## [1.3.1] - 2021-07-13
+### Fixed
+- Furnace macros text area background color
+  
+## [1.3.0] - 2021-07-13
 ### Changed
 - FoundrVTT core versione 0.8.8
 ### Fixed
