@@ -388,6 +388,11 @@ form .hint {
   color: unset !important;
 }
 
+.system-sfrpg .sfrpg.item-browser-window .item-browser .header .item-sort-link:hover {
+  text-shadow: 0 0 10px var(--sfmod-color-secondary), 0 0 5px var(--sfmod-color-secondary);
+  color: unset !important;
+}
+
 .sfrpg.sheet.actor.starship .sheet-body a.critical-edit,
 .sfrpg.sheet.actor.starship .sheet-body i.fas {
   color: inherit;
