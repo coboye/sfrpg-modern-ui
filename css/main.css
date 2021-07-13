@@ -99,7 +99,7 @@
   border-color: var(--sfmod-border-on-background);
 }
 
-.system-sfrpg textarea,
+.system-sfrpg textarea:not[name="command"],
 .system-sfrpg input[type="text"],
 .system-sfrpg input[type="number"],
 .system-sfrpg input[type="password"],
