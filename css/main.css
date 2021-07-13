@@ -104,10 +104,10 @@
 .system-sfrpg input[type="number"],
 .system-sfrpg input[type="password"],
 .system-sfrpg input[type="date"],
-.system-sfrpg input[type="time"] {
-  color: var(--sfmod-text-on-background);
-  background: var(--sfmod-color-background);
-  border-color: var(--sfmod-border-on-background-light);
+.system-sfrpg input[type="time"]{
+  color: var(--sfmod-text-on-background) !important;
+  background: var(--sfmod-color-background) !important;
+  border-color: var(--sfmod-border-on-background-light) !important;
 }
 
 .sfrpg.sheet .editor .tox-tinymce {
