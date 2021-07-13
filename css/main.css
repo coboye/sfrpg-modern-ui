@@ -104,7 +104,7 @@
 .system-sfrpg input[type="number"],
 .system-sfrpg input[type="password"],
 .system-sfrpg input[type="date"],
-.system-sfrpg input[type="time"]{
+.system-sfrpg input[type="time"] {
   color: var(--sfmod-text-on-background) !important;
   background: var(--sfmod-color-background) !important;
   border-color: var(--sfmod-border-on-background-light) !important;
@@ -408,6 +408,10 @@ form .hint {
 .system-sfrpg .filepicker .tabs .item.active {
   text-shadow: 0 0 10px var(--sfmod-color-secondary);
   color: var(--sfmod-color-secondary);
+}
+
+.system-sfrpg .dice-roll .dice-result {
+  overflow: auto;
 }
 
 /*
