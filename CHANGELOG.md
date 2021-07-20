@@ -1,4 +1,9 @@
 # Changelog
+
+## [1.4.1] - 2021-07-20
+### Fixed
+- module version
+  
 ## [1.4.0] - 2021-07-20
 ### Changed
 - modules integration on-demand loading (a separate css file in /css/mods folder named as module id, included only if the module is active)
