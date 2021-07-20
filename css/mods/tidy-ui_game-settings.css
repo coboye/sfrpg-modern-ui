@@ -1,0 +1,4 @@
+/* Tidy UI integration */
+.system-sfrpg #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::placeholder {
+    color: var(--sfmod-text-on-surface);
+}

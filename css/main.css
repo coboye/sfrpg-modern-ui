@@ -2,18 +2,6 @@
   /* tagify integration */
   --tagify-dd-color-primary: var(--sfmod-color-primary);
   --tagify-dd-bg-color: var(--sfmod-color-background);
-  /*OneJournal integration */
-  --ojLightBorder: 1px solid rgba(0, 0, 0, 0.1);
-  --ojBackground: rgba(0, 0, 0, 0.03);
-  --ojBackgroundMedium: #86909630;
-  --ojBackgroundHeavy: #86909650;
-  --ojTextColor: var(--sfmod-text-on-background);
-  --ojTextColorContrast: var(--sfmod-text-on-background);
-  --ojHeaderAccentBg: rgba(0, 0, 0, 0.25);
-  --ojHeaderAccentBgFullscreen: rgba(0, 0, 0, 0.05);
-  --ojSidebarWidth: 300px;
-  --ojAppHeaderHeight: 30px;
-  --ojAccentColor: var(--sfmod-color-primary);
 }
 
 /* tagify integration */
@@ -105,9 +93,9 @@
 .system-sfrpg input[type="password"],
 .system-sfrpg input[type="date"],
 .system-sfrpg input[type="time"] {
-  color: var(--sfmod-text-on-background) !important;
-  background: var(--sfmod-color-background) !important;
-  border-color: var(--sfmod-border-on-background-light) !important;
+  color: var(--sfmod-text-on-background);
+  background: var(--sfmod-color-background);
+  border-color: var(--sfmod-border-on-background-light);
 }
 
 .sfrpg.sheet .editor .tox-tinymce {
@@ -188,7 +176,8 @@
 }
 
 .system-sfrpg #chat-form textarea,
-.sidebar-tab .directory-header .header-search input {
+.sidebar-tab .directory-header .header-search input,
+.system-sfrpg .monks-journal-sheet .directory .directory-header .header-search input {
   background: var(--sfmod-color-background);
   color: var(--sfmod-text-on-background);
 }
@@ -553,43 +542,6 @@ sheets borders
   color: var(--sfmod-text-on-background-light);
 }
 
-/* GM Screen integration */
-
-.system-sfrpg .gm-screen-container.window-content.tab.active {
-  background: var(--sfmod-color-background);
-}
-
-.system-sfrpg .gm-screen-app .gm-screen-actions button,
-.system-sfrpg .gm-screen-app .gm-screen-actions .meta-actions button {
-  color: var(--sfmod-text-on-background);
-  background: var(--sfmod-color-surface);
-}
-
-/* Token Action HUD integration */
-
-.system-sfrpg .tah-action .active {
-  background: var(--sfmod-color-surface);
-  box-shadow: 0 0 10px var(--sfmod-color-secondary);
-  border: 1px solid var(--sfmod-color-secondary);
-  color: var(--sfmod-color-secondary);
-}
-
-.system-sfrpg .tah-title-button,
-.system-sfrpg .tah-action button {
-  background: var(--sfmod-color-surface);
-  border: 1px solid #000;
-  backdrop-filter: blur(var(--sfmod-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
-}
-
-.system-sfrpg .tah-title-button:hover,
-.system-sfrpg .tah-action button:hover {
-  color: var(--sfmod-text-on-background);
-  border: 1px solid var(--sfmod-color-primary);
-  border-bottom: 1px solid var(--sfmod-color-primary-light);
-  box-shadow: 0 0 10px var(--sfmod-color-primary);
-}
-
 .system-sfrpg tags.tagify.token-action-hud-taginput {
   background: var(--sfmod-color-background) !important;
   color: var(--sfmod-text-on-background) !important;
@@ -621,6 +573,15 @@ sheets borders
   color: var(--sfmod-color-primary-light);
 }
 
+.sfrpg.sheet.actor.character .sheet-header .charlevel .xpbar .bar {
+  background: var(--sfmod-color-primary);
+}
+
+.sfrpg.sheet.actor.character .encumbrance .encumbrance-bar {
+  background: var(--sfmod-color-primary);
+  border: 1px solid var(--sfmod-color-primary-light);
+}
+
 ::-webkit-scrollbar-thumb {
   background: var(--sfmod-color-secondary);
   border: 1px solid var(--sfmod-color-secondary-light);
@@ -636,249 +597,6 @@ sheets borders
 
 ::-moz-range-thumb {
   background: var(--sfmod-color-secondary) !important;
-}
-
-.sfrpg.sheet.actor.character .sheet-header .charlevel .xpbar .bar {
-  background: var(--sfmod-color-primary);
-}
-
-.sfrpg.sheet.actor.character .encumbrance .encumbrance-bar {
-  background: var(--sfmod-color-primary);
-  border: 1px solid var(--sfmod-color-primary-light);
-}
-
-/* DF Chat Enhancements integration */
-
-.system-sfrpg #dfcp-rt-buttons button i {
-  color: var(--sfmod-text-on-background);
-}
-
-.system-sfrpg #dfcp-rt-buttons button.active {
-  background: unset;
-}
-
-.system-sfrpg #dfcp-rt-buttons button[data-id=roll].active {
-  box-shadow: inset 0 0 8px 4px #26c281;
-}
-
-.system-sfrpg #dfcp-rt-buttons button[data-id=gmroll].active {
-  box-shadow: inset 0 0 8px 4px #f2ca27;
-}
-
-.system-sfrpg #dfcp-rt-buttons button[data-id=blindroll].active {
-  box-shadow: inset 0 0 8px 4px #e87e04;
-}
-
-.system-sfrpg #dfcp-rt-buttons button[data-id=selfroll].active {
-  box-shadow: inset 0 0 8px 4px #e74c3c;
-}
-
-.system-sfrpg .chat-card-custom .chat-card-custom-item p span {
-  color: var(--sfmod-text-on-background);
-}
-
-.system-sfrpg .tox .tox-dialog {
-  background-color: var(--sfmod-color-background);
-  border-color: var(--sfmod-border-on-background);
-}
-
-.system-sfrpg .tox .tox-dialog__header {
-  background: var(--sfmod-color-primary-gradient);
-  color: var(--sfmod-text-on-primary);
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.system-sfrpg .tox .tox-button--naked {
-  color: var(--sfmod-text-on-background)
-}
-
-.system-sfrpg .tox .tox-button--naked.tox-button--icon:hover:not(:disabled) {
-  border-color: var(--sfmod-color-secondary);
-  border-bottom-color: var(--sfmod-color-secondary-light);
-  box-shadow: 0 0 10px var(--sfmod-color-secondary-light);
-  background: var(--sfmod-color-surface);
-}
-
-.system-sfrpg .tox .tox-listboxfield .tox-listbox--select,
-.system-sfrpg .tox .tox-textarea,
-.system-sfrpg .tox .tox-textfield,
-.system-sfrpg .tox .tox-toolbar-textfield {
-  color: var(--sfmod-text-on-background) !important;
-  background: var(--sfmod-color-background) !important;
-  border-color: var(--sfmod-border-on-background-light) !important;
-}
-
-.system-sfrpg .tox .tox-label,
-.system-sfrpg .tox .tox-toolbar-label {
-  color: var(--sfmod-color-primary)
-}
-
-.system-sfrpg .tox .tox-dialog__footer {
-  background-color: var(--sfmod-color-background);
-  border-color: var(--sfmod-border-on-background);
-}
-
-.system-sfrpg ::selection {
-  color: var(--sfmod-text-on-selection);
-  background: var(--sfmod-color-selection);
-}
-
-.system-sfrpg ::-moz-selection {
-  color: var(--sfmod-text-on-selection);
-  background: var(--sfmod-color-selection);
-}
-
-/*OneJournal integration */
-
-.system-sfrpg #OneJournalShell.maximized .window-content {
-  backdrop-filter: none;
-}
-
-.system-sfrpg #client-settings.app.window-app.form #config-tabs .settings-list h2.module-header span .far:before {
-  color: var(--sfmod-text-on-surface);
-}
-
-/*Furnace integration */
-
-.system-sfrpg .macro-sheet .form-group.command .furnace-macro-command {
-  background: #fff;
-}
-
-.system-sfrpg .macro-sheet .form-group.command .furnace-macro-command textarea {
-  caret-color: black;
-}
-
-/* Tidy UI integration */
-
-.system-sfrpg #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::placeholder {
-  color: var(--sfmod-text-on-surface);
-}
-
-/* Forien's Quest Log integration */
-
-.system-sfrpg #forien-quest-log-form button {
-  background: rgba(0, 0, 0, 0.1) !important;
-  border: 2px groove var(--sfmod-text-on-background) !important;
-  color: var(--sfmod-text-on-background) !important;
-}
-
-.system-sfrpg #forien-quest-log-form button:hover,
-.system-sfrpg #forien-quest-log-form button:focus {
-  box-shadow: 0 0 5px var(--sfmod-color-primary) !important;
-  color: var(--sfmod-color-primary) !important;
-}
-
-.system-sfrpg .forien-quest-preview .editor,
-.system-sfrpg #forien-quest-log-form .editor,
-.system-sfrpg #forien-quest-log-form textarea,
-#forien-quest-log-form input[type="text"],
-#forien-quest-log-form input[type="number"],
-#forien-quest-log-form input[type="password"],
-#forien-quest-log-form input[type="date"],
-#forien-quest-log-form input[type="time"] {
-  color: var(--sfmod-text-on-background) !important;
-  background: var(--sfmod-color-background) !important;
-  border: 1px solid var(--sfmod-border-on-background-light) !important;
-}
-
-.system-sfrpg #forien-quest-log .window-content,
-.system-sfrpg #forien-quest-log-form .window-content,
-.system-sfrpg .window-app.forien-quest-preview .window-content {
-  overflow: visible;
-}
-
-.system-sfrpg #forien-quest-log .quest-log.bookmarks nav .item {
-  background: none;
-  background-color: var(--sfmod-color-background);
-  border: 1px solid var(--sfmod-border-on-background);
-  border-right: 0px;
-  backdrop-filter: blur(var(--sfmod-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
-}
-
-.system-sfrpg #forien-quest-log .quest-log.bookmarks nav .item:hover {
-  border-color: var(--sfmod-color-primary);
-}
-
-.system-sfrpg #forien-quest-log .quest-log.bookmarks nav .item.active {
-  color: var(--sfmod-color-primary);
-  border: 1px solid var(--sfmod-color-primary);
-  border-right: 0px;
-}
-
-.system-sfrpg #forien-quest-log .actions i,
-.system-sfrpg #forien-quest-log-form .actions i,
-.system-sfrpg .window-app.forien-quest-preview .actions i {
-  color: var(--sfmod-text-on-background-light);
-}
-
-.system-sfrpg #forien-quest-log .actions i:hover,
-.system-sfrpg #forien-quest-log-form .actions i:hover,
-.system-sfrpg .window-app.forien-quest-preview .actions i:hover {
-  color: var(--sfmod-color-secondary);
-}
-
-.system-sfrpg .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right header {
-  border-color: var(--sfmod-border-on-background);
-}
-
-.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-giver-gc .toggleImage {
-  background: var(--sfmod-color-surface);
-}
-
-.system-sfrpg .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .toggleState:hover,
-.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .actions i:hover .system-sfrpg #forien-quest-log .actions i:hover,
-#forien-quest-log-form .actions i:hover,
-.window-app.forien-quest-preview .actions i:hover,
-.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-status .quest-name:hover,
-.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-giver-name h2:hover {
-  color: var(--sfmod-color-secondary) !important;
-}
-
-/*Illandrill's Token Tooltips integration*/
-.system-sfrpg .illandril-token-tooltips--tooltip {
-  background: var(--sfmod-color-surface-wbr);
-  border-color: var(--sfmod-color-primary-variant);
-  backdrop-filter: blur(var(--sfmod-blur-radius));
-  -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
-}
-
-.system-sfrpg .illandril-token-tooltips--name {
-  color: var(--sfmod-color-primary);
-}
-
-.system-sfrpg .illandril-token-tooltips--label {
-  color: var(--sfmod-text-on-background)
-}
-
-.system-sfrpg .illandril-token-tooltips--row {
-  color: var(--sfmod-text-on-surface)
-}
-
-/*Always HP integration*/
-
-.system-sfrpg #alwayshp-container #alwayshp-move-handle {
-  border-bottom-color: var(--sfmod-color-primary);
-}
-
-.system-sfrpg #alwayshp-container .good-ones {
-  border: 1px solid var(--sfmod-color-primary);
-  box-shadow: 0 0 10px var(--sfmod-color-primary);
-}
-
-.system-sfrpg #alwayshp-container .good-ones i {
-  color: var(--sfmod-color-primary);
-}
-
-.system-sfrpg #alwayshp-container .bad-ones {
-  border: 1px solid var(--sfmod-color-secondary);
-  border-bottom: 1px solid var(--sfmod-color-secondary);
-  box-shadow: 0 0 10px var(--sfmod-color-secondary);
-}
-
-.system-sfrpg #alwayshp-container .bad-ones i {
-  color: var(--sfmod-color-secondary);
 }
 
 /* END */

@@ -1,5 +1,13 @@
 # Changelog
-## [1.3.2] - 2021-07-20
+## [1.4.0] - 2021-07-20
+### Changed
+- modules integration on-demand loading (a separate css file in /css/mods folder named as module id, included only if the module is active)
+### Fixed
+- character sheet inputs background
+### Added
+- Monk's Enhanced Journal integration (beta) [GH-21]
+  
+- ## [1.3.2] - 2021-07-20
 ### Fixed
 - input backgrounds rule typo
 ### Added

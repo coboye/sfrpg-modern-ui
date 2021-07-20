@@ -1,0 +1,11 @@
+/* GM Screen integration */
+
+.system-sfrpg .gm-screen-container.window-content.tab.active {
+    background: var(--sfmod-color-background);
+}
+
+.system-sfrpg .gm-screen-app .gm-screen-actions button,
+.system-sfrpg .gm-screen-app .gm-screen-actions .meta-actions button {
+    color: var(--sfmod-text-on-background);
+    background: var(--sfmod-color-surface);
+}

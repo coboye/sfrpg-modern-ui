@@ -1,0 +1,9 @@
+/*Furnace integration */
+
+.system-sfrpg .macro-sheet .form-group.command .furnace-macro-command {
+    background: #fff;
+}
+
+.system-sfrpg .macro-sheet .form-group.command .furnace-macro-command textarea {
+    caret-color: black;
+}

@@ -1,0 +1,24 @@
+/* Token Action HUD integration */
+
+.system-sfrpg .tah-action .active {
+    background: var(--sfmod-color-surface);
+    box-shadow: 0 0 10px var(--sfmod-color-secondary);
+    border: 1px solid var(--sfmod-color-secondary);
+    color: var(--sfmod-color-secondary);
+}
+
+.system-sfrpg .tah-title-button,
+.system-sfrpg .tah-action button {
+    background: var(--sfmod-color-surface);
+    border: 1px solid #000;
+    backdrop-filter: blur(var(--sfmod-blur-radius));
+    -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
+}
+
+.system-sfrpg .tah-title-button:hover,
+.system-sfrpg .tah-action button:hover {
+    color: var(--sfmod-text-on-background);
+    border: 1px solid var(--sfmod-color-primary);
+    border-bottom: 1px solid var(--sfmod-color-primary-light);
+    box-shadow: 0 0 10px var(--sfmod-color-primary);
+}

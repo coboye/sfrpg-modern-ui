@@ -1,0 +1,158 @@
+.system-sfrpg {
+    --mej-color-disabled: var(--sfmod-border-on-background);
+    --mej-border-normal: var(--sfmod-border-on-background);
+    --mej-border-strong: var(--sfmod-border-on-background-light);
+    --mej-border-light:rgba(0, 0, 0, 0.1);
+    --mej-background: rgba(0, 0, 0, 0.03);
+    --mej-background-medium: #86909630;
+    --mej-background-heavy: #86909650;
+}
+
+.system-sfrpg .monks-enhanced-journal .sidebar,
+.system-sfrpg .journal-list {
+    background-image: none;
+}
+
+.system-sfrpg .monks-enhanced-journal .sidebar,
+.system-sfrpg #journal-directory li.journal,
+.system-sfrpg #journal-directory .subdirectory,
+.system-sfrpg #journal-directory .sidebar-tab .directory-list .entity.selected,
+.system-sfrpg .monks-journal-sheet.sheet .sheet-header .sheet-image,
+.system-sfrpg #objective-display ul ul li:not(:last-child),
+.system-sfrpg .monks-journal-sheet.sheet .items-list .item,
+.system-sfrpg .sidebar-tab.directory .directory-item.journal .permissions div,
+.system-sfrpg .journal-select,
+.system-sfrpg .journal-list .journal-item .journal-title {
+    border-color: var(--mej-border-strong);
+}
+
+.system-sfrpg .monks-enhanced-journal .mainbar>div,
+.system-sfrpg .monks-enhanced-journal .tab-bar .journal-tab,
+.system-sfrpg .monks-enhanced-journal .mainbar .navigation .nav-button,
+.system-sfrpg .monks-enhanced-journal .mainbar .navigation .title input:focus,
+.system-sfrpg #journal li.journal[status] .entity-name,
+.system-sfrpg #journal-directory li.journal[status] .entity-name,
+.system-sfrpg .monks-journal-sheet.sheet header.sheet-header,
+.system-sfrpg .monks-journal-sheet.sheet .sheet-navigation .item,
+.system-sfrpg .monks-journal-sheet.sheet .sheet-header .sheet-image,
+.system-sfrpg .monks-journal-sheet.sheet .sheet-header .magnify-image,
+.system-sfrpg .monks-enhanced-journal .slideshow-container .slide,
+.system-sfrpg .monks-journal-sheet .bookmark-bar .bookmark-button.add-bookmar,
+.system-sfrpg .monks-journal-sheet.sheet .items-list .items-header,
+.system-sfrpg .monks-journal-sheet.sheet .editor-content .polyglot-container:before,
+.system-sfrpg .journal-list,
+.system-sfrpg .journal-list .subfolder,
+.system-sfrpg .select-player .user-list {
+    border-color: var(--mej-border-normal);
+}
+
+.system-sfrpg .monks-enhanced-journal .tab-bar .journal-tab,
+.system-sfrpg .monks-enhanced-journal .mainbar .navigation,
+.system-sfrpg .monks-enhanced-journal .mainbar .navigation .nav-button,
+.system-sfrpg .monks-enhanced-journal .mainbar .navigation .title input:focus,
+.system-sfrpg #objective-display,
+.system-sfrpg .sidebar-tab.directory .directory-item.journal .permissions,
+.system-sfrpg .journal-list .journal-item.folder>.journal-title,
+.system-sfrpg .select-player .options {
+    background: var(--sfmod-color-surface);
+}
+
+.system-sfrpg .monks-enhanced-journal .tab-bar .journal-tab.active,
+.system-sfrpg #journal-directory .directory-item.active,
+.system-sfrpg .monks-journal-sheet.sheet .sheet-header .magnify-image,
+.system-sfrpg #slideshow-canvas,
+.system-sfrpg #slideshow-canvas .slide-padding,
+.system-sfrpg .monks-journal-sheet.sheet .items-list .items-header,
+.system-sfrpg #journal-directory .directory-item.journal .permissions,
+.system-sfrpg .system-sfrpg .monks-journal-sheet.sheet .editor-content .polyglot-container:before,
+.system-sfrpg .journal-select,
+.system-sfrpg .journal-list .journal-item.folder>.journal-title:hover {
+    background-color: var(--sfmod-color-background);
+}
+
+.system-sfrpg .monks-enhanced-journal .tab-bar .tab-button:hover,
+.system-sfrpg .monks-enhanced-journal .mainbar .navigation .nav-button:hover {
+    text-shadow: 0 0 8px var(--sfmod-color-primary);
+}
+
+.system-sfrpg .monks-enhanced-journal .mainbar .navigation .nav-button.disabled,
+.system-sfrpg .select-player .inactive,
+.system-sfrpg .monks-journal-sheet.sheet .items-list,
+.system-sfrpg .monks-journal-sheet.sheet .items-list .item .item-name.item-received {
+    color: var(--mej-color-disabled);
+}
+
+.system-sfrpg #journal-directory li.folder.collapsed>.folder-header:not(.customcolor),
+.system-sfrpg #journal-directory li.folder.collapsed>.folder-header .create-folder,
+.system-sfrpg #journal-directory li.folder.collapsed>.folder-header .create-entity,
+.system-sfrpg #journal-directory li.folder.collapsed .folder-header.customcolor {
+    color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg #journal-directory li.folder.collapsed>.folder-header.customcolor .create-folder,
+.system-sfrpg #journal-directory li.folder.collapsed>.folder-header.customcolor .create-entity,
+.system-sfrpg .monks-journal-sheet.sheet .form-group label {
+    color: var(--sfmod-text-on-background-light);
+}
+
+.system-sfrpg .monks-journal-sheet.sheet .sheet-navigation .item.active {
+    border-color: var(--sfmod-color-secondary);
+}
+
+.system-sfrpg .monks-enhanced-journal .header-name {
+    border-color: var(--sfmod-color-secondary-light);
+}
+
+.system-sfrpg .monks-enhanced-journal .slideshow-container.playing .slide.active {
+    border-color: var(--sfmod-color-primary);
+    box-shadow: 0 0 10px var(--sfmod-color-primary)
+}
+
+.system-sfrpg .monks-enhanced-journal .slideshow-container.playing .slide-showing .duration {
+    border-color: var(--sfmod-color-primary-variant);
+}
+
+.system-sfrpg .monks-enhanced-journal .slideshow-container.playing .slide-showing .duration .duration-bar {
+    border-color: var(--sfmod-color-primary-variant);
+    background-color: transparent;
+    background: var(--sfmod-color-primary-gradient);
+}
+
+.system-sfrpg .monks-enhanced-journal .slideshow-container.playing .slide-showing .duration .duration-label,
+.system-sfrpg #objective-display,
+.system-sfrpg .monks-journal-sheet.sheet .items-list .item .item-name,
+.system-sfrpg .sidebar-tab.directory .directory-item.journal .permissions div,
+.system-sfrpg .monks-journal-sheet.sheet .editor-content .polyglot-container:before {
+    color: var(--sfmod-text-on-primary);
+}
+
+.system-sfrpg .journal-list .journal-item:not(.folder):hover,
+.system-sfrpg .journal-list .journal-item.selected {
+    color: var(--sfmod-text-on-secondary);
+}
+
+.system-sfrpg .monks-journal-sheet.sheet .items-list .item .item-name.rollable .item-image:hover {
+    background-image: url("../../../icons/svg/d20-white.svg") !important;
+}
+
+.system-sfrpg #objective-display {
+    border-color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg #objective-display .title {
+    background-color: var(--mej-background-medium);
+    border-color: var(--mej-background-medium);
+}
+
+.system-sfrpg .journal-select:focus {
+    box-shadow: 0 0 5px var(--sfmod-color-secondary);
+}
+
+.system-sfrpg .journal-select>div>i {
+    color: var(--sfmod-color-secondary);
+}
+
+.system-sfrpg .journal-list .journal-item:not(.folder):hover,
+.system-sfrpg .journal-list .journal-item.selected {
+    background-color: var(--sfmod-color-secondary);
+}

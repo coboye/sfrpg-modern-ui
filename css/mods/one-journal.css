@@ -1,0 +1,22 @@
+/*OneJournal integration */
+.system-sfrpg {
+  /*OneJournal integration */
+  --ojLightBorder: 1px solid rgba(0, 0, 0, 0.1);
+  --ojBackground: rgba(0, 0, 0, 0.03);
+  --ojBackgroundMedium: #86909630;
+  --ojBackgroundHeavy: #86909650;
+  --ojTextColor: var(--sfmod-text-on-background);
+  --ojTextColorContrast: var(--sfmod-text-on-background);
+  --ojHeaderAccentBg: rgba(0, 0, 0, 0.25);
+  --ojHeaderAccentBgFullscreen: rgba(0, 0, 0, 0.05);
+  --ojSidebarWidth: 300px;
+  --ojAppHeaderHeight: 30px;
+  --ojAccentColor: var(--sfmod-color-primary);
+}
+.system-sfrpg #OneJournalShell.maximized .window-content {
+  backdrop-filter: none;
+}
+
+.system-sfrpg #client-settings.app.window-app.form #config-tabs .settings-list h2.module-header span .far:before {
+  color: var(--sfmod-text-on-surface);
+}

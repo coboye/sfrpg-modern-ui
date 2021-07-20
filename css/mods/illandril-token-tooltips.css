@@ -1,0 +1,20 @@
+/*Illandrill's Token Tooltips integration*/
+.system-sfrpg .illandril-token-tooltips--tooltip {
+    background: var(--sfmod-color-surface-wbr);
+    border-color: var(--sfmod-color-primary-variant);
+    backdrop-filter: blur(var(--sfmod-blur-radius));
+    -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
+}
+
+.system-sfrpg .illandril-token-tooltips--name {
+    color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg .illandril-token-tooltips--label {
+    color: var(--sfmod-text-on-background)
+}
+
+.system-sfrpg .illandril-token-tooltips--row {
+    color: var(--sfmod-text-on-surface)
+}
+

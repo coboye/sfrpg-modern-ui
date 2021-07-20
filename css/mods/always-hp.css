@@ -1,0 +1,24 @@
+/*Always HP integration*/
+
+.system-sfrpg #alwayshp-container #alwayshp-move-handle {
+    border-bottom-color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg #alwayshp-container .good-ones {
+    border: 1px solid var(--sfmod-color-primary);
+    box-shadow: 0 0 10px var(--sfmod-color-primary);
+}
+
+.system-sfrpg #alwayshp-container .good-ones i {
+    color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg #alwayshp-container .bad-ones {
+    border: 1px solid var(--sfmod-color-secondary);
+    border-bottom: 1px solid var(--sfmod-color-secondary);
+    box-shadow: 0 0 10px var(--sfmod-color-secondary);
+}
+
+.system-sfrpg #alwayshp-container .bad-ones i {
+    color: var(--sfmod-color-secondary);
+}

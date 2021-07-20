@@ -1,13 +1,26 @@
+import {
+    default as AbstractTheme
+} from "./theme.js"
+import {
+    default as StarfinderTheme
+} from "./specs/starfinder.js";
+import {
+    default as NeonTheme
+} from "./specs/neon.js";
+import {
+    default as TerminalTheme
+} from "./specs/terminal.js";
+import {
+    default as IllusiveManTheme
+} from "./specs/illusive-man.js";
+import {
+    default as UnitologistTheme
+} from "./specs/unitologist.js";
 
-
-import { default as AbstractTheme } from "./theme.js"
-import { default as StarfinderTheme } from "./specs/starfinder.js";
-import { default as NeonTheme } from "./specs/neon.js";
-import { default as TerminalTheme } from "./specs/terminal.js";
-import { default as IllusiveManTheme } from "./specs/illusive-man.js";
-import { default as UnitologistTheme } from "./specs/unitologist.js";
-
-export { default as Theme } from "./theme.js"
+export {
+    default as Theme
+}
+from "./theme.js"
 
 export const Themes = {
     core: AbstractTheme,
@@ -17,3 +30,16 @@ export const Themes = {
     illusive_man: IllusiveManTheme,
     unitologist: UnitologistTheme
 }
+
+export const Integrations = [
+    "always-hp",
+    "df-chat-enhance",
+    "forien-quest-log",
+    "furnace",
+    "gm-screen",
+    "illandril-token-tooltips",
+    "monks-enhanced-journal",
+    "one-journal",
+    "tidy-ui_game-settings",
+    "token-action-hud"
+]
