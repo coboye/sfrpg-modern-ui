@@ -1,5 +1,10 @@
 # Changelog
-
+## [1.3.2] - 2021-07-2
+### Fixed
+- input backgrounds rule typo
+### Added
+- Always HP integration [GH-22]
+  
 ## [1.3.1] - 2021-07-13
 ### Fixed
 - Furnace macros text area background color

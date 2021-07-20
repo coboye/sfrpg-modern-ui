@@ -99,7 +99,7 @@
   border-color: var(--sfmod-border-on-background);
 }
 
-.system-sfrpg textarea:not[name="command"],
+.system-sfrpg textarea:not([name="command"]),
 .system-sfrpg input[type="text"],
 .system-sfrpg input[type="number"],
 .system-sfrpg input[type="password"],
@@ -291,6 +291,7 @@
 .system-sfrpg input[type="date"],
 .system-sfrpg input[type="time"] {
   color: var(--sfmod-text-on-background) !important;
+  background-image: none;
 }
 
 .system-sfrpg input[type="text"]::placeholder,
@@ -855,5 +856,29 @@ sheets borders
   color: var(--sfmod-text-on-surface)
 }
 
+/*Always HP integration*/
+
+.system-sfrpg #alwayshp-container #alwayshp-move-handle {
+  border-bottom-color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg #alwayshp-container .good-ones {
+  border: 1px solid var(--sfmod-color-primary);
+  box-shadow: 0 0 10px var(--sfmod-color-primary);
+}
+
+.system-sfrpg #alwayshp-container .good-ones i {
+  color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg #alwayshp-container .bad-ones {
+  border: 1px solid var(--sfmod-color-secondary);
+  border-bottom: 1px solid var(--sfmod-color-secondary);
+  box-shadow: 0 0 10px var(--sfmod-color-secondary);
+}
+
+.system-sfrpg #alwayshp-container .bad-ones i {
+  color: var(--sfmod-color-secondary);
+}
 
 /* END */
