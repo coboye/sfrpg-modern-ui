@@ -1,5 +1,5 @@
 # Changelog
-## [1.3.2] - 2021-07-2
+## [1.3.2] - 2021-07-20
 ### Fixed
 - input backgrounds rule typo
 ### Added
