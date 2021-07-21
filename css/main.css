@@ -238,9 +238,10 @@
   color: var(--sfmod-text-on-background);
 }
 
-.sfrpg.sheet .sheet-header .summary li,
-.sfrpg .form-group label,
-.sfrpg.chat-card .card-header h3 {
+.system-sfrpg .sfrpg.sheet .sheet-header .summary li,
+.system-sfrpg .sfrpg .form-group label,
+.system-sfrpg .sfrpg.chat-card .card-header h3,
+.system-sfrpg .chat-card-custom .chat-card-custom-item p span {
   color: var(--sfmod-text-on-background-light);
 }
 
