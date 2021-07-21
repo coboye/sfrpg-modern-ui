@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.4.2] - 2021-07-21
+### Fixed
+- chat card custom item's name color
+
 ## [1.4.1] - 2021-07-20
 ### Fixed
 - module version
