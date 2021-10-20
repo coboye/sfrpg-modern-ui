@@ -78,14 +78,26 @@
 .system-sfrpg .macro-sheet textarea {
     background: #fff !important;
 }
-
+.system-sfrpg .sfrpg.sheet.actor .inventory-list .item .item-name h4,
+.system-sfrpg .sfrpg.sheet.actor .crew-list .item .item-name h4,
+.system-sfrpg .sfrpg.sheet.actor .vehicle-system-list .item .item-name h4,
+.system-sfrpg .sfrpg.sheet.actor .inventory-list .crew .item-name h4,
+.system-sfrpg .sfrpg.sheet.actor .crew-list .crew .item-name h4,
+.system-sfrpg .sfrpg.sheet.actor .vehicle-system-list .crew .item-name h4,
+.system-sfrpg .sfrpg.sheet.actor .inventory-list .item .crew-name h4,
+.system-sfrpg .sfrpg.sheet.actor .crew-list .item .crew-name h4,
+.system-sfrpg .sfrpg.sheet.actor .vehicle-system-list .item .crew-name h4,
+.system-sfrpg .sfrpg.sheet.actor .inventory-list .crew .crew-name h4,
+.system-sfrpg .sfrpg.sheet.actor .crew-list .crew .crew-name h4,
+.system-sfrpg .sfrpg.sheet.actor .vehicle-system-list .crew .crew-name h4 {
+    line-height: 1.1em;
+    margin: 0;
+    align-self: center;
+}
 /* compact mode ========================================================= */
 .system-sfrpg.compact #compendium li.compendium-pack {
     line-height: 10px;
 }
-
-.system-sfrpg.compact #compendium li.compendium-pack:hover {}
-
 .system-sfrpg.compact .directory .directory-list .directory-item h4 {
     margin: 0;
     white-space: nowrap;
