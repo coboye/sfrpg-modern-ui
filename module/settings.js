@@ -225,6 +225,16 @@ export const SettingsProvider = {
                 showHint:false
             })
         );
+
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.compact_mode, {
+                scope: SettingScope.CLIENT,
+                type: Boolean,
+                default: true,
+                showHint: false
+            })
+        );
+
         
         SettingsProvider.settings.register();
 

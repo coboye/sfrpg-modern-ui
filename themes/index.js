@@ -16,11 +16,14 @@ import {
 import {
     default as UnitologistTheme
 } from "./specs/unitologist.js";
+import {
+    default as VelstracTheme
+} from "./specs/velstrac.js";
 
 export {
     default as Theme
 }
-from "./theme.js"
+    from "./theme.js"
 
 export const Themes = {
     core: AbstractTheme,
@@ -28,7 +31,8 @@ export const Themes = {
     neon: NeonTheme,
     terminal: TerminalTheme,
     illusive_man: IllusiveManTheme,
-    unitologist: UnitologistTheme
+    unitologist: UnitologistTheme,
+    velstrac:VelstracTheme
 }
 
 export const Integrations = [

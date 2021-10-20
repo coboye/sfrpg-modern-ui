@@ -1,4 +1,9 @@
 # Changelog
+## [1.4.4] - XXXX-XX-XX
+### Added
+- Velstrac Theme
+- Compact mode for compendiums (experimental)
+
 ## [1.4.3] - 2021-10-20
 ### Fixed
 - Compendium's header search field background

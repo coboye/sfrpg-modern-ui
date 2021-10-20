@@ -7,6 +7,7 @@
     "sfrpg-modern-ui.theme.terminal": "Terminale",
     "sfrpg-modern-ui.theme.illusive_man": "Uomo Misterioso",
     "sfrpg-modern-ui.theme.unitologist": "Unitologista",
+    "sfrpg-modern-ui.theme.velstrac": "Velstrac",
     "sfrpg-modern-ui.settings.theme.label": "Theme palette",
     "sfrpg-modern-ui.settings.theme.hint": "Scegli quale tavolozza di tema usare nel tuo client, seleziona -- disabilita -- per usare ill tema di sistema.",
     "sfrpg-modern-ui.settings.background_alpha.label": "Opacità finesta",
@@ -16,5 +17,6 @@
     "sfrpg-modern-ui.settings.colors_saturation.label": "Saturatione",
     "sfrpg-modern-ui.settings.colors_value.label": "Valore",
     "sfrpg-modern-ui.settings.colors_lightness.label": "Luminosità",
-    "sfrpg-modern-ui.settings.colors_hue.label": "Tonalità"
+    "sfrpg-modern-ui.settings.colors_hue.label": "Tonalità",
+    "sfrpg-modern-ui.settings.compact_mode.label": "Modalita Compatta (sperimentale)"
 }
