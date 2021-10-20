@@ -611,6 +611,7 @@ sheets borders
 .sfrpg.sheet.actor .vehicle-system-list .inventory-header h3,
 .sfrpg.sheet.actor .inventory-list .crew-header h3,
 .sfrpg.sheet.actor .crew-list .crew-header h3,
+.sfrpg.sheet.actor .crew-list .crew-header[data-type="shipsCrew"],
 .sfrpg.sheet.actor .vehicle-system-list .crew-header h3 {
   text-shadow:
     -1px -1px 0 var(--sfmod-color-primary-light),
@@ -677,5 +678,6 @@ sheets borders
 .system-sfrpg .directory .directory-list .directory-item.active {
   border-color: var(--sfmod-color-secondary) !important;
 }
+
 
 /* END */

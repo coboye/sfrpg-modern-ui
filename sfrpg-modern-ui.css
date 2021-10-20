@@ -78,6 +78,7 @@
 .system-sfrpg .macro-sheet textarea {
     background: #fff !important;
 }
+
 .system-sfrpg .sfrpg.sheet.actor .inventory-list .item .item-name h4,
 .system-sfrpg .sfrpg.sheet.actor .crew-list .item .item-name h4,
 .system-sfrpg .sfrpg.sheet.actor .vehicle-system-list .item .item-name h4,
@@ -94,10 +95,20 @@
     margin: 0;
     align-self: center;
 }
+
+.system-sfrpg .sfrpg.sheet.actor .crew-list .crew-header .crew-controls a.skill-create {
+    flex-basis: auto;
+}
+
+.system-sfrpg .sfrpg.sheet.actor.starship .crew-controls {
+    flex: 0 0 auto;
+}
+
 /* compact mode ========================================================= */
 .system-sfrpg.compact #compendium li.compendium-pack {
     line-height: 10px;
 }
+
 .system-sfrpg.compact .directory .directory-list .directory-item h4 {
     margin: 0;
     white-space: nowrap;
