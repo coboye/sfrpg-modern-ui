@@ -67,3 +67,9 @@
 .sfrpg.chat-card .card-header .action-img+.flexcol .item-name:hover {
     letter-spacing: -1px;
 }
+.sfrpg.sheet.actor .spell-slots.fit-classes,
+.sfrpg.sheet.actor .spell-comps.fit-classes {
+    width: auto;
+    text-align: right;
+    flex-grow: 1;
+}

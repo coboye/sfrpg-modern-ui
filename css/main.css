@@ -92,7 +92,8 @@
 .system-sfrpg input[type="number"],
 .system-sfrpg input[type="password"],
 .system-sfrpg input[type="date"],
-.system-sfrpg input[type="time"] {
+.system-sfrpg input[type="time"],
+.system-sfrpg .directory .directory-header .header-search input {
   color: var(--sfmod-text-on-background);
   background: var(--sfmod-color-background);
   border-color: var(--sfmod-border-on-background-light);
@@ -258,8 +259,8 @@
 .sfrpg.sheet.actor .crew-list .crew .crew-name .item-action .attack,
 .sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-action .attack {
   width: auto;
-  background: #235683;
-  color: #fff;
+  background: var(--sfmod-color-primary-variant);
+  color: var(--sfmod-text-on-primary);
   cursor: pointer;
 }
 
@@ -598,6 +599,83 @@ sheets borders
 
 ::-moz-range-thumb {
   background: var(--sfmod-color-secondary) !important;
+}
+
+.sfrpg.sheet.actor .crew-list .crew-item-list {
+  margin-left: 12px;
+}
+
+.sfrpg.sheet.actor.starship .action-header .action-name,
+.sfrpg.sheet.actor .inventory-list .inventory-header h3,
+.sfrpg.sheet.actor .crew-list .inventory-header h3,
+.sfrpg.sheet.actor .vehicle-system-list .inventory-header h3,
+.sfrpg.sheet.actor .inventory-list .crew-header h3,
+.sfrpg.sheet.actor .crew-list .crew-header h3,
+.sfrpg.sheet.actor .vehicle-system-list .crew-header h3 {
+  text-shadow:
+    -1px -1px 0 var(--sfmod-color-primary-light),
+    1px -1px 0 var(--sfmod-color-primary-light),
+    -1px 1px 0 var(--sfmod-color-primary-light),
+    1px 1px 0 var(--sfmod-color-primary-light),
+    -1px 1px 3px var(--sfmod-color-primary),
+    -1px -1px 3px var(--sfmod-color-primary),
+    1px 1px 3px var(--sfmod-color-primary),
+    1px -1px 3px var(--sfmod-color-primary);
+  color: #000;
+  font-size: 1.45em;
+  font-variant: petite-caps;
+  padding-left: 5px;
+  padding-right: 0px;
+  letter-spacing: -.2px
+}
+
+.sfrpg.sheet.actor .inventory-list .inventory-header.disabled h3,
+.sfrpg.sheet.actor .crew-list .inventory-header.disabled h3,
+.sfrpg.sheet.actor .vehicle-system-list .inventory-header.disabled h3,
+.sfrpg.sheet.actor .inventory-list .crew-header.disabled h3,
+.sfrpg.sheet.actor .crew-list .crew-header.disabled h3,
+.sfrpg.sheet.actor .vehicle-system-list .crew-header.disabled h3 {
+  text-shadow:
+    -1px -1px 1px var(--sfmod-color-primary),
+    1px -1px 1px var(--sfmod-color-primary),
+    -1px 1px 1px var(--sfmod-color-primary),
+    1px 1px 1px var(--sfmod-color-primary),
+    0 0 6px var(--sfmod-color-primary);
+  color: #000;
+  opacity: 0.45;
+}
+
+.sfrpg.chat-card.combat-card .card-content h2[style*="background-color:Salmon"],
+.sfrpg.chat-card.combat-card .card-content h2[style*="background-color:LightGreen"] {
+  color: var(--sfmod-color-secondary);
+  text-transform: uppercase;
+  font-size: 1.7em;
+  font-weight: bold;
+  line-height: 1.8em;
+  padding: 0;
+  display: block;
+  margin: 5px auto;
+  border: 10px double var(--sfmod-color-secondary);
+  background: none !important;
+}
+
+.sfrpg.chat-card.combat-card .card-content h2[style*="background-color:LightGreen"] {
+  color: var(--sfmod-color-primary);
+  border-color: var(--sfmod-color-primary) !important;
+}
+
+.system-sfrpg .placeable-hud .control-icon.active {
+  box-shadow: 0 0 10px var(--sfmod-color-secondary) inset !important;
+}
+
+.system-sfrpg .control-icon.active>img {
+  filter: none;
+  opacity: .9;
+}
+
+.system-sfrpg .directory .directory-list .directory-item.context,
+.system-sfrpg .directory .directory-list .directory-item.active {
+  border-color: var(--sfmod-color-secondary) !important;
 }
 
 /* END */

@@ -39,6 +39,9 @@ export const Integrations = [
     "gm-screen",
     "illandril-token-tooltips",
     "monks-enhanced-journal",
+    "monks-active-tiles",
+    "monks-little-details",
+    "monks-tokenbar",
     "one-journal",
     "tidy-ui_game-settings",
     "token-action-hud"

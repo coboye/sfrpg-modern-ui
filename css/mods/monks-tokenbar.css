@@ -1,0 +1,125 @@
+.system-sfrpg #tokenbar:not(.hidectrl) .bar-controls .tokenbar-buttons div:not(.disabled):hover {
+    filter: unset;
+    text-shadow: 0 0 8px var(--sfmod-color-primary);
+    color: var(--sfmod-color-primary-light);
+}
+
+.system-sfrpg #tokenbar .bar-controls .tokenbar-buttons div.active:not(.disabled) i,
+.system-sfrpg #tokenbar[movement="free"] #movement-free:not(.disabled) i,
+.system-sfrpg #tokenbar[movement="none"] #movement-none:not(.disabled) i,
+.system-sfrpg #tokenbar[movement="combat"] #movement-combat:not(.disabled) i {
+    color: var(--sfmod-color-primary-light);
+    border-color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg #tokenbar:not(.hidectrl) .bar-controls .tokenbar-buttons div.active:not(.disabled):hover i,
+.system-sfrpg #tokenbar[movement="free"]:not(.hidectrl) #movement-free:not(.disabled):hover i,
+.system-sfrpg #tokenbar[movement="none"]:not(.hidectrl) #movement-none:not(.disabled):hover i,
+.system-sfrpg #tokenbar[movement="combat"]:not(.hidectrl) #movement-combat:not(.disabled):hover i {
+    color: var(--sfmod-color-primary-light);
+}
+
+.system-sfrpg #tokenbar .token:hover .token-icon {
+    box-shadow: 0 0 10px var(--sfmod-color-primary) inset;
+}
+
+.system-sfrpg #tokenbar .token .context-items li.selected,
+.system-sfrpg #tokenbar .token .movement-icon[movement],
+.system-sfrpg #tokenbar .token .inspiration-icon,
+.system-sfrpg #tokenbar .token .panning-icon {
+    color: var(--sfmod-color-primary-light);
+}
+
+/*-----------------------------Dialog Styles-------------------------------------*/
+.system-sfrpg .monks-tokenbar .sheet select,
+.system-sfrpg .monks-tokenbar .sheet input[type="text"],
+.system-sfrpg .monks-tokenbar .sheet input[type="number"] {
+    color: var(--sfmod-text-on-surface);
+}
+
+.system-sfrpg .monks-tokenbar .sheet .items-list {
+    color: var(--sfmod-text-on-background)
+}
+
+.system-sfrpg .monks-tokenbar .sheet .items-list .item-controls a.selected {
+    text-shadow: 0 0 8px var(--sfmod-color-secondary);
+}
+
+.system-sfrpg .monks-tokenbar .sheet .items-list .item {
+    border-bottom: 1px solid var(--sfmod-border-on-background);
+}
+
+.system-sfrpg .monks-tokenbar .sheet .items-list .item .item-name {
+    color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg .monks-tokenbar .sheet .items-list .items-header {
+    border-color: var(--sfmod-border-on-background);
+}
+
+.system-sfrpg #requestsavingthrow .request-header {
+    color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg #requestsavingthrow .request-grid>div {
+    color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg #requestsavingthrow .request-grid>div.selected,
+.system-sfrpg #requestsavingthrow .request-grid>div:hover {
+    border-color: var(--sfmod-color-secondary);
+    border-bottom: 1px solid var(--sfmod-color-secondary-light);
+    box-shadow: 0 0 10px var(--sfmod-color-secondary);
+    color: var(--sfmod-color-secondary-light);
+    background: transparent;
+}
+
+.system-sfrpg #requestsavingthrow .request-grid>div.selected {
+    color: var(--sfmod-text-on-background-light);
+}
+
+/*---------------------------------------Chat card styles-------------------------------*/
+.system-sfrpg .monks-tokenbar.chat-card .card-header,
+.system-sfrpg .monks-tokenbar.chat-card .card-footer,
+.system-sfrpg .monks-tokenbar.chat-card .card-footer span {
+    border-color: var(--sfmod-border-on-background);
+}
+
+.system-sfrpg .monks-tokenbar.chat-card .card-header h3 {
+    color: var(--sfmod-text-on-surface);
+}
+
+.system-sfrpg .monks-tokenbar.chat-card .card-header h3:hover {
+    color: var(--sfmod-color-secondary-light);
+    text-shadow: 0 0 10px var(--sfmod-color-secondary);
+}
+
+.system-sfrpg .grabbing .grab-message {
+    border-color: var(--sfmod-color-primary);
+    border-bottom-color: var(--sfmod-color-primary-light);
+    box-shadow: 0 0 10px var(--sfmod-color-primary-light);
+}
+
+.system-sfrpg .monks-tokenbar.editstats .font-picker {
+    border-color: var(--sfmod-border-on-background);
+}
+
+.system-sfrpg .monks-tokenbar.editstats .font-picker header {
+    border-color: var(--sfmod-border-on-background);
+    color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg .monks-tokenbar.editstats .tt-menu {
+    background-color: var(--sfmod-color-surface);
+}
+
+.system-sfrpg .monks-tokenbar.editstats .tt-suggestion:hover {
+    box-shadow: 0 0 10px var(--sfmod-color-primary) inset;
+    color: var(--sfmod-color-primary-light);
+    background: var(--sfmod-color-surface);
+}
+
+.system-sfrpg .monks-tokenbar.editstats .tt-suggestion.tt-cursor {
+    color: var(--sfmod-text-on-background);
+    background-color: transparent;
+}

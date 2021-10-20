@@ -1,0 +1,49 @@
+.system-sfrpg .monks-active-tiles.sheet .items-list {
+    color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg .monks-active-tiles.sheet .items-list .item {
+    border-bottom-color: var(--sfmod-border-on-background);
+}
+
+.system-sfrpg .monks-active-tiles.sheet .items-list .item .item-name {
+    color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg .monks-active-tiles.sheet .items-list .items-header {
+    border-color: var(--sfmod-border-on-background-light);
+}
+
+.system-sfrpg .action-sheet .display-value {
+    color: var(--sfmod-text-on-background);
+    background: var(--sfmod-color-background);
+    border-color: var(--sfmod-border-on-background-light);
+}
+
+.system-sfrpg .active-tile-backdrop {
+    background: var(--sfmod-color-surface-wbr);
+}
+
+.system-sfrpg #trigger-action .tt-hint {
+    color: var(--sfmod-text-on-background);
+}
+
+#trigger-action .tt-hint input {
+    background: var(--sfmod-color-background);
+}
+
+#trigger-action .tt-menu {
+    background-color: var(--sfmod-color-background);
+    border-color: var(--sfmod-border-on-background);
+}
+
+
+#trigger-action .tt-suggestion:hover {
+    color: var(--sfmod-text-on-secondary);
+    background-color: var(--sfmod-color-secondary);
+}
+
+#trigger-action .tt-suggestion.tt-cursor {
+    color: var(--sfmod-text-on-secondary);
+    background-color: var(--sfmod-color-secondary);
+}

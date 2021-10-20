@@ -1,4 +1,15 @@
 # Changelog
+## [1.4.3] - 2021-10-20
+### Fixed
+- Compendium's header search field background
+### Changed
+- improved visibility for table's headers
+- combat phase/round alert chat card style
+### Added
+- Monk's TokenBar integration
+- Monk's Little Details integration
+- Monk's Active Tile Triggers integration
+- minor system css tweaks
 
 ## [1.4.2] - 2021-07-21
 ### Fixed

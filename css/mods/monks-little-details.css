@@ -1,0 +1,54 @@
+.system-sfrpg .group-header {
+    background: var(--sfmod-color-primary-variant);
+    color: var(--sfmod-text-on-primary);
+}
+
+.system-sfrpg .subdirectory {
+    border-bottom-color: var(--sfmod-border-on-background);
+}
+
+.system-sfrpg .encounter-cr[rating="epic"] {
+    background-color: #7100a5;
+}
+
+.system-sfrpg #mldCharacterSound.loaded {
+    border-color: var(--sfmod-color-secondary);
+}
+
+.system-sfrpg #token-hud.monks-little-details .status-effects .effect-control.active {
+    border-color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg #token-hud.monks-little-details .status-effects .effect-container:hover .effect-control.active {
+    color: var(--sfmod-color-primary-light) !important;
+}
+
+.system-sfrpg #token-hud.monks-little-details .status-effects .effect-name {
+    color: var(--sfmod-text-on-background);
+}
+
+.system-sfrpg #token-hud.monks-little-details .status-effects .effect-control.active+.effect-name,
+.system-sfrpg #token-hud.monks-little-details .status-effects .pf2e-effect-control.active+.effect-name {
+    color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg .monks-playlist ol li {
+    border-bottom-color: var(--sfmod-border-on-background);
+}
+
+.system-sfrpg .play-list-sounds li {
+    border-bottom-color: var(--sfmod-border-on-background);
+}
+
+.system-sfrpg .timer-msg .timer-bar {
+    border-color: var(--sfmod-border-on-background-light);
+    background-color: var(--sfmod-color-background)
+}
+
+.system-sfrpg .round-marker {
+    border-bottom-color: var(--sfmod-color-primary);
+}
+
+.system-sfrpg .round-marker .message-header .flavor-text {
+    color: var(--sfmod-text-on-primary);
+}
