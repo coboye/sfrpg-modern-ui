@@ -1,5 +1,5 @@
 # Changelog
-## [1.4.4] - XXXX-XX-XX
+## [1.5.0] - WORK IN PROGRESS
 ### Added
 - Velstrac Theme
 - Compact mode for compendiums (experimental)
