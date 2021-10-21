@@ -69,7 +69,7 @@ export class Setting{
         return this.choices != null ? "select" : "input";
     }
     get element(){
-        return $(`${this.tagname}[name="${Constants.MODULENAME}.${this.key}"]`);
+        return $(`[name="${Constants.MODULENAME}.${this.key}"]`);
     }
     reset(){
         this.value = game.settings.get(Constants.MODULENAME, this.key);
@@ -86,8 +86,23 @@ export class Setting{
     }
     watch(){
         Logger.debug("Setting:watch", this.key);
-        this.element.on("change", (evt) => { this.updated($(evt.target).val()) });
-        this.element.on("input", (evt) => { this.updated($(evt.target).val()) });
+
+        this.element.on("change", (evt) => { this.updated(this.eventValue(evt)) });
+        this.element.on("input", (evt) => { this.updated(this.eventValue(evt), evt) });
+        if(this.element.is(":checkbox")){
+            this.element.parent().prev().click(() => this.updated(this.eventValue({target:this.element})));
+        }
+        this.element.on("checked", (evt) => { this.updated(this.eventValue(evt), evt) });
+    }
+    eventValue(evt){
+        let val = null;
+        const target = $(evt.target);
+        if (target.is(':checkbox')){
+            val = target.is(':checked');
+        }else{
+            val = target.val();
+        }
+        return val;
     }
 
     constructor(key, properties){

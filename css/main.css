@@ -679,5 +679,61 @@ sheets borders
   border-color: var(--sfmod-color-secondary) !important;
 }
 
+/* ************************************************************************* */
+/* ***    COMPACT MODE CSS RULES                                         *** */
+/* ************************************************************************* */
 
+.sfmod-compact.system-sfrpg #compendium li.compendium-pack {
+  line-height: 10px;
+}
+
+.sfmod-compact.system-sfrpg .directory .directory-list .directory-item h4 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.1em;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.sfmod-compact.system-sfrpg #compendium li.compendium-pack .compendium-footer {
+  font-size: 13px;
+  font-variant: all-small-caps;
+  padding-left: 22px;
+}
+
+.sfmod-compact.system-sfrpg #compendium li.compendium-pack .status-icons {
+  top: 5px;
+}
+
+.sfmod-compact.system-sfrpg #compendium h3 {
+  background: var(--sfmod-color-background);
+  color: var(--sfmod-text-on-background-light);
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.sfmod-compact.system-sfrpg #compendium li.compendium-pack .pack-title i {
+  margin-right: 3px;
+  font-size: 0.8em;
+  width: 13px;
+}
+
+.sfmod-compact.system-sfrpg #compendium li[data-open="1"].compendium-pack .pack-title i.folder {
+  color: var(--sfmod-color-primary-light);
+}
+
+.sfmod-compact.system-sfrpg .compendium .directory-list .directory-item {
+  line-height: 35px;
+  word-spacing: -1px;
+  height: 35px;
+  border-top: none;
+}
+
+.sfmod-compact.system-sfrpg .compendium .directory-list .directory-item img {
+  height: 34px;
+  width: 34px;
+  flex: 0 0 34px;
+  margin: 0 5px 0 0
+}
 /* END */

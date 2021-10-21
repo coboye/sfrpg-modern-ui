@@ -12,6 +12,8 @@ import { Utils } from "../module/utils.js";
 export default class AbstractTheme {
 
     __name = null;
+
+    compactMode=true;
     
     __backgroundAlpha = .40;
     __blurRadius = "10px";
@@ -58,6 +60,7 @@ export default class AbstractTheme {
      * @param {Settings} settings 
      */
     apply(settings){
+        this.compactMode = settings.value(Constants.Settings.compact_mode);
         if(!this.core){
             this.__backgroundAlpha = (settings.value(Constants.Settings.background_alpha) / 100).toFixed(2);
             this.__blurRadius = settings.value(Constants.Settings.blur_radius)  + "px";

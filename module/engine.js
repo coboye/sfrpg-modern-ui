@@ -21,13 +21,9 @@ export class UIEngine {
          */
         const theme = new (Themes[settings.value(Constants.Settings.theme)] || Themes.core)().apply(settings);      
         const title = `${Constants.MODULENAME}-${Constants.Settings.theme}`;
-        Logger.debug("UIEngine:compact_mode", settings.value(Constants.Settings.compact_mode));
-        if (settings.value(Constants.Settings.compact_mode)){
-            document.body.classList.add("compact");
-        }else{
-            document.body.classList.remove("compact");
-        }
-        const link = `link[rel="stylesheet"][title="${title}"]`
+        const link = `link[rel="stylesheet"][title="${title}"]`;
+
+        document.body.classList[theme.compactMode ?  'add': 'remove']("sfmod-compact");
 
         let stylesheet = document.head.querySelector(`${link}`);
         if (!stylesheet) {

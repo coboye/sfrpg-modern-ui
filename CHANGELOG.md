@@ -1,9 +1,12 @@
 # Changelog
-## [1.5.0] - WORK IN PROGRESS
+## [1.5.0] - 2021-10-21
 ### Added
-- Velstrac Theme
-- Compact mode for compendiums (experimental)
-
+- new Velstrac Theme palette
+- Compact mode (experimental) mainly for compendiums (list and content) and some SciFi-like small-caps text scattered around the UI
+### Fixed
+- minor css fixes
+### Changed
+- some engine tweak to live render checkbox options changes (compact mode)
 ## [1.4.3] - 2021-10-20
 ### Fixed
 - Compendium's header search field background
