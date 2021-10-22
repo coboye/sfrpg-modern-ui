@@ -24,6 +24,7 @@
 
 .system-sfrpg {
   --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
+  --sfmod-font-variant: small-caps;  
 }
 
 .system-sfrpg :not(span[style*="color:"])>strong {
@@ -33,8 +34,9 @@
 .system-sfrpg .editor-content h3,
 .system-sfrpg .editor-content h4,
 .system-sfrpg .editor-content h5,
-.system-sfrpg .editor-content h6 {
-  font-variant: small-caps;
+.system-sfrpg .editor-content h6
+ {
+  font-variant: var(--sfmod-font-variant, inherit);
   color: var(--sfmod-text-on-selection);
 }
 
@@ -692,7 +694,7 @@ sheets borders
   white-space: nowrap;
   overflow: hidden;
   font-size: 1.1em;
-  font-variant: small-caps;
+  font-variant: var(--sfmod-font-variant, inherit);
   letter-spacing: 1px;
 }
 

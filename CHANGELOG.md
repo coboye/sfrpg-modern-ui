@@ -1,4 +1,9 @@
 # Changelog
+
+## [1.5.1] - 2021-10-22
+### Fixed
+- Monk's Enhanced Journal module css
+- Furnace module css 
 ## [1.5.0] - 2021-10-21
 ### Added
 - new Velstrac Theme palette

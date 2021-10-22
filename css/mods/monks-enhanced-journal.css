@@ -7,7 +7,10 @@
     --mej-background-medium: #86909630;
     --mej-background-heavy: #86909650;
 }
-
+.system-sfrpg .monks-enhanced-journal .directory-sidebar {
+    background-image: none;
+    background-color: var(--sfmod-color-background);
+}
 .system-sfrpg .monks-enhanced-journal .sidebar,
 .system-sfrpg .journal-list {
     background-image: none;

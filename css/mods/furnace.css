@@ -6,4 +6,9 @@
 
 .system-sfrpg .macro-sheet .form-group.command .furnace-macro-command textarea {
     caret-color: black;
+    background: transparent !important;
+}
+.system-sfrpg .macro-sheet .form-group.command .furnace-macro-expand {
+    background: #00000099;
+    color: #fff;
 }
