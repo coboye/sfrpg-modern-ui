@@ -1,5 +1,7 @@
 # Changelog
-
+## [1.5.2] - 2021-10-22
+### Fixed
+- The Forge update distribution
 ## [1.5.1] - 2021-10-22
 ### Fixed
 - Monk's Enhanced Journal module css
