@@ -4,77 +4,77 @@ import { UIEngine } from "./engine.js";
 import { Themes } from "../themes/index.js";
 import { Utils } from "./utils.js";
 
-export class SettingRange{
-    min= 0;
-    max= 100;
-    step= 1;
+export class SettingRange {
+    min = 0;
+    max = 100;
+    step = 1;
 
-    constructor(min, max, step){
+    constructor(min, max, step) {
         this.min = min;
         this.max = max;
         this.step = step;
     }
 }
 export const SettingScope = Object.freeze({
-    CLIENT:"client",
-    GLOBAL:"global"
+    CLIENT: "client",
+    GLOBAL: "global"
 })
-export class Setting{
+export class Setting {
     key = "setting";
-    value;     
+    value;
     scope = SettingScope.GLOBAL;
-    default="";
-    showHint= true;
-    type=String;
-    choices= null;
-    config= true;
+    default = "";
+    showHint = true;
+    type = String;
+    choices = null;
+    config = true;
     /**
      * @type {SettingRange}
      */
-    range= null;
+    range = null;
     /**
      * @type {Function}
      */
     callback = () => { UIEngine.apply() };
 
-    register(){
+    register() {
         Logger.debug("Setting:register", this.key);
         let setting = {
             name: Utils.localize(`settings.${this.key}.label`),
-            hint: this.showHint? Utils.localize(`settings.${this.key}.hint`) : null,
+            hint: this.showHint ? Utils.localize(`settings.${this.key}.hint`) : null,
             scope: this.scope,
-            type: this.type,            
+            type: this.type,
             default: this.default,
             config: this.config,
             onChange: this.changed.bind(this)
         }
-        if(this.type == Number){
+        if (this.type == Number) {
             // If range is specified, the resulting setting will be a range slider
-            if(this.range !=null){
-                setting.range ={
+            if (this.range != null) {
+                setting.range = {
                     min: this.range.min,
                     max: this.range.max,
                     step: this.range.step
                 }
             }
         }
-        if(this.choices != null){
+        if (this.choices != null) {
             setting.choices = this.choices;
         }
         game.settings.register(Constants.MODULENAME, this.key, setting);
-        this.value = game.settings.get(Constants.MODULENAME, this.key);        
+        this.value = game.settings.get(Constants.MODULENAME, this.key);
 
     }
-    get tagname(){
+    get tagname() {
         return this.choices != null ? "select" : "input";
     }
-    get element(){
+    get element() {
         return $(`[name="${Constants.MODULENAME}.${this.key}"]`);
     }
-    reset(){
+    reset() {
         this.value = game.settings.get(Constants.MODULENAME, this.key);
     }
-    changed(value){
+    changed(value) {
         Logger.debug("Setting:changed", this.key, value);
         this.value = value;
         this.callback(value);
@@ -84,47 +84,47 @@ export class Setting{
         this.value = value;
         this.callback(value);
     }
-    watch(){
+    watch() {
         Logger.debug("Setting:watch", this.key);
 
         this.element.on("change", (evt) => { this.updated(this.eventValue(evt)) });
         this.element.on("input", (evt) => { this.updated(this.eventValue(evt), evt) });
-        if(this.element.is(":checkbox")){
-            this.element.parent().prev().click(() => this.updated(this.eventValue({target:this.element})));
+        if (this.element.is(":checkbox")) {
+            this.element.parent().prev().click(() => this.updated(this.eventValue({ target: this.element })));
         }
         this.element.on("checked", (evt) => { this.updated(this.eventValue(evt), evt) });
     }
-    eventValue(evt){
+    eventValue(evt) {
         let val = null;
         const target = $(evt.target);
-        if (target.is(':checkbox')){
+        if (target.is(':checkbox')) {
             val = target.is(':checked');
-        }else{
+        } else {
             val = target.val();
         }
         return val;
     }
 
-    constructor(key, properties){
-        Object.assign(this, {...properties});
-        this.key = key;        
+    constructor(key, properties) {
+        Object.assign(this, { ...properties });
+        this.key = key;
     }
 }
 export class Settings {
     /**
      * @type {Array<Setting>}
      */
-    properties= [];
+    properties = [];
 
     /**
      * 
      * @param {Arrayy<Setting>} properties 
      */
-    constructor(properties){
+    constructor(properties) {
         this.properties = this.properties || [];
     }
 
-    register(){
+    register() {
         this.properties.forEach(p => p.register());
     }
 
@@ -137,7 +137,7 @@ export class Settings {
                 if (mutation.type == 'childList' && mutation.removedNodes) {
                     if (Array.from(mutation.removedNodes).some(node => node.id == 'client-settings')) {
                         observer.disconnect();
-                        this.reset();                        
+                        this.reset();
                     }
                 }
             });
@@ -145,7 +145,7 @@ export class Settings {
         // Start observing the target node for configured mutations
         observer.observe($("#client-settings").get(0).parentNode, { attributes: false, childList: true, subtree: true });
 
-        $('#client-settings button[name="reset"]').on("click", ()=> this.reset());
+        $('#client-settings button[name="reset"]').on("click", () => this.reset());
     }
 
     reset() {
@@ -153,8 +153,8 @@ export class Settings {
         UIEngine.apply();
     }
 
-    value(key){
-        const property = this.properties.find(p=>{
+    value(key) {
+        const property = this.properties.find(p => {
             return p.key == key;
         });
         return (property || {}).value;
@@ -173,7 +173,7 @@ export const SettingsProvider = {
         SettingsProvider.settings.reset();
     },
 
-    initialize: () => {    
+    initialize: () => {
         // Register any custom module settings here   
         let themes = Object.keys(Themes).reduce((map, key) => {
             map[key] = game.i18n.localize(Constants.MODULENAME + ".theme." + key) || key;
@@ -237,7 +237,17 @@ export const SettingsProvider = {
                 type: Number,
                 range: new SettingRange(-360, 360, 1),
                 default: 0,
-                showHint:false
+                showHint: false
+            })
+        );
+
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.chat_font_size, {
+                scope: SettingScope.CLIENT,
+                type: Number,
+                range: new SettingRange(8, 18, 1),
+                default: 12,
+                showHint: false
             })
         );
 
@@ -250,7 +260,7 @@ export const SettingsProvider = {
             })
         );
 
-        
+
         SettingsProvider.settings.register();
 
     }

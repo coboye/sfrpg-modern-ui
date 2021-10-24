@@ -1,4 +1,15 @@
 # Changelog
+## [1.5.4] - 2021-10-24
+### Added
+- Workaround to fix new actor resources presentation in combat tracker
+- Chat font size modifier in module options [GH-24]
+### Fixed
+- Tidy UI import/export text area
+- Tidy UI modules settings collassible fab color
+## [1.5.3] - 2021-10-22
+### Fixed
+- Monk's Enhanced Journal module css
+- Furnace module css  
 ## [1.5.3] - 2021-10-22
 ### Fixed
 - Monk's Enhanced Journal module css

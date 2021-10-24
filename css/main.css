@@ -24,7 +24,7 @@
 
 .system-sfrpg {
   --sfmod-color-surface: var(--sfmod-color-surface-wbr) !important;
-  --sfmod-font-variant: small-caps;  
+  --sfmod-font-variant: small-caps;
 }
 
 .system-sfrpg :not(span[style*="color:"])>strong {
@@ -34,8 +34,7 @@
 .system-sfrpg .editor-content h3,
 .system-sfrpg .editor-content h4,
 .system-sfrpg .editor-content h5,
-.system-sfrpg .editor-content h6
- {
+.system-sfrpg .editor-content h6 {
   font-variant: var(--sfmod-font-variant, inherit);
   color: var(--sfmod-text-on-selection);
 }
@@ -738,4 +737,32 @@ sheets borders
   flex: 0 0 34px;
   margin: 0 5px 0 0
 }
+
+/* font size */
+.system-sfrpg #chat-log {
+  font-size: var(--sfmod-chat-font-size, 12px);
+}
+
+.system-sfrpg #chat-log .message,
+.system-sfrpg .sfrpg.chat-card,
+.system-sfrpg .sfrpg.chat-card .card-content {
+  font-size: 1em;
+}
+
+.system-sfrpg .chat-message .message-header {
+  font-size: 1.2em;
+}
+
+.system-sfrpg .chat-message .message-header .flavor-text,
+.system-sfrpg .chat-message .message-header .whisper-to {
+  font-size: 0.9em;
+}
+
+.system-sfrpg .chat-message .message-header .message-sender {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex-grow: 7;
+}
+
 /* END */

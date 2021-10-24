@@ -2,3 +2,16 @@
 .system-sfrpg #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::placeholder {
     color: var(--sfmod-text-on-surface);
 }
+
+.system-sfrpg #module-management #importExportModal #modalIO:focus {
+    box-shadow: 0 0 8px var(--sfmod-color-primary);
+    outline: 2px solid var(--sfmod-color-primary-light);
+    background: var(--sfmod-color-background);
+}
+
+.system-sfrpg #module-management #importExportModal #modalIO {
+    background: var(--sfmod-color-background);
+}
+.system-sfrpg #client-settings.app.window-app.form #config-tabs .settings-list h2.module-header span {
+    color: var(--sfmod-color-secondary);
+}

@@ -103,3 +103,32 @@
 .system-sfrpg .sfrpg.sheet.actor.starship .crew-controls {
     flex: 0 0 auto !important;
 }
+
+/* FIX new resource system in combat tracker */
+.system-sfrpg #combat-tracker .counter-image-relative {
+    height: auto;
+    position: relative;
+}
+
+.system-sfrpg #combat-tracker div#foundry-elements+div#counter-tokens {
+    position: absolute;
+    bottom: 0;
+}
+
+.system-sfrpg #combat-tracker div#foundry-elements+div#counter-tokens+div.token-resource {
+    position: absolute;
+    bottom: 12px;
+    right: 61px;
+}
+
+.system-sfrpg #combat-tracker div#foundry-elements+div#counter-tokens img.counter-token-image {
+    border-radius: 50%;
+}
+
+.system-sfrpg #combat-tracker div#foundry-elements+div#counter-tokens a.counter-token p {
+    text-shadow: 1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        0 0 5px #000;
+}

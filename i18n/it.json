@@ -18,5 +18,6 @@
     "sfrpg-modern-ui.settings.colors_value.label": "Valore",
     "sfrpg-modern-ui.settings.colors_lightness.label": "Luminosità",
     "sfrpg-modern-ui.settings.colors_hue.label": "Tonalità",
-    "sfrpg-modern-ui.settings.compact_mode.label": "Modalita Compatta (sperimentale)"
+    "sfrpg-modern-ui.settings.compact_mode.label": "Modalita Compatta (sperimentale)",
+    "sfrpg-modern-ui.settings.chat_font_size.label": "Dimensione Testo Chat (sperimentale)"
 }
