@@ -1,4 +1,8 @@
 # Changelog
+## [1.6.0] - 2022-02-06
+### Fixed
+- Incorrect colouring on dropdown menus (thanks to LebombJames)[GH-27]
+- Package sfrpg-modern-ui was using the old "systems" manifest key where a "system" key is expected [GH-25]
 ## [1.5.4] - 2021-10-24
 ### Added
 - Workaround to fix new actor resources presentation in combat tracker
