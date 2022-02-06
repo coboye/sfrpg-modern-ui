@@ -188,6 +188,10 @@
   background: var(--sfmod-color-background) !important;
 }
 
+.system-sfrpg select option {
+  background-color: var(--sfmod-color-background) !important;
+}
+
 .system-sfrpg a.entity-link,
 .system-sfrpg a.inline-roll {
   border: 1px solid var(--sfmod-color-primary);
