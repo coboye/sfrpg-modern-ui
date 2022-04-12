@@ -1,4 +1,9 @@
 # Changelog
+## [1.6.1] - 2022-04-12
+### Fixed
+- "use" button color
+### Added
+- vtta-tokenizer module integration
 ## [1.6.0] - 2022-02-06
 ### Fixed
 - Incorrect colouring on dropdown menus (thanks to LebombJames)[GH-27]
