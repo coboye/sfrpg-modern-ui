@@ -1,0 +1,45 @@
+.system-sfrpg #vtta-tokenizer div.view>div>canvas {    
+    border-color: var(--sfmod-border-on-background);
+}
+.system-sfrpg #vtta-tokenizer div.view-layer-control {
+    background-color: var(--sfmod-color-surface-wbr);
+    border-bottom-color: var(--sfmod-border-on-background);
+}
+.system-sfrpg #vtta-tokenizer div.view-layer-control canvas {
+    background-color: var(--sfmod-color-background);
+}
+.system-sfrpg #vtta-tokenizer div.view-layer-control .section,
+.system-sfrpg #vtta-tokenizer .section {
+    background-color: var(--sfmod-color-surface-wbr);
+}
+.system-sfrpg #vtta-tokenizer div.view-layer-control button,
+.system-sfrpg #vtta-tokenizer button {
+    border-color: var(--sfmod-border-on-background-light);    
+    -webkit-box-shadow: -2px 2px 5px -2px var(--sfmod-border-on-background);
+    -moz-box-shadow: -2px 2px 5px -2px var(--sfmod-border-on-background);
+    box-shadow: -2px 2px 5px -2px var(--sfmod-border-on-background);
+}
+.system-sfrpg #vtta-tokenizer select {
+    border-color: var(--sfmod-border-on-background);
+    -webkit-box-shadow: -2px 2px 5px -2px var(--sfmod-border-on-background);
+    -moz-box-shadow: -2px 2px 5px -2px var(--sfmod-border-on-background);
+    box-shadow: -2px 2px 5px -2px var(--sfmod-border-on-background);
+}
+.system-sfrpg #vtta-tokenizer div.view-layer-control .color-picker {
+    border-color: var(--sfmod-border-on-background);
+    -webkit-box-shadow: -2px 2px 5px -2px var(--sfmod-border-on-background);
+    -moz-box-shadow: -2px 2px 5px -2px var(--sfmod-border-on-background);
+    box-shadow: -2px 2px 5px -2px var(--sfmod-border-on-background);
+}
+.system-sfrpg #vtta-tokenizer div.menu {
+    background-color: var(--sfmod-color-background);
+}
+.system-sfrpg #vtta-tokenizer div.section {
+    background-color: var(--sfmod-color-surface-wbr);
+    border: var(--sfmod-border-on-background-light);
+}
+.system-sfrpg #vtta-tokenizer button .fas {
+    position: relative;
+    top: -3px;
+    left: 2px;
+}

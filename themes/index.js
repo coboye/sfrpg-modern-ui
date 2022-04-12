@@ -48,5 +48,6 @@ export const Integrations = [
     "monks-tokenbar",
     "one-journal",
     "tidy-ui_game-settings",
-    "token-action-hud"
+    "token-action-hud",
+    "vtta-tokenizer"
 ]
