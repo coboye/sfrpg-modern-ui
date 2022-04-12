@@ -48,7 +48,7 @@
 }
 
 .system-sfrpg blockquote {
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C" "\201D" "\2018" "\2019";
   background: var(--sfmod-color-surface);
   border-left: 5px solid var(--sfmod-color-secondary);
   margin: 15px 5px;
@@ -769,4 +769,47 @@ sheets borders
   flex-grow: 7;
 }
 
+.sfrpg.sheet.actor .inventory-list .item .item-name .item-action .use,
+.sfrpg.sheet.actor .crew-list .item .item-name .item-action .use,
+.sfrpg.sheet.actor .vehicle-system-list .item .item-name .item-action .use,
+.sfrpg.sheet.actor .inventory-list .crew .item-name .item-action .use,
+.sfrpg.sheet.actor .crew-list .crew .item-name .item-action .use,
+.sfrpg.sheet.actor .vehicle-system-list .crew .item-name .item-action .use,
+.sfrpg.sheet.actor .inventory-list .item .crew-name .item-action .use,
+.sfrpg.sheet.actor .crew-list .item .crew-name .item-action .use,
+.sfrpg.sheet.actor .vehicle-system-list .item .crew-name .item-action .use,
+.sfrpg.sheet.actor .inventory-list .crew .crew-name .item-action .use,
+.sfrpg.sheet.actor .crew-list .crew .crew-name .item-action .use,
+.sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-action .use{
+  color: var(--sfmod-text-on-background);
+}
+.sfrpg.sheet.actor .inventory-list .item .item-name .item-action .use:hover,
+.sfrpg.sheet.actor .crew-list .item .item-name .item-action .use:hover,
+.sfrpg.sheet.actor .vehicle-system-list .item .item-name .item-action .use:hover,
+.sfrpg.sheet.actor .inventory-list .crew .item-name .item-action .use:hover,
+.sfrpg.sheet.actor .crew-list .crew .item-name .item-action .use:hover,
+.sfrpg.sheet.actor .vehicle-system-list .crew .item-name .item-action .use:hover,
+.sfrpg.sheet.actor .inventory-list .item .crew-name .item-action .use:hover,
+.sfrpg.sheet.actor .crew-list .item .crew-name .item-action .use:hover,
+.sfrpg.sheet.actor .vehicle-system-list .item .crew-name .item-action .use:hover,
+.sfrpg.sheet.actor .inventory-list .crew .crew-name .item-action .use:hover,
+.sfrpg.sheet.actor .crew-list .crew .crew-name .item-action .use:hover,
+.sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-action .use:hover,
+.sfrpg.sheet.actor .inventory-list .item .item-name .item-action .use:focus,
+.sfrpg.sheet.actor .crew-list .item .item-name .item-action .use:focus,
+.sfrpg.sheet.actor .vehicle-system-list .item .item-name .item-action .use:focus,
+.sfrpg.sheet.actor .inventory-list .crew .item-name .item-action .use:focus,
+.sfrpg.sheet.actor .crew-list .crew .item-name .item-action .use:focus,
+.sfrpg.sheet.actor .vehicle-system-list .crew .item-name .item-action .use:focus,
+.sfrpg.sheet.actor .inventory-list .item .crew-name .item-action .use:focus,
+.sfrpg.sheet.actor .crew-list .item .crew-name .item-action .use:focus,
+.sfrpg.sheet.actor .vehicle-system-list .item .crew-name .item-action .use:focus,
+.sfrpg.sheet.actor .inventory-list .crew .crew-name .item-action .use:focus,
+.sfrpg.sheet.actor .crew-list .crew .crew-name .item-action .use:focus,
+.sfrpg.sheet.actor .vehicle-system-list .crew .crew-name .item-action .use:focus {
+  box-shadow: 0 0 5px var(--sfmod-color-primary);
+}
+.sfrpg.sheet.actor .proficient .proficiency-toggle {
+  color: var(--sfmod-color-primary);
+}
 /* END */
