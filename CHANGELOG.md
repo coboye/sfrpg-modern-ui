@@ -1,4 +1,8 @@
 # Changelog
+
+## [1.6.2] - 2022-04-13
+### Fixed
+- module.json claims for Forge's Bazaar
 ## [1.6.1] - 2022-04-12
 ### Fixed
 - "use" button color
