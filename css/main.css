@@ -48,7 +48,7 @@
 }
 
 .system-sfrpg blockquote {
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "\201C""\201D""\2018""\2019";
   background: var(--sfmod-color-surface);
   border-left: 5px solid var(--sfmod-color-secondary);
   margin: 15px 5px;
@@ -437,6 +437,7 @@ sheets borders
 .sfrpg.sheet.actor.starship .sheet-header .attributes .attribute,
 .sfrpg.sheet .sheet-header .summary li,
 .sfrpg.sheet .sheet-header .summary,
+.sfrpg.sheet .sheet-header .summary-row1 li,
 .sfrpg.sheet.actor.starship .sheet-header .summary,
 .sfrpg.sheet .sheet-header img.profile,
 .sfrpg.sheet .sheet-header,
@@ -460,6 +461,15 @@ sheets borders
 .sfrpg.sheet.actor.character .ability-scores .ability .ability-header input[type="text"].ability-damage,
 .sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers span.ability-mod,
 .sfrpg.sheet.actor.character .ability-scores .ability .ability-modifiers input[type="text"].ability-base,
+.sfrpg.sheet.actor.npc .ability-scores .ability .ability-modifiers input[type="text"].ability-base,
+.sfrpg.sheet.actor.npc .ability-scores .ability h4.new-box-title,
+.sfrpg.sheet.actor.npc ul.attributes li.attribute h4.new-box-title,
+.sfrpg.sheet.actor.npc ul.attributes li.attribute .attrib-modifiers input[type="text"].attrib-base,
+.sfrpg.sheet.actor.npc ul.skills-list li.skills-header,
+.sfrpg.sheet.actor .spell-school,
+.sfrpg.sheet.actor .spell-action,
+.sfrpg.sheet.actor .spell-comps,
+.sfrpg.sheet.actor .spell-slots,
 .sfrpg.sheet.actor ul.skills-list,
 .sfrpg.sheet.actor.character ul.skills-list li.skills-header,
 .sfrpg.sheet.actor .inventory-list .item-detail,
@@ -488,10 +498,18 @@ sheets borders
 .sfrpg.sheet.actor .inventory-list .crew,
 .sfrpg.sheet.actor .crew-list .crew,
 .sfrpg.sheet.actor .vehicle-system-list .crew,
+.sfrpg.sheet.actor .inventory-list .item-summary,
+.sfrpg.sheet.actor .crew-list .item-summary,
+.sfrpg.sheet.actor .vehicle-system-list .item-summary,
+.sfrpg.sheet.actor .inventory-list .crew-summary, .sfrpg.sheet.actor .crew-list .crew-summary,
+.sfrpg.sheet.actor .vehicle-system-list .crew-summary,
+.sfrpg.sheet.actor .sheet-body .bio-properties,
+.sfrpg.sheet.actor.starship .action-list .action .item-summary,
 .sfrpg.sheet.item .inventory-list .item-detail,
 .sfrpg.sheet.item .inventory-list .inventory-header,
+.sfrpg.sheet.item .sheet-body .item-properties,
 .sfrpg.sheet.item .inventory-list .item {
-  border-color: var(--sfmod-border-on-background);
+  border-color: var(--sfmod-border-on-background) !important;
 }
 
 .system-sfrpg form .form-group span.units {
