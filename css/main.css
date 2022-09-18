@@ -192,7 +192,7 @@
   background-color: var(--sfmod-color-background) !important;
 }
 
-.system-sfrpg a.entity-link,
+.system-sfrpg a.content-link,
 .system-sfrpg a.inline-roll {
   border: 1px solid var(--sfmod-color-primary);
   color: var(--sfmod-color-primary);
@@ -269,9 +269,9 @@
   cursor: pointer;
 }
 
-.system-sfrpg a.entity-link,
+.system-sfrpg a.content-link,
 .system-sfrpg a.inline-roll {
-  background: none;
+  background: var(--color-border-dark-1);
 }
 
 .system-sfrpg input[type="text"],
@@ -554,7 +554,7 @@ sheets borders
   flex-grow: 1;
 }
 
-.system-sfrpg a.entity-link i,
+.system-sfrpg a.content-link i,
 .system-sfrpg a.inline-roll i {
   color: unset;
 }
