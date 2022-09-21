@@ -1,5 +1,7 @@
 # Changelog
-
+## [1.7.0] - 2022-09-21
+### Added
+- v10 compatibility [GH-31]
 ## [1.6.3] - 2022-04-13
 ### Fixed
 - "use" button color
