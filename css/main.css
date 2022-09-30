@@ -71,10 +71,6 @@
   vertical-align: -0.4em;
 }
 
-.system-sfrpg blockquote p {
-  display: inline;
-}
-
 .sfrpg.sheet .journal-entry-content h3,
 .sfrpg.sheet .item-summary h3 {
   color: var(--sfmod-color-primary);
