@@ -6,7 +6,8 @@
 [![Foundry VTT Version](https://img.shields.io/badge/dynamic/json.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcoboye%2Fsfrpg-modern-ui%2Fmain%2Fmodule.json&label=Foundry%20VTT%20Version&query=$.compatibleCoreVersion&colorB=orange)](https://foundryvtt.com/packages/sfrpg-modern-ui)
 
 ### Want to thank me? Buy me a Coffee (:
-[![Donate](https://img.shields.io/badge/donate-PayPal-red.svg)](https://www.paypal.com/donate?business=6Q3NP6M9TE35L&item_name=GitHub+sfrpg-modern-ui&currency_code=EUR)
+[![Donate](https://img.shields.io/badge/donate-Ko--fi-ff5f5f)](https://ko-fi.com/coboye)
+[![Donate](https://img.shields.io/badge/donate-PayPal-0070ba.svg)](https://www.paypal.com/donate?business=6Q3NP6M9TE35L&item_name=GitHub+sfrpg-modern-ui&currency_code=EUR)
 
 ![preview](https://media3.giphy.com/media/FpAhaeNGzha5kasNHm/giphy.gif)
 
