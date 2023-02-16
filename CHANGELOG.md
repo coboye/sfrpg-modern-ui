@@ -1,4 +1,9 @@
 # Changelog
+## [1.7.1] - 2023-02-16
+### Fixed
+- additional UI buttons layout [GH-33]
+- locked keys style in controls window [GH-30]
+- non gm scene button
 ## [1.7.0] - 2022-09-21
 ### Added
 - v10 compatibility [GH-31]
