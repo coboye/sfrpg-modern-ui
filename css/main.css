@@ -594,12 +594,16 @@ sheets borders
 
 .system-sfrpg .sidebar-tab .directory-footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 2px;
 }
 
 .system-sfrpg .sidebar-tab .directory-footer > * {
   flex-grow: 1;
+}
+
+.system-sfrpg .directory .action-buttons button{
+  margin: 4px 0;
 }
 
 .system-sfrpg a.content-link i,
