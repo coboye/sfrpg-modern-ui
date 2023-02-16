@@ -167,11 +167,19 @@
   color: var(--sfmod-text-on-secondary) !important;
 }
 
+.system-sfrpg #navigation #scene-list .scene {
+  border-color: var(--sfmod-color-primary);
+  background: var(--sfmod-color-primary-variant);
+  border-bottom-color: var(--sfmod-color-primary);
+  box-shadow: 0 0 10px var(--sfmod-color-primary);
+}
+
 .system-sfrpg #navigation #scene-list .scene.gm {
   border-color: var(--sfmod-color-primary);
   background: var(--sfmod-color-surface);
   border-bottom-color: var(--sfmod-color-primary-light);
   box-shadow: 0 0 10px var(--sfmod-color-primary-light);
+  opacity: .85;
 }
 
 .system-sfrpg #chat-controls .roll-type-select {
