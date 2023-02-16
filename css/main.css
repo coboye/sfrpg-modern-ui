@@ -760,7 +760,9 @@ sheets borders
 .system-sfrpg .directory .directory-list .directory-item.active {
   border-color: var(--sfmod-color-secondary) !important;
 }
-
+.system-sfrpg #keybindings .binding .key.uneditable {
+  background: #cac9c510;
+}
 /* ************************************************************************* */
 /* ***    COMPACT MODE CSS RULES                                         *** */
 /* ************************************************************************* */
