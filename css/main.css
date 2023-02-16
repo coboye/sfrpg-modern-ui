@@ -94,6 +94,7 @@
 .system-sfrpg input[type="number"],
 .system-sfrpg input[type="password"],
 .system-sfrpg input[type="date"],
+.system-sfrpg input[type="search"],
 .system-sfrpg input[type="time"],
 .system-sfrpg .directory .directory-header .header-search input {
   color: var(--sfmod-text-on-background);
