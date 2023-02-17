@@ -1,6 +1,6 @@
 export const Constants = {
     MODULENAME: "sfrpg-modern-ui",
-    LOGGERNAME: "Dark UI SFRPG",
+    LOGGERNAME: "Starfinder - Dark UI",
     Settings: {
         theme: "theme",
         background_alpha: "background_alpha",
