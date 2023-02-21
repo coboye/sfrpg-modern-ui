@@ -3,7 +3,7 @@
 ### Fixed
 - Compendium browser items hover color
 - Default Roll Mode header background
-- 
+- [Monk's Enhanced Journal](https://foundryvtt.com/packages/monks-enhanced-journal) footer navigation buttons
 ### Added
 - [Simple Calendar](https://foundryvtt.com/packages/foundryvtt-simple-calendar) first integration
 ## [1.7.1] - 2023-02-16

@@ -1,3 +1,7 @@
+/*
+Monk's Enhanced Journal
+https://foundryvtt.com/packages/monks-enhanced-journal
+*/
 .system-sfrpg {
     --mej-color-disabled: var(--sfmod-border-on-background);
     --mej-border-normal: var(--sfmod-border-on-background);
@@ -56,7 +60,9 @@
 .system-sfrpg #objective-display,
 .system-sfrpg .sidebar-tab.directory .directory-item.journal .permissions,
 .system-sfrpg .journal-list .journal-item.folder>.journal-title,
-.system-sfrpg .select-player .options {
+.system-sfrpg .select-player .options.bookmark-bar,
+.system-sfrpg .monks-enhanced-journal .mainbar .navigation .nav-button,
+.system-sfrpg .monks-enhanced-journal footer.navigation .nav-button {
     background: var(--sfmod-color-surface);
 }
 
@@ -74,7 +80,8 @@
 }
 
 .system-sfrpg .monks-enhanced-journal .tab-bar .tab-button:hover,
-.system-sfrpg .monks-enhanced-journal .mainbar .navigation .nav-button:hover {
+.system-sfrpg .monks-enhanced-journal .mainbar .navigation .nav-button:hover,
+.system-sfrpg .monks-enhanced-journal footer.navigation .nav-button:not(.disabled):hover {
     text-shadow: 0 0 8px var(--sfmod-color-primary);
 }
 
@@ -106,7 +113,9 @@
     border-color: var(--sfmod-color-secondary-light);
 }
 
-.system-sfrpg .monks-enhanced-journal .slideshow-container.playing .slide.active {
+.system-sfrpg .monks-enhanced-journal .slideshow-container.playing .slide.active,
+.system-sfrpg .monks-enhanced-journal .mainbar .navigation .nav-button:not(.disabled):hover,
+.system-sfrpg .monks-enhanced-journal footer.navigation .nav-button:not(.disabled):hover {
     border-color: var(--sfmod-color-primary);
     box-shadow: 0 0 10px var(--sfmod-color-primary)
 }
