@@ -2,12 +2,14 @@
     "name": "sfrpg-modern-ui",
     "title": "Starfinder - Dark UI",
     "description": "A dark UI for SFRPG system.",
-    "version": "1.7.2",
+    "version": "1.7.3",
     "author": "Coboye",
+    "manifestPlusVersion": "1.2.0",
     "authors": [
         {
             "name": "Coboye",
-            "discord": "Coboye#4996"
+            "discord": "Coboye#4996",
+            "ko-fi": "coboye"
         },
         {
             "name": "LebombJames",
@@ -42,31 +44,38 @@
     "media": [
         {
             "type": "cover",
-            "link": "https://i.imgur.com/FjuGn5I.jpg"
+            "link": "https://i.imgur.com/FjuGn5I.jpg",
+            "caption": "Starfinder - Dark UI"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/aIQNuP4.png"
+            "link": "https://i.imgur.com/aIQNuP4.png",
+            "caption": "Starfinder Logo Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/2QjJEDe.png"
+            "link": "https://i.imgur.com/2QjJEDe.png",
+            "caption": "Neon Cyberpunk Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/Kj6wQtJ.png"
+            "link": "https://i.imgur.com/Kj6wQtJ.png",
+            "caption": "Terminal Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/FsHLnOm.png"
+            "link": "https://i.imgur.com/FsHLnOm.png",
+            "caption": "Illusive Man Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/oa3asLA.png"
+            "link": "https://i.imgur.com/oa3asLA.png",
+            "caption": "Unitologist's Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/beYH4KW.png"
+            "link": "https://i.imgur.com/beYH4KW.png",
+            "caption": "Terminal Theme (shifted hue)"
         }
     ],
     "bugs": "https://github.com/coboye/sfrpg-modern-ui/issues",
