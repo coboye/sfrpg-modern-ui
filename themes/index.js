@@ -40,6 +40,7 @@ export const Integrations = [
     "df-chat-enhance",
     "forien-quest-log",
     "furnace",
+    "foundryvtt-simple-calendar",
     "gm-screen",
     "illandril-token-tooltips",
     "monks-enhanced-journal",

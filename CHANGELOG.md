@@ -3,6 +3,9 @@
 ### Fixed
 - Compendium browser items hover color
 - Default Roll Mode header background
+- 
+### Added
+- [Simple Calendar](https://foundryvtt.com/packages/foundryvtt-simple-calendar) first integration
 ## [1.7.1] - 2023-02-16
 ### Fixed
 - additional UI buttons layout [GH-33]

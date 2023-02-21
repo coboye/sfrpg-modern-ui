@@ -1,0 +1,24 @@
+/* 
+Simple Calendar 
+version 2.1.80
+https: //foundryvtt.com/packages/foundryvtt-simple-calendar
+https://github.com/vigoren/foundryvtt-simple-calendar
+
+Simple integration, no recolor
+*/
+body.system-sfrpg.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-li:hover,
+body.system-sfrpg.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-li.active,
+body.system-sfrpg.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-li:focus,
+body.system-sfrpg.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-li,
+body.system-sfrpg.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-bc {
+    color: #EACB74;
+}
+body.system-sfrpg.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-bc svg line,
+body.system-sfrpg.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-bc svg path,
+body.system-sfrpg.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-bc svg circle {
+    fill: #EACB74;
+    stroke: #EACB74;
+}
+body.system-sfrpg.game .fsc-eh .prosemirror menu {
+    background-color: var(--form-group-bg-color);
+}
