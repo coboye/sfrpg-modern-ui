@@ -1,4 +1,7 @@
 # Changelog
+## [1.7.3] - 2023-02-21
+### Changed
+- Manifest Plus version 1.2.0
 ## [1.7.2] - 2023-02-21
 ### Fixed
 - Compendium browser items hover color
