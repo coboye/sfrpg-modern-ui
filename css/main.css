@@ -944,4 +944,9 @@ sheets borders
 .sfrpg.sheet.actor .proficient .proficiency-toggle {
   color: var(--sfmod-color-primary);
 }
+.system-sfrpg .sfrpg.document-browser-window .document-browser li.item:hover {
+  box-shadow: 0 0 5px var(--sfmod-color-primary);
+  color: var(--sfmod-color-primary);
+  background: none;
+}
 /* END */

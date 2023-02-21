@@ -1,4 +1,7 @@
 # Changelog
+## [1.7.2] - TBD
+### Fixed
+- Compendium browser items hover color
 ## [1.7.1] - 2023-02-16
 ### Fixed
 - additional UI buttons layout [GH-33]
