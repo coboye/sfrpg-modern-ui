@@ -77,6 +77,7 @@ https://foundryvtt.com/packages/monks-enhanced-journal
 .system-sfrpg .select-player .options.bookmark-bar,
 .system-sfrpg .monks-enhanced-journal .mainbar .navigation .nav-button,
 .system-sfrpg .monks-enhanced-journal footer.navigation .nav-button,
+.system-sfrpg .journal-list,
 .system-sfrpg .journal-list .journal-item.folder>.journal-title,
 .system-sfrpg .journal-list .subfolder {
     background: var(--sfmod-color-background);
