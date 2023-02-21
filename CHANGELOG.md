@@ -2,6 +2,7 @@
 ## [1.7.2] - TBD
 ### Fixed
 - Compendium browser items hover color
+- Default Roll Mode header background
 ## [1.7.1] - 2023-02-16
 ### Fixed
 - additional UI buttons layout [GH-33]

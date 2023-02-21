@@ -202,7 +202,7 @@
 .system-sfrpg select {
   background: var(--sfmod-color-background) !important;
 }
-
+.system-sfrpg select optgroup,
 .system-sfrpg select option {
   background-color: var(--sfmod-color-background) !important;
 }
