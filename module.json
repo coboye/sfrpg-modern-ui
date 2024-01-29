@@ -16,8 +16,10 @@
             "discord": "LebombJames#1611"
         }
     ],
-    "system": [
-        "sfrpg"
+    "relationships": [
+        {
+            "systems": "sfrpg"
+        }
     ],
     "compatibility": {
         "minimum": 10,
@@ -44,37 +46,37 @@
     "media": [
         {
             "type": "cover",
-            "link": "https://i.imgur.com/FjuGn5I.jpg",
+            "url": "https://i.imgur.com/FjuGn5I.jpg",
             "caption": "Starfinder - Dark UI"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/aIQNuP4.png",
+            "url": "https://i.imgur.com/aIQNuP4.png",
             "caption": "Starfinder Logo Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/2QjJEDe.png",
+            "url": "https://i.imgur.com/2QjJEDe.png",
             "caption": "Neon Cyberpunk Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/Kj6wQtJ.png",
+            "url": "https://i.imgur.com/Kj6wQtJ.png",
             "caption": "Terminal Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/FsHLnOm.png",
+            "url": "https://i.imgur.com/FsHLnOm.png",
             "caption": "Illusive Man Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/oa3asLA.png",
+            "url": "https://i.imgur.com/oa3asLA.png",
             "caption": "Unitologist's Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/beYH4KW.png",
+            "url": "https://i.imgur.com/beYH4KW.png",
             "caption": "Terminal Theme (shifted hue)"
         }
     ],
