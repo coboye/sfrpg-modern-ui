@@ -18,8 +18,7 @@
     "relationships": {
         "systems": [
             {
-                "id": "sfrpg",
-                "type": "system"
+                "id": "sfrpg"
             }
         ]
     },
