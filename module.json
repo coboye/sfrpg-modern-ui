@@ -1,10 +1,9 @@
 {
+    "id": "sfrpg-modern-ui",
     "name": "sfrpg-modern-ui",
     "title": "Starfinder - Dark UI",
     "description": "A dark UI for SFRPG system.",
-    "version": "1.7.3",
-    "author": "Coboye",
-    "manifestPlusVersion": "1.2.0",
+    "version": "1.8.0",
     "authors": [
         {
             "name": "Coboye",
@@ -16,12 +15,14 @@
             "discord": "LebombJames#1611"
         }
     ],
-    "system": [
-        "sfrpg"
-    ],
+    "relationships": {
+"systems": [
+  {"id": "sfrpg", "type": "module"}
+]
+    },
     "compatibility": {
         "minimum": 13,
-        "verified": 13
+        "verified": 13.999
     },
     "styles": [
         "sfrpg-modern-ui.css"
@@ -44,47 +45,47 @@
     "media": [
         {
             "type": "cover",
-            "link": "https://i.imgur.com/FjuGn5I.jpg",
+            "url": "https://i.imgur.com/FjuGn5I.jpg",
             "caption": "Starfinder - Dark UI"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/aIQNuP4.png",
+            "url": "https://i.imgur.com/aIQNuP4.png",
             "caption": "Starfinder Logo Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/2QjJEDe.png",
+            "url": "https://i.imgur.com/2QjJEDe.png",
             "caption": "Neon Cyberpunk Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/Kj6wQtJ.png",
+            "url": "https://i.imgur.com/Kj6wQtJ.png",
             "caption": "Terminal Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/FsHLnOm.png",
+            "url": "https://i.imgur.com/FsHLnOm.png",
             "caption": "Illusive Man Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/oa3asLA.png",
+            "url": "https://i.imgur.com/oa3asLA.png",
             "caption": "Unitologist's Theme"
         },
         {
             "type": "screenshot",
-            "link": "https://i.imgur.com/beYH4KW.png",
+            "url": "https://i.imgur.com/beYH4KW.png",
             "caption": "Terminal Theme (shifted hue)"
         }
     ],
-    "bugs": "https://github.com/coboye/sfrpg-modern-ui/issues",
-    "url": "https://github.com/coboye/sfrpg-modern-ui",
-    "manifest": "https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/main/module.json",
-    "download": "https://codeload.github.com/coboye/sfrpg-modern-ui/zip/refs/tags/release/1.7.3",
-    "readme": "https://github.com/coboye/sfrpg-modern-ui/blob/main/README.md",
-    "changelog": "https://github.com/coboye/sfrpg-modern-ui/blob/main/CHANGELOG.md",
-    "license": "https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/main/LICENSE",
+    "bugs": "https://github.com/DukeVenator/sfrpg-modern-ui/issues",
+    "url": "https://github.com/DukeVenator/sfrpg-modern-ui",
+    "manifest": "https://raw.githubusercontent.com/DukeVenator/sfrpg-modern-ui/v13-upgrade-test/module.json",
+    "download": "https://github.com/DukeVenator/sfrpg-modern-ui/archive/refs/heads/v13-upgrade-test.zip",
+    "readme": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/v13-upgrade-test/README.md",
+    "changelog": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/v13-upgrade-test/CHANGELOG.md",
+    "license": "https://raw.githubusercontent.com/DukeVenator/sfrpg-modern-ui/v13-upgrade-test/LICENSE",
     "flags": {
         "allowBugReporter": true
     }
