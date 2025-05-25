@@ -15,5 +15,11 @@
 
 ![preview](https://media3.giphy.com/media/FpAhaeNGzha5kasNHm/giphy.gif)
 
-## Custom installation module url
+## Testing the v13 Compatible Version
+This fork contains a branch specifically updated for Foundry VTT v13 compatibility. To test this version:
+
+### Custom installation module url for v13 testing branch
+https://raw.githubusercontent.com/DukeVenator/sfrpg-modern-ui/v13-upgrade-test/module.json
+
+## Original installation module url
 https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/main/module.json
