@@ -21,8 +21,8 @@
         ]
     },
     "compatibility": {
-        "minimum": 10,
-        "verified": 10.291
+        "minimum": 13,
+        "verified": 13
     },
     "styles": [
         "sfrpg-modern-ui.css"

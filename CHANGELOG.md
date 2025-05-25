@@ -1,4 +1,11 @@
 # Changelog
+## [1.8.0] - 2025-05-25
+### Changed
+- Upgraded for Foundry VTT v13 compatibility.
+- Audited and updated all code for deprecated/breaking API changes.
+- Updated CSS and module integrations for v13 DOM and style changes.
+- Updated documentation and manifest for v13 support.
+
 ## [1.7.3] - 2023-02-21
 ### Changed
 - Manifest Plus version 1.2.0
