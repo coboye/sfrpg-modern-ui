@@ -16,13 +16,17 @@
         }
     ],
     "relationships": {
-"systems": [
-  {"id": "sfrpg", "type": "module"}
-]
+        "systems": [
+            {
+                "id": "sfrpg",
+                "type": "system",
+                "compatibility": {}
+            }
+        ]
     },
     "compatibility": {
-        "minimum": 13,
-        "verified": 13.999
+        "minimum": "13",
+        "verified": "13"
     },
     "styles": [
         "sfrpg-modern-ui.css"
@@ -84,9 +88,5 @@
     "manifest": "https://raw.githubusercontent.com/DukeVenator/sfrpg-modern-ui/v13-upgrade-test/module.json",
     "download": "https://github.com/DukeVenator/sfrpg-modern-ui/archive/refs/heads/v13-upgrade-test.zip",
     "readme": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/v13-upgrade-test/README.md",
-    "changelog": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/v13-upgrade-test/CHANGELOG.md",
-    "license": "https://raw.githubusercontent.com/DukeVenator/sfrpg-modern-ui/v13-upgrade-test/LICENSE",
-    "flags": {
-        "allowBugReporter": true
-    }
+    "changelog": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/v13-upgrade-test/CHANGELOG.md"
 }
