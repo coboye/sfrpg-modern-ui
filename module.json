@@ -83,8 +83,8 @@
     ],
     "bugs": "https://github.com/DukeVenator/sfrpg-modern-ui/issues",
     "url": "https://github.com/DukeVenator/sfrpg-modern-ui",
-    "manifest": "https://raw.githubusercontent.com/DukeVenator/sfrpg-modern-ui/v13-upgrade-test/module.json",
-    "download": "https://github.com/DukeVenator/sfrpg-modern-ui/archive/refs/tags/v2.3.4.zip",
-    "readme": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/v13-upgrade-test/README.md",
-    "changelog": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/v13-upgrade-test/CHANGELOG.md"
+    "manifest": "https://raw.githubusercontent.com/DukeVenator/sfrpg-modern-ui/main/module.json",
+    "download": "https://github.com/DukeVenator/sfrpg-modern-ui/archive/refs/tags/1.8.1.zip",
+    "readme": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/main/README.md",
+    "changelog": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/main/CHANGELOG.md"
 }
