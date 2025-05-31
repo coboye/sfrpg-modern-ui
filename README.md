@@ -36,6 +36,24 @@ If you have suggestions or encounter issues, please [open an issue](https://gith
 - Customizable appearance and compact mode
 - Full localization support
 
+### Supported Mods
+- Always HP
+- DF Chat Enhance
+- Forien Quest Log
+- FoundryVTT Simple Calendar
+- Furnace
+- GM Screen
+- Illandril Token Tooltips
+- Monks Active Tiles
+- Monks Enhanced Journal
+- Monks Little Details
+- Monks Tokenbar
+- One Journal
+- Tidbits
+- Tidy UI Game Settings
+- Token Action HUD
+- VTTA Tokenizer
+
 ![preview](https://media3.giphy.com/media/FpAhaeNGzha5kasNHm/giphy.gif)
 
 ---
