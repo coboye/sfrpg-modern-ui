@@ -39,10 +39,10 @@
 
 ## Task List
 
-1. [ ] Audit all code for v13 breaking changes and deprecated APIs.
+1. [X] Audit all code for v13 breaking changes and deprecated APIs.
 2. [X] Update `module.json` for v13 compatibility.
 3. [X] Refactor JavaScript code for v13 API changes.
-4. [ ] Update and test all CSS for v13 DOM changes.
+4. [X] Update and test all CSS for v13 DOM changes.
 5. [ ] Test and update all module integrations.
 6. [X] Update documentation (`README.md`).
 7. [X] Update `CHANGELOG.md` with v13 upgrade notes.

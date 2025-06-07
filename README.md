@@ -15,9 +15,12 @@
 
 ---
 
-## 🚀 Project Maintenance
+## 👥 Authors & Maintenance
 
-As of May 2025, this project is maintained by **DukeVenator**. The original author, **coboye**, is no longer maintaining the project. Ongoing support and development will continue for the community.
+**Original Author:** [coboye](https://github.com/coboye)  
+**Current Maintainers:** [coboye](https://github.com/coboye) & [DukeVenator](https://github.com/dukevenator)
+
+As of June 2025, this project is actively maintained by both **coboye** and **DukeVenator**. The project continues to receive ongoing support and development for the community.
 
 ### Future Plans
 - Further mod support for enhanced customization and integration

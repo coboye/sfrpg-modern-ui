@@ -33,4 +33,8 @@ export default class extends AbstractTheme {
         this.borderOnBackgroundLight = new Color("#7a7971");
     }
 
+    // Add chat background to your theme class:
+    get __colorsChatBackground() {
+        return new Color('#1e1e1e'); // Slightly lighter than pure black
+    }
 }

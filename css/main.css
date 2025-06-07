@@ -949,4 +949,76 @@ sheets borders
   color: var(--sfmod-color-primary);
   background: none;
 }
-/* END */
+
+/* Chat Messages - Simplified Dark Theme */
+.system-sfrpg.system-sfrpg .app.chat-popout .chat-message:not(.sfrpg.chat-card),
+.system-sfrpg.system-sfrpg #chat-log .message:not(.sfrpg.chat-card),
+.system-sfrpg.system-sfrpg .chat-message:not(.sfrpg.chat-card) {
+  background: none;
+  color: var(--sfmod-text-on-background); 
+}
+
+/* Chat form */
+.system-sfrpg.system-sfrpg #chat-form textarea {
+  background: var(--sfmod-color-background) !important;
+  color: var(--sfmod-text-on-background) !important;
+  border-color: var(--sfmod-border-on-background-light) !important;
+}
+
+/* Chat cards - Only style dice roll and similar content cards that need better contrast */
+.system-sfrpg.system-sfrpg .chat-message .dice-roll,
+.system-sfrpg.system-sfrpg .chat-message .dice-tooltip,
+.system-sfrpg.system-sfrpg .sfrpg.chat-card.dice-roll,
+.system-sfrpg.system-sfrpg .sfrpg.chat-card[data-type="dice-roll"] {
+  background: linear-gradient(135deg, rgba(43, 45, 49, 0.4), rgba(35, 37, 41, 0.5)) !important;
+  color: var(--sfmod-text-on-background) !important;
+  border-radius: 6px !important;
+  padding: 8px !important;
+  margin: 4px 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Ensure better contrast for light text elements in dice rolls and similar cards */
+.system-sfrpg.system-sfrpg .chat-message .dice-roll .dice-total,
+.system-sfrpg.system-sfrpg .chat-message .dice-roll .dice-formula,
+.system-sfrpg.system-sfrpg .dice-tooltip .dice-total,
+.system-sfrpg.system-sfrpg .dice-tooltip .dice-formula {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Preserve system success/failure colors for dice rolls */
+.system-sfrpg.system-sfrpg .chat-message .dice-roll .dice-total.success,
+.system-sfrpg.system-sfrpg .dice-tooltip .dice-total.success {
+  color: #4ade80 !important; /* Light green for success */
+  text-shadow: 0 0 8px rgba(74, 222, 128, 0.6), 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+}
+
+.system-sfrpg.system-sfrpg .chat-message .dice-roll .dice-total.failure,
+.system-sfrpg.system-sfrpg .dice-tooltip .dice-total.failure {
+  color: #f87171 !important; /* Light red for failure */
+  text-shadow: 0 0 8px rgba(248, 113, 113, 0.6), 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Critical success - bright green */
+.system-sfrpg.system-sfrpg .chat-message .dice-roll .dice-total.critical-success,
+.system-sfrpg.system-sfrpg .dice-tooltip .dice-total.critical-success {
+  color: #00ff41 !important;
+  text-shadow: 0 0 12px rgba(0, 255, 65, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+  font-weight: bold !important;
+}
+
+/* Critical failure - bright red */
+.system-sfrpg.system-sfrpg .chat-message .dice-roll .dice-total.critical-failure,
+.system-sfrpg.system-sfrpg .dice-tooltip .dice-total.critical-failure {
+  color: #ff2941 !important;
+  text-shadow: 0 0 12px rgba(255, 41, 65, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+  font-weight: bold !important;
+}
+
+.system-sfrpg.system-sfrpg .sfrpg.chat-card .card-buttons button {
+  background: var(--sfmod-color-background) !important;
+  color: var(--sfmod-text-on-background) !important;
+  border-color: var(--sfmod-border-on-background) !important;
+}

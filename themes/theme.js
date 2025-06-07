@@ -193,6 +193,7 @@ export default class AbstractTheme {
         props["blur-radius"] = this.__blurRadius;
         props["chat-font-size"] = this.__chatFontSize;
         props["background-alpha"] = this.__backgroundAlpha;
+        props["--sfmod-hue-shift"] = this.__colorsHue + 'deg';
 
         return props;
     }
