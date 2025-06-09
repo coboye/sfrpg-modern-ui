@@ -27,7 +27,7 @@ As of June 2025, this project is actively maintained by both **coboye** and **Du
 - Expand compatibility with the latest Starfinder for Foundry VTT v13
 - Continue improving user experience and keeping the module up to date
 
-If you have suggestions or encounter issues, please [open an issue](https://github.com/dukevenator/sfrpg-modern-ui/issues) or [submit a pull request](https://github.com/dukevenator/sfrpg-modern-ui/pulls).
+If you have suggestions or encounter issues, please [open an issue](https://github.com/coboye/sfrpg-modern-ui/issues) or [submit a pull request](https://github.com/coboye/sfrpg-modern-ui/pulls).
 
 ---
 
@@ -70,7 +70,7 @@ To install this module in Foundry VTT:
 3. Paste the following Manifest URL into the **Manifest URL** field:
 
    ```
-   https://raw.githubusercontent.com/dukevenator/sfrpg-modern-ui/main/module.json
+   https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/main/module.json
    ```
 
 4. Click **Install**. Once installed, enable the module in your world.
@@ -78,7 +78,7 @@ To install this module in Foundry VTT:
 > **Note:** For the latest v13 testing version, use this Manifest URL instead:
 >
 > ```
-> https://raw.githubusercontent.com/DukeVenator/sfrpg-modern-ui/v13-upgrade-test/module.json
+> https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/v13-upgrade-test/module.json
 > ```
 
 ---
