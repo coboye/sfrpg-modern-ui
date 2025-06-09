@@ -1,0 +1,125 @@
+:root {
+  --var-tidbits-accent: #00d4ff;
+  --var-tidbits-message: #1a1a2e;
+  --var-tidbits-text: #e0e0e0;
+  --var-tidbits-border: #333447;
+}
+
+body.system-sfrpg.game .chat-message:has(.tidbit-content) {
+  background-color: var(--palette-tertiary, var(--var-tidbits-message));
+  color: var(--palette-tertiary-contrast, var(--var-tidbits-text));
+  position: relative;
+  border: 1px solid var(--var-tidbits-border);
+}
+
+body.system-sfrpg.game .chat-message .tidbit-content h3 {
+  display: flex;
+  gap: 0.5rem;
+  border-color: var(--var-tidbits-accent);
+  color: var(--var-tidbits-text);
+}
+body.system-sfrpg.game .chat-message .tidbit-content h3 .fa-lightbulb-exclamation-on {
+  text-shadow: 0 0 8px var(--var-tidbits-accent);
+  color: var(--var-tidbits-accent);
+}
+body.system-sfrpg.game .chat-message .tidbit-content h3 .reroll-tidbit {
+  margin-left: auto;
+  margin-right: 0.5rem;
+  color: var(--var-tidbits-text);
+}
+body.system-sfrpg.game .chat-message .tidbit-content h3 .reroll-tidbit:hover {
+  cursor: pointer;
+  text-shadow: 0 0 8px var(--var-tidbits-accent);
+  color: var(--var-tidbits-accent);
+}
+
+body.system-sfrpg.game #tidbits-loading-screen {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgb(15, 15, 25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--var-tidbits-text);
+  text-align: center;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+body.system-sfrpg.game #tidbits-loading-screen.hidden {
+  display: none;
+}
+body.system-sfrpg.game #tidbits-loading-screen .loading-screen-content {
+  max-width: 50vw;
+  font-size: xx-large;
+  z-index: 1;
+  position: relative;
+}
+body.system-sfrpg.game #tidbits-loading-screen .loading-screen-content .fa-lightbulb-exclamation-on {
+  text-shadow: 0 0 10px var(--var-tidbits-accent);
+  color: var(--var-tidbits-accent);
+  pointer-events: all;
+}
+body.system-sfrpg.game #tidbits-loading-screen .loading-screen-content .fa-lightbulb-exclamation-on:hover {
+  cursor: pointer;
+  text-shadow: 0 0 15px var(--var-tidbits-accent), 0 0 20px var(--var-tidbits-accent);
+}
+body.system-sfrpg.game #tidbits-loading-screen .loading-screen-content h1 {
+  border-color: var(--var-tidbits-accent);
+  text-shadow: 0 0 10px var(--var-tidbits-accent);
+  color: var(--var-tidbits-text);
+}
+body.system-sfrpg.game #tidbits-loading-screen .loading-screen-background {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 85vh;
+  left: 0;
+  bottom: 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px) brightness(0.3) contrast(1.2);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
+  mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
+}
+body.system-sfrpg.game #tidbits-loading-screen .loading-screen-background.clean {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.4) contrast(1.1);
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+body.system-sfrpg.game #tidbits-loading-screen .loading-screen-background.radial {
+  position: absolute;
+  min-width: 50vw;
+  min-height: 85vh;
+  left: 0;
+  bottom: 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px) brightness(0.3) contrast(1.2);
+  -webkit-mask-image: radial-gradient(at bottom left, black 25%, transparent 75%);
+  mask-image: radial-gradient(at bottom left, black 25%, transparent 75%);
+}
+
+body.system-sfrpg.game #pause:has(.tidbit-pause-text) {
+  padding: 1rem 0;
+  height: unset;
+  animation: none;
+  background: rgba(15, 15, 25, 0.9);
+}
+body.system-sfrpg.game #pause:has(.tidbit-pause-text) figcaption {
+  line-height: normal;
+  font-size: var(--font-size-16);
+  max-width: 50vw;
+  padding: 0.5rem 1rem;
+  color: var(--var-tidbits-text);
+  text-shadow: 0 0 8px var(--var-tidbits-accent), 0 0 12px var(--var-tidbits-accent);
+}/*# sourceMappingURL=module.css.map */

@@ -36,6 +36,7 @@ export const Themes = {
 }
 
 export const Integrations = [
+    "tidbits",
     "always-hp",
     "df-chat-enhance",
     "forien-quest-log",
