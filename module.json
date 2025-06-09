@@ -85,10 +85,10 @@
             "caption": "Terminal Theme (shifted hue)"
         }
     ],
-    "bugs": "https://github.com/DukeVenator/sfrpg-modern-ui/issues",
-    "url": "https://github.com/DukeVenator/sfrpg-modern-ui",
-    "manifest": "https://raw.githubusercontent.com/DukeVenator/sfrpg-modern-ui/main/module.json",
-    "download": "https://github.com/DukeVenator/sfrpg-modern-ui/archive/refs/tags/1.8.1.zip",
-    "readme": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/main/README.md",
-    "changelog": "https://github.com/DukeVenator/sfrpg-modern-ui/blob/main/CHANGELOG.md"
+    "bugs": "https://github.com/coboye/sfrpg-modern-ui/issues",
+    "url": "https://github.com/coboye/sfrpg-modern-ui",
+    "manifest": "https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/main/module.json",
+    "download": "https://github.com/coboye/sfrpg-modern-ui/archive/refs/tags/release/1.8.1.zip",
+    "readme": "https://github.com/coboye/sfrpg-modern-ui/blob/main/README.md",
+    "changelog": "https://github.com/coboye/sfrpg-modern-ui/blob/main/CHANGELOG.md"
 }
