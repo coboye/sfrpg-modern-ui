@@ -75,11 +75,6 @@ To install this module in Foundry VTT:
 
 4. Click **Install**. Once installed, enable the module in your world.
 
-> **Note:** For the latest v13 testing version, use this Manifest URL instead:
->
-> ```
-> https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/v13-upgrade-test/module.json
-> ```
 
 ---
 
