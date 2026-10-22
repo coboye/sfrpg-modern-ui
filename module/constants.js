@@ -10,6 +10,8 @@ export const Constants = {
         colors_hue: "colors_hue",
         colors_lightness: "colors_lightness",
         compact_mode: "compact_mode",
-        chat_font_size: "chat_font_size"
+        chat_font_size: "chat_font_size",
+        transparent_chat: "transparent_chat",
+        sidebar_tab_glow: "sidebar_tab_glow"
     }
 }

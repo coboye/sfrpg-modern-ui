@@ -1,4 +1,22 @@
 # Changelog
+## [1.9.0] - 2026-10-22
+Maintained by [@DukeVenator](https://github.com/dukevenator).
+
+### Changed
+- Intermediate release for Foundry VTT 13 and 14. Minimum is 13 and verified is 14.
+- Settings preview no longer depends on jQuery and works with both the v13 and v14 settings forms.
+- Core theme rules keep the v13 selectors and also cover the v14 HUD and ApplicationV2 windows.
+### Fixed
+- Theme hue adjustment reads the hue channel.
+- Chat font size no longer shares the hue setter.
+- Tidbits loading screen is no longer covered by the pause-bar styles.
+### Added
+- Node tests for the manifest, themes, integrations, and settings binder.
+- GitHub Actions runs those tests on pushes and pull requests to main.
+- Pushing a `release/X.Y.Z` tag publishes that version after the tests pass.
+- Transparent chat is now a client setting, off by default. Chat messages use the theme background unless it is enabled.
+- The sidebar tab-bar glow is a client setting, off by default.
+
 ## [1.8.1] - 2025-05-31
 ### Changed
 - Project maintenance Taken over by DukeVenator as the original author is no longer maintaining the project.

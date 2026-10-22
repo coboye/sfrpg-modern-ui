@@ -17,6 +17,7 @@
   backdrop-filter: none;
 }
 
-.system-sfrpg #client-settings.app.window-app.form #config-tabs .settings-list h2.module-header span .far:before {
+.system-sfrpg #client-settings.app:is(.window-app, .application).form #config-tabs .settings-list h2.module-header span .far:before,
+.system-sfrpg #client-settings.application #config-tabs .settings-list h2.module-header span .far:before {
   color: var(--sfmod-text-on-surface);
 }

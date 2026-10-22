@@ -24,6 +24,8 @@ export class UIEngine {
         const link = `link[rel="stylesheet"][title="${title}"]`;
 
         document.body.classList[theme.compactMode ?  'add': 'remove']("sfmod-compact");
+        document.body.classList[settings.value(Constants.Settings.transparent_chat) ? "add" : "remove"]("sfmod-transparent-chat");
+        document.body.classList[settings.value(Constants.Settings.sidebar_tab_glow) ? "add" : "remove"]("sfmod-sidebar-glow");
 
         let stylesheet = document.head.querySelector(`${link}`);
         if (!stylesheet) {
@@ -51,7 +53,7 @@ export class UIEngine {
         } else {
             stylesheet.disabled = theme.core;
             try{
-                document.head.querySelectorAll(`link[rel="stylesheet"][data-sfmod]:not([data-sfmod=""]`).forEach(mod => mod.disabled = theme.core)
+                document.head.querySelectorAll('link[rel="stylesheet"][data-sfmod]:not([data-sfmod=""])').forEach(mod => mod.disabled = theme.core)
             }catch(e){}
         }
         Logger.debug("UIEngine:change", "stylesheet.disabled ", stylesheet.disabled, theme.toString() );

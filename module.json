@@ -3,7 +3,7 @@
     "name": "sfrpg-modern-ui",
     "title": "Starfinder - Dark UI",
     "description": "A dark UI for SFRPG system.",
-    "version": "1.8.1",
+    "version": "1.9.0",
     "authors": [
         {
             "name": "Coboye",
@@ -27,11 +27,14 @@
         ]
     },
     "compatibility": {
-        "minimum": "11",
-        "verified": "13"
+        "minimum": "13",
+        "verified": "14"
     },
     "styles": [
-        "sfrpg-modern-ui.css"
+        {
+            "src": "sfrpg-modern-ui.css",
+            "layer": null
+        }
     ],
     "esmodules": [
         "sfrpg-modern-ui.js"
@@ -88,7 +91,7 @@
     "bugs": "https://github.com/coboye/sfrpg-modern-ui/issues",
     "url": "https://github.com/coboye/sfrpg-modern-ui",
     "manifest": "https://raw.githubusercontent.com/coboye/sfrpg-modern-ui/main/module.json",
-    "download": "https://github.com/coboye/sfrpg-modern-ui/archive/refs/tags/release/1.8.1.zip",
+    "download": "https://github.com/coboye/sfrpg-modern-ui/releases/download/release/1.9.0/sfrpg-modern-ui.zip",
     "readme": "https://github.com/coboye/sfrpg-modern-ui/blob/main/README.md",
     "changelog": "https://github.com/coboye/sfrpg-modern-ui/blob/main/CHANGELOG.md"
 }

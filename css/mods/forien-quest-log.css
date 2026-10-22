@@ -26,7 +26,7 @@
 
 .system-sfrpg #forien-quest-log .window-content,
 .system-sfrpg #forien-quest-log-form .window-content,
-.system-sfrpg .window-app.forien-quest-preview .window-content {
+.system-sfrpg :is(.window-app, .application).forien-quest-preview .window-content {
     overflow: visible;
 }
 
@@ -51,29 +51,29 @@
 
 .system-sfrpg #forien-quest-log .actions i,
 .system-sfrpg #forien-quest-log-form .actions i,
-.system-sfrpg .window-app.forien-quest-preview .actions i {
+.system-sfrpg :is(.window-app, .application).forien-quest-preview .actions i {
     color: var(--sfmod-text-on-background-light);
 }
 
 .system-sfrpg #forien-quest-log .actions i:hover,
 .system-sfrpg #forien-quest-log-form .actions i:hover,
-.system-sfrpg .window-app.forien-quest-preview .actions i:hover {
+.system-sfrpg :is(.window-app, .application).forien-quest-preview .actions i:hover {
     color: var(--sfmod-color-secondary);
 }
 
-.system-sfrpg .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right header {
+.system-sfrpg :is(.window-app, .application).forien-quest-preview .quest-body .quest-info .quest-col-right header {
     border-color: var(--sfmod-border-on-background);
 }
 
-.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-giver-gc .toggleImage {
+.system-sfrpg :is(.window-app, .application).forien-quest-preview .quest-body .details-header .quest-giver-gc .toggleImage {
     background: var(--sfmod-color-surface);
 }
 
-.system-sfrpg .window-app.forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .toggleState:hover,
-.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .actions i:hover .system-sfrpg #forien-quest-log .actions i:hover,
+.system-sfrpg :is(.window-app, .application).forien-quest-preview .quest-body .quest-info .quest-col-right .quest-tasks .toggleState:hover,
+.system-sfrpg :is(.window-app, .application).forien-quest-preview .quest-body .details-header .quest-setup .actions i:hover .system-sfrpg #forien-quest-log .actions i:hover,
 #forien-quest-log-form .actions i:hover,
-.window-app.forien-quest-preview .actions i:hover,
-.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-status .quest-name:hover,
-.system-sfrpg .window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-giver-name h2:hover {
+:is(.window-app, .application).forien-quest-preview .actions i:hover,
+.system-sfrpg :is(.window-app, .application).forien-quest-preview .quest-body .details-header .quest-setup .quest-status .quest-name:hover,
+.system-sfrpg :is(.window-app, .application).forien-quest-preview .quest-body .details-header .quest-setup .quest-giver-name h2:hover {
     color: var(--sfmod-color-secondary) !important;
 }

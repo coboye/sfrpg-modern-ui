@@ -8,6 +8,10 @@ Hooks.once('init', async function () {
     UIEngine.initialize();
 });
 
-Hooks.on("renderSettingsConfig", (sheet, html, data) => {
-    SettingsProvider.watch();    
-})
+Hooks.on("renderSettingsConfig", (sheet, html) => {
+    SettingsProvider.watch(html);
+});
+
+Hooks.on("closeSettingsConfig", () => {
+    SettingsProvider.reset();
+});

@@ -134,7 +134,8 @@
   background: var(--sfmod-color-secondary-gradient);
 }
 
-.system-sfrpg .window-app .window-header {
+.system-sfrpg .window-app .window-header,
+.system-sfrpg .application .window-header {
   background: var(--sfmod-color-primary-gradient);
   color: var(--sfmod-text-on-primary);
 }
@@ -151,30 +152,56 @@
 .system-sfrpg .tabs a.item:hover,
 .system-sfrpg #navigation #scene-list .scene.view,
 .system-sfrpg #navigation #scene-list .scene.context,
+.system-sfrpg #scene-navigation .scene.view,
+.system-sfrpg #scene-navigation .scene.context,
 .system-sfrpg #controls .scene-control.active,
 .system-sfrpg #controls .control-tool.active,
 .system-sfrpg #controls .scene-control:hover,
 .system-sfrpg #controls .control-tool:hover,
+.system-sfrpg #scene-controls .scene-control.active,
+.system-sfrpg #scene-controls .control-tool.active,
+.system-sfrpg #scene-controls .main-controls .control-tool.active,
+.system-sfrpg #scene-controls .sub-controls .control-tool.active,
+.system-sfrpg #scene-controls .scene-control:hover,
+.system-sfrpg #scene-controls .control-tool:hover,
+.system-sfrpg #scene-controls .main-controls .control-tool:hover,
+.system-sfrpg #scene-controls .sub-controls .control-tool:hover,
 .system-sfrpg #sidebar-tabs > .item.active,
-.system-sfrpg #sidebar-tabs {
+.system-sfrpg #sidebar-tabs > button.active,
+.system-sfrpg #sidebar nav.tabs > .item.active,
+.system-sfrpg #sidebar nav.tabs > button.active {
   border-color: var(--sfmod-color-secondary);
   border-bottom-color: var(--sfmod-color-secondary-light);
   box-shadow: 0 0 10px var(--sfmod-color-secondary-light);
   background: var(--sfmod-color-surface);
 }
 
+.system-sfrpg #sidebar-tabs,
+.system-sfrpg #sidebar nav.tabs {
+  border-color: var(--sfmod-color-secondary);
+  border-bottom-color: var(--sfmod-color-secondary-light);
+  background: var(--sfmod-color-surface);
+}
+
+.sfmod-sidebar-glow.system-sfrpg #sidebar-tabs,
+.sfmod-sidebar-glow.system-sfrpg #sidebar nav.tabs {
+  box-shadow: 0 0 10px var(--sfmod-color-secondary-light);
+}
+
 .sfrpg.sheet .sheet-navigation .item.active:hover {
   color: var(--sfmod-text-on-secondary) !important;
 }
 
-.system-sfrpg #navigation #scene-list .scene {
+.system-sfrpg #navigation #scene-list .scene,
+.system-sfrpg #scene-navigation .scene {
   border-color: var(--sfmod-color-primary);
   background: var(--sfmod-color-primary-variant);
   border-bottom-color: var(--sfmod-color-primary);
   box-shadow: 0 0 10px var(--sfmod-color-primary);
 }
 
-.system-sfrpg #navigation #scene-list .scene.gm {
+.system-sfrpg #navigation #scene-list .scene.gm,
+.system-sfrpg #scene-navigation .scene.gm {
   border-color: var(--sfmod-color-primary);
   background: var(--sfmod-color-surface);
   border-bottom-color: var(--sfmod-color-primary-light);
@@ -182,7 +209,9 @@
   opacity: .85;
 }
 
-.system-sfrpg #chat-controls .roll-type-select {
+.system-sfrpg #chat-controls .roll-type-select,
+.system-sfrpg #chat-controls select[name="messageMode"],
+.system-sfrpg #chat-controls .message-mode {
   background: var(--sfmod-color-background);
   color: var(--sfmod-text-on-background);
 }
@@ -226,19 +255,24 @@
 }
 
 .sfrpg.sheet .window-content,
-.system-sfrpg .window-app .window-content {
+.system-sfrpg .window-app .window-content,
+.system-sfrpg .application .window-content {
   background: var(--sfmod-color-surface);
   color: var(--sfmod-text-on-background) !important;
   backdrop-filter: blur(var(--sfmod-blur-radius));
   -webkit-backdrop-filter: blur(var(--sfmod-blur-radius));
 }
 
-.system-sfrpg #chat-log .message {
+.system-sfrpg #chat-log .message,
+.system-sfrpg #chat .chat-message,
+.system-sfrpg .chat-log .chat-message {
   background: var(--sfmod-color-background);
   color: var(--sfmod-text-on-background) !important;
 }
 
-.system-sfrpg #chat-log .message .message-content h2 {
+.system-sfrpg #chat-log .message .message-content h2,
+.system-sfrpg #chat .chat-message .message-content h2,
+.system-sfrpg .chat-log .chat-message .message-content h2 {
   position: unset;
 }
 
@@ -597,7 +631,9 @@ sheets borders
   text-shadow: unset;
 }
 
-.system-sfrpg #sidebar-tabs.tabs a.item:hover {
+.system-sfrpg #sidebar-tabs.tabs a.item:hover,
+.system-sfrpg #sidebar-tabs.tabs button.item:hover,
+.system-sfrpg #sidebar nav.tabs button:hover {
   box-shadow: inset 0 0 8px var(--sfmod-color-secondary);
 }
 
@@ -835,11 +871,14 @@ sheets borders
 }
 
 /* font size */
-.system-sfrpg #chat-log {
+.system-sfrpg #chat-log,
+.system-sfrpg #chat .chat-log {
   font-size: var(--sfmod-chat-font-size, 12px);
 }
 
 .system-sfrpg #chat-log .message,
+.system-sfrpg #chat .chat-message,
+.system-sfrpg .chat-log .chat-message,
 .system-sfrpg .sfrpg.chat-card,
 .system-sfrpg .sfrpg.chat-card .card-content {
   font-size: 1em;
@@ -950,12 +989,15 @@ sheets borders
   background: none;
 }
 
-/* Chat Messages - Simplified Dark Theme */
-.system-sfrpg.system-sfrpg .app.chat-popout .chat-message:not(.sfrpg.chat-card),
-.system-sfrpg.system-sfrpg #chat-log .message:not(.sfrpg.chat-card),
-.system-sfrpg.system-sfrpg .chat-message:not(.sfrpg.chat-card) {
+/* Transparent chat is opt-in via the transparent_chat setting. */
+.sfmod-transparent-chat.system-sfrpg .app.chat-popout .chat-message:not(.sfrpg.chat-card),
+.sfmod-transparent-chat.system-sfrpg .application.chat-popout .chat-message:not(.sfrpg.chat-card),
+.sfmod-transparent-chat.system-sfrpg #chat-log .message:not(.sfrpg.chat-card),
+.sfmod-transparent-chat.system-sfrpg #chat .chat-message:not(.sfrpg.chat-card),
+.sfmod-transparent-chat.system-sfrpg .chat-log .chat-message:not(.sfrpg.chat-card),
+.sfmod-transparent-chat.system-sfrpg .chat-message:not(.sfrpg.chat-card) {
   background: none;
-  color: var(--sfmod-text-on-background); 
+  color: var(--sfmod-text-on-background);
 }
 
 /* Chat form */

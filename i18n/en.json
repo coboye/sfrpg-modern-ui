@@ -19,5 +19,9 @@
   "sfrpg-modern-ui.settings.colors_lightness.label": "Lightness",
   "sfrpg-modern-ui.settings.colors_hue.label": "Hue shift",
   "sfrpg-modern-ui.settings.compact_mode.label": "Compact Mode (experimental)",
-  "sfrpg-modern-ui.settings.chat_font_size.label": "Chat Text Size (experimental)"
+  "sfrpg-modern-ui.settings.chat_font_size.label": "Chat Text Size (experimental)",
+  "sfrpg-modern-ui.settings.transparent_chat.label": "Transparent chat",
+  "sfrpg-modern-ui.settings.transparent_chat.hint": "Leave chat messages transparent so the panel behind them shows through. Off by default.",
+  "sfrpg-modern-ui.settings.sidebar_tab_glow.label": "Sidebar tab glow",
+  "sfrpg-modern-ui.settings.sidebar_tab_glow.hint": "Draw a glow around the sidebar tab bar. Off by default, because that bar can stretch across the screen."
 }

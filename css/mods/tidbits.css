@@ -34,11 +34,11 @@ body.system-sfrpg.game .chat-message .tidbit-content h3 .reroll-tidbit:hover {
 }
 
 body.system-sfrpg.game #tidbits-loading-screen {
-  position: absolute;
-  min-width: 100vw;
-  min-height: 100vh;
-  top: 0;
-  left: 0;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
   background: rgb(15, 15, 25);
   display: flex;
   align-items: center;
@@ -46,6 +46,9 @@ body.system-sfrpg.game #tidbits-loading-screen {
   color: var(--var-tidbits-text);
   text-align: center;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+body.system-sfrpg.game:has(#tidbits-loading-screen:not(.hidden)) #pause {
+  visibility: hidden;
 }
 body.system-sfrpg.game #tidbits-loading-screen.hidden {
   display: none;
@@ -66,9 +69,17 @@ body.system-sfrpg.game #tidbits-loading-screen .loading-screen-content .fa-light
   text-shadow: 0 0 15px var(--var-tidbits-accent), 0 0 20px var(--var-tidbits-accent);
 }
 body.system-sfrpg.game #tidbits-loading-screen .loading-screen-content h1 {
-  border-color: var(--var-tidbits-accent);
+  border: none;
+  border-bottom: 1px solid var(--var-tidbits-accent);
+  font-variant: normal;
   text-shadow: 0 0 10px var(--var-tidbits-accent);
   color: var(--var-tidbits-text);
+}
+body.system-sfrpg.game #tidbits-loading-screen .loading-screen-content p {
+  font-variant: normal;
+  color: var(--var-tidbits-text);
+  background: none;
+  border: none;
 }
 body.system-sfrpg.game #tidbits-loading-screen .loading-screen-background {
   position: absolute;

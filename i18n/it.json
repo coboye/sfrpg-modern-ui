@@ -19,5 +19,9 @@
     "sfrpg-modern-ui.settings.colors_lightness.label": "Luminosità",
     "sfrpg-modern-ui.settings.colors_hue.label": "Tonalità",
     "sfrpg-modern-ui.settings.compact_mode.label": "Modalita Compatta (sperimentale)",
-    "sfrpg-modern-ui.settings.chat_font_size.label": "Dimensione Testo Chat (sperimentale)"
+    "sfrpg-modern-ui.settings.chat_font_size.label": "Dimensione Testo Chat (sperimentale)",
+    "sfrpg-modern-ui.settings.transparent_chat.label": "Chat trasparente",
+    "sfrpg-modern-ui.settings.transparent_chat.hint": "Lascia i messaggi di chat trasparenti così si vede il pannello dietro. Disattivato per impostazione predefinita.",
+    "sfrpg-modern-ui.settings.sidebar_tab_glow.label": "Bagliore schede laterali",
+    "sfrpg-modern-ui.settings.sidebar_tab_glow.hint": "Disegna un bagliore intorno alla barra delle schede laterali. Disattivato per impostazione predefinita, perché quella barra può estendersi su tutto lo schermo."
 }

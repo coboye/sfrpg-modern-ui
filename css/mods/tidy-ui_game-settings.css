@@ -12,6 +12,7 @@
 .system-sfrpg #module-management #importExportModal #modalIO {
     background: var(--sfmod-color-background);
 }
-.system-sfrpg #client-settings.app.window-app.form #config-tabs .settings-list h2.module-header span {
+.system-sfrpg #client-settings.app:is(.window-app, .application).form #config-tabs .settings-list h2.module-header span,
+.system-sfrpg #client-settings.application #config-tabs .settings-list h2.module-header span {
     color: var(--sfmod-color-secondary);
 }

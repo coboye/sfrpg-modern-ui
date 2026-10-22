@@ -118,7 +118,7 @@ export default class AbstractTheme {
         Logger.debug("lightness", this.colorPrimary.getLightness(), this.colorPrimary.toString());
     }
 
-    get hue() { return this.__colorsValue; }
+    get hue() { return this.__colorsHue; }
     set hue(value) {
         this.__colorsHue = Math.min(360, Math.max(-360, parseInt(value)));
         if (this.__colorsHue != 0) {
@@ -131,19 +131,7 @@ export default class AbstractTheme {
         }
         Logger.debug("hue", this.colorPrimary.getHue(), this.colorPrimary.toString());
     }
-    get chatFontSize() { return this.__chatFontSize + "px"; }
-    set chatFontSize(value) {
-        this.__colorsHue = Math.min(360, Math.max(-360, parseInt(value)));
-        if (this.__colorsHue != 0) {
-            Object.keys(this).forEach(key => {
-                let color = this[key];
-                if (!!color && !!color.shiftHue) {
-                    this[key] = color.shiftHue(this.__colorsHue);
-                }
-            })
-        }
-        Logger.debug("hue", this.colorPrimary.getHue(), this.colorPrimary.toString());
-    }
+    get chatFontSize() { return this.__chatFontSize; }
 
     get core() { return this.__name == null };
 

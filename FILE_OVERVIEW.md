@@ -10,13 +10,17 @@ This document describes the purpose of each file and major folder in the `sfrpg-
 - **CHANGELOG.md**: Chronological list of changes, updates, and fixes for each release.
 - **LICENSE**: Legal terms for using, modifying, and distributing the project.
 - **module.json**: Foundry VTT module manifest, declaring metadata, compatibility, scripts, styles, and language files.
-- **UPGRADE_PLAN_V13.md**: Planning and checklist for upgrading the module to Foundry VTT v13 compatibility.
+- **package.json**: Private Node package used to run the automated tests.
 - **sfrpg-modern-ui.js**: Main JavaScript entry point. Initializes the module, settings, and UI engine on Foundry startup.
 - **sfrpg-modern-ui.css**: Core CSS for the module, providing global UI fixes and style overrides for the Starfinder system.
 
 ---
 
 ## Folders
+
+### `.github/workflows/`
+- **ci.yml**: Runs the Node tests on pushes and pull requests to `main`.
+- **release.yml**: Runs when a `release/X.Y.Z` tag is pushed, then publishes the module zip on that tag.
 
 ### `css/`
 - **main.css**: Main stylesheet for the module, defining custom properties and UI tweaks for the Starfinder system.
@@ -33,6 +37,9 @@ This document describes the purpose of each file and major folder in the `sfrpg-
 - **logger.js**: Logging utility for consistent debug, info, and error output.
 - **settings.js**: Settings provider and definitions for user-configurable options (theme, opacity, blur, etc.).
 - **utils.js**: Utility functions (e.g., string conversion, localization helper).
+
+### `test/`
+- Node tests for the manifest, color and theme helpers, integration stylesheets, HUD selectors, and the settings form binder.
 
 ### `themes/`
 - **index.js**: Exports available themes and integration list.

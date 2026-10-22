@@ -4,6 +4,89 @@ import { UIEngine } from "./engine.js";
 import { Themes } from "../themes/index.js";
 import { Utils } from "./utils.js";
 
+const RESET_SELECTOR = '[data-action="resetDefaults"], button[name="reset"]';
+let removalObserver = null;
+
+/**
+ * Accept either an ApplicationV2 HTMLElement or a jQuery object from older hooks.
+ * @param {HTMLElement | { get?: Function, 0?: HTMLElement } | null} html
+ * @returns {HTMLElement | null}
+ */
+export function asElement(html) {
+    if (!html) return null;
+    if (typeof HTMLElement !== "undefined" && html instanceof HTMLElement) return html;
+    if (html.nodeType === 1) return html;
+    if (typeof html.get === "function") {
+        const node = html.get(0);
+        if (node && node.nodeType === 1) return node;
+    }
+    if (html[0] && html[0].nodeType === 1) return html[0];
+    return null;
+}
+
+/**
+ * @param {HTMLInputElement | null} target
+ * @returns {string | boolean | null}
+ */
+export function readControlValue(target) {
+    if (!target) return null;
+    if (target.type === "checkbox") return Boolean(target.checked);
+    return target.value;
+}
+
+/**
+ * @param {HTMLElement} element
+ * @param {(value: string | boolean | null) => void} onValue
+ */
+export function bindControl(element, onValue) {
+    if (!element || element.dataset?.sfmodBound === "1") return;
+    if (element.dataset) element.dataset.sfmodBound = "1";
+    const handler = (evt) => onValue(readControlValue(evt.target));
+    element.addEventListener("change", handler);
+    element.addEventListener("input", handler);
+}
+
+/**
+ * @param {ParentNode} root
+ * @param {() => void} onReset
+ */
+export function bindResetControls(root, onReset) {
+    if (!root?.querySelectorAll) return;
+    root.querySelectorAll(RESET_SELECTOR).forEach((button) => {
+        if (button.dataset?.sfmodReset === "1") return;
+        if (button.dataset) button.dataset.sfmodReset = "1";
+        button.addEventListener("click", () => onReset());
+    });
+}
+
+/**
+ * Backup for when the settings app is removed without closeSettingsConfig.
+ * Skips the callback if a replacement #client-settings is already in the document.
+ * @param {HTMLElement} root
+ * @param {() => void} onRemove
+ */
+export function observeSettingsRemoval(root, onRemove) {
+    if (typeof MutationObserver === "undefined" || !root?.parentNode) return;
+    if (removalObserver) removalObserver.disconnect();
+    removalObserver = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+            if (mutation.type !== "childList") continue;
+            const removed = Array.from(mutation.removedNodes);
+            const gone = removed.some((node) => node === root || node.id === "client-settings" || node.contains?.(root));
+            if (!gone) continue;
+            const current = typeof document !== "undefined" && document.getElementById
+                ? document.getElementById("client-settings")
+                : null;
+            removalObserver.disconnect();
+            removalObserver = null;
+            if (current && current !== root) return;
+            onRemove();
+            return;
+        }
+    });
+    removalObserver.observe(root.parentNode, { childList: true, subtree: true });
+}
+
 export class SettingRange {
     min = 0;
     max = 100;
@@ -68,9 +151,6 @@ export class Setting {
     get tagname() {
         return this.choices != null ? "select" : "input";
     }
-    get element() {
-        return $(`[name="${Constants.MODULENAME}.${this.key}"]`);
-    }
     reset() {
         this.value = game.settings.get(Constants.MODULENAME, this.key);
     }
@@ -84,25 +164,14 @@ export class Setting {
         this.value = value;
         this.callback(value);
     }
-    watch() {
+    /**
+     * @param {ParentNode} root
+     */
+    watch(root) {
         Logger.debug("Setting:watch", this.key);
-
-        this.element.on("change", (evt) => { this.updated(this.eventValue(evt)) });
-        this.element.on("input", (evt) => { this.updated(this.eventValue(evt), evt) });
-        if (this.element.is(":checkbox")) {
-            this.element.parent().prev().click(() => this.updated(this.eventValue({ target: this.element })));
-        }
-        this.element.on("checked", (evt) => { this.updated(this.eventValue(evt), evt) });
-    }
-    eventValue(evt) {
-        let val = null;
-        const target = $(evt.target);
-        if (target.is(':checkbox')) {
-            val = target.is(':checked');
-        } else {
-            val = target.val();
-        }
-        return val;
+        const element = root?.querySelector?.(`[name="${Constants.MODULENAME}.${this.key}"]`);
+        if (!element) return;
+        bindControl(element, (value) => this.updated(value));
     }
 
     constructor(key, properties) {
@@ -128,24 +197,17 @@ export class Settings {
         this.properties.forEach(p => p.register());
     }
 
-    watch() {
-        this.properties.forEach(p => p.watch());
-
-        // Create an observer instance linked to the callback function
-        const observer = new MutationObserver((mutations, observer) => {
-            mutations.forEach((mutation) => {
-                if (mutation.type == 'childList' && mutation.removedNodes) {
-                    if (Array.from(mutation.removedNodes).some(node => node.id == 'client-settings')) {
-                        observer.disconnect();
-                        this.reset();
-                    }
-                }
-            });
-        });
-        // Start observing the target node for configured mutations
-        observer.observe($("#client-settings").get(0).parentNode, { attributes: false, childList: true, subtree: true });
-
-        $('#client-settings button[name="reset"]').on("click", () => this.reset());
+    /**
+     * @param {HTMLElement | { get?: Function, 0?: HTMLElement }} html
+     */
+    watch(html) {
+        const root = asElement(html) ?? (typeof document !== "undefined" && document.getElementById
+            ? document.getElementById("client-settings")
+            : null);
+        if (!root) return;
+        this.properties.forEach(p => p.watch(root));
+        bindResetControls(root, () => this.reset());
+        observeSettingsRemoval(root, () => this.reset());
     }
 
     reset() {
@@ -165,8 +227,8 @@ export const SettingsProvider = {
 
     settings: new Settings(),
 
-    watch: () => {
-        SettingsProvider.settings.watch();
+    watch: (html) => {
+        SettingsProvider.settings.watch(html);
     },
 
     reset: () => {
@@ -257,6 +319,20 @@ export const SettingsProvider = {
                 type: Boolean,
                 default: true,
                 showHint: false
+            })
+        );
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.transparent_chat, {
+                scope: SettingScope.CLIENT,
+                type: Boolean,
+                default: false
+            })
+        );
+        SettingsProvider.settings.properties.push(
+            new Setting(Constants.Settings.sidebar_tab_glow, {
+                scope: SettingScope.CLIENT,
+                type: Boolean,
+                default: false
             })
         );
 
